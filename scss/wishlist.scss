@@ -1,0 +1,88 @@
+
+.wishlist {
+    &-panel {
+        display: flex;
+        justify-content: right;
+        border: solid #eeeeee;
+        border-width: 1px 0;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    &-sum {
+        width: 220px;
+        text-align: right;
+        margin-right: 48px;
+    }
+    &-sum-label {
+        display: block;
+        margin-top: -5px;
+        margin-bottom: 1px;
+        font-size: 16px;
+    }
+    &-sum-value {
+        font-size: 22px;
+        color: #1d1d1d;
+        font-weight: 700;
+    }
+    &-sum-currency {
+        font-size: 21px;
+    }
+    &-button {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    &-cross {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.43);
+        border: 1px solid #fff;
+        text-decoration: none;
+        &:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
+    &-cross-icon {
+        font-size: 18px;
+        color: #1d1d1d;
+        font-weight: 900;
+    }
+}
+
+
+@media screen
+and (max-width: $desktop){
+}
+
+@media screen
+and (max-width: $tablet){
+}
+
+@media screen
+and (max-width: $mobile){
+    .wishlist {
+        &-panel {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        &-sum {
+            width: auto;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        &-cross {
+            top: 15px;
+            right: 15px;
+            width: 23px;
+            height: 23px;
+        }
+        &-cross-icon {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+
+.buyers {
+    &-item {
+        margin-bottom: 30px;
+    }
+    &-block {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        height: 100%;
+        padding: 40px 20px 35px;
+        background-color: #f1f2f6;
+        text-align: center;
+        text-decoration: none;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -90px;
+            height: 100%;
+            width: 185px;
+            transform: skew(163deg);
+            background-color: rgba(1, 65, 97, 0.03);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -80px;
+            height: 100%;
+            width: 180px;
+            transform: skew(-163deg);
+            background-color: rgba(1, 65, 97, 0.03);
+        }
+    }
+    &-icon {
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+    &-name {
+        display: block;
+        font-size: 17px;
+        font-weight: 500;
+        color: #1c1c1c;
+    }
+}
+
+
+@media screen
+and (max-width: $desktop){
+}
+
+@media screen
+and (max-width: $tablet){
+}
+
+@media screen
+and (max-width: $mobile){
+}

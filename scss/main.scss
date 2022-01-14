@@ -322,6 +322,17 @@
     &-item_active &-label {
         border-color: #fff;
     }
+
+    &_modified {
+        top: 20px;
+        left: 20px;
+        right: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_modified &-item {
+        margin-right: 8px;
+    }
 }
 
 .products-box:hover .colors {
