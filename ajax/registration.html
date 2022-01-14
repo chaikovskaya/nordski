@@ -1,0 +1,88 @@
+
+<div class="popup">
+    <div class="popup-content">
+        <span class="popup-title">Войти в личный кабинет</span>
+        <div class="tabs JS-Tab" data-tab="{
+             'classSwitcherActive': 'tabs-link_active',
+             'classItemActive': 'tabs-item_active'
+        }">
+            <div class="tabs-menu">
+                <a class="tabs-link tabs-link_active JS-Tab-Switcher" href="javascript:;">Вход</a>
+                <a class="tabs-link JS-Tab-Switcher" href="javascript:;">Регистрация</a>
+            </div>
+            <div class="tabs-item tabs-item_active JS-Tab-Item">
+                <form class="js-form-validate" action="/">
+            <div class="field js-form-validate-field">
+                <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                    <label class="field-label field-label_simple JS-FieldText-Label" for="email-2">Email</label>
+                    <input class="input input_simple JS-FieldText-Input js-mask-email" type="text" placeholder="" id="email-2" name="email-2" required />
+                </span>
+            </div>
+            <div class="field field_modified js-form-validate-field">
+                <span class="field-input JS-FieldText js-password" data-fieldtext="{'classActive':'field-input_active'}" data-password="field-password-active">
+                    <label class="field-label field-label_simple JS-FieldText-Label" for="password">Пароль</label>
+                    <input class="input input_simple JS-FieldText-Input js-password-input" type="password" placeholder="" id="password" name="password" required />
+                    <a class="js-password-link" href="javascript:;">
+                        <i class="eye-icon eye-icon_hide las la-eye-slash"></i>
+                        <i class="eye-icon eye-icon_show las la-eye"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="field field_modified field-remember">
+                <label class="field-remember-checkbox checkbox">
+                    <input class="checkbox-input" type="checkbox" name="value-1" />
+                    <span class="checkbox-check"></span>
+                    <span class="field-remember-label checkbox-label">Запомнить меня</span>
+                </label>
+                <a class="field-remember-label link js-open-forgot-password" href="javascript:;" data-src="./ajax/forgot-password.html">Забыли пароль?</a>
+            </div>
+            <div class="field-button">
+                <button class="popup-button button">Войти</button>
+            </div>
+        </form>
+            </div>
+            <div class="tabs-item JS-Tab-Item">
+                <form class="js-form-validate js-form" action="/">
+                    <div class="field js-form-validate-field">
+                <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                    <label class="field-label field-label_simple JS-FieldText-Label" for="email-1">Email</label>
+                    <input class="input input_simple JS-FieldText-Input js-mask-email" type="text" placeholder="" id="email-1" name="email-1" required />
+                </span>
+                    </div>
+                    <div class="field js-form-validate-field">
+                        <span class="field-input JS-FieldText js-password" data-fieldtext="{'classActive':'field-input_active'}" data-password="field-password-active">
+                            <label class="field-label field-label_simple JS-FieldText-Label" for="password-1">Пароль</label>
+                            <input class="input input_simple JS-FieldText-Input js-password-input" type="password" placeholder="" id="password-1" name="password-1" required />
+                            <a class="js-password-link" href="javascript:;">
+                                <i class="eye-icon eye-icon_hide las la-eye-slash"></i>
+                                <i class="eye-icon eye-icon_show las la-eye"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="field field_modified js-form-validate-field">
+                        <span class="field-input JS-FieldText js-password" data-fieldtext="{'classActive':'field-input_active'}" data-password="field-password-active">
+                            <label class="field-label field-label_simple JS-FieldText-Label" for="password-2">Повторите пароль</label>
+                            <input class="input input_simple JS-FieldText-Input js-password-input" type="password" placeholder="" id="password-2" name="password-2" required />
+                            <a class="js-password-link" href="javascript:;">
+                                <i class="eye-icon eye-icon_hide las la-eye-slash"></i>
+                                <i class="eye-icon eye-icon_show las la-eye"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="switch-field">
+                        <label class="switch switch_simple">
+                            <input class="switch-checkbox js-form-checkbox" type="checkbox" name="agreement" checked="checked" />
+                            <span class="switch-decor">
+                                <span class="switch-icon"></span>
+                            </span>
+                            <span class="switch-label">Я согласен на <a href="#">обработку персональных данных</a></span>
+                        </label>
+                    </div>
+                    <div class="field-button">
+                        <button class="popup-button button js-form-button">Зарегистрироваться</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

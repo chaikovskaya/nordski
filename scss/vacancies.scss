@@ -1,0 +1,151 @@
+
+.vacancies {
+    margin-bottom: 42px;
+    &-item {
+        margin-bottom: 30px;
+    }
+    &-container {
+        overflow: hidden;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &-block {
+        height: 100%;
+        border: 1px solid #ececec;
+        padding: 22px 20px 33px;
+    }
+    &-name {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: rgb( 29, 29, 29 );
+        font-weight: bold;
+    }
+    &-data {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+    }
+    &-data-item {
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #eaeaea;
+        font-size: 15px;
+        color: #a0a0a0;
+        line-height: 10px;
+        &:last-child {
+            padding-right: 0;
+            margin-right: 0;
+            border-right-width: 0;
+        }
+    }
+    &-content {
+        margin-bottom: 19px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    &-panel {
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        background-color: #f6f6f9;
+        border: solid #ececec;
+        border-width: 0 1px 1px;
+    }
+    &-label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 53px;
+        height: 100%;
+        margin: -1px 10px -1px -1px;
+        padding: 15px 40px 18px 20px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #fff;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 15px;
+            bottom: 0;
+            max-width: none;
+            width: 250px;
+            background-color: #014161;
+            transform: skew(150deg);
+        }
+    }
+    &-label-inner {
+        position: relative;
+    }
+    &-links {
+        padding: 15px 20px 18px 0;
+        font-size: 16px;
+        line-height: 18px;
+        color: #1d1d1d;
+    }
+    &-link {
+        margin-right: 15px;
+        color: #1d1d1d;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: #1d1d1d;
+            text-decoration: none;
+        }
+    }
+    &-links-label {
+        margin-right: 15px;
+    }
+    &-salary {
+       font-size: 16px;
+    }
+    &-salary-label {
+        margin-right: 2px;
+        font-weight: 700;
+        color: #1d1d1d;
+    }
+    &-salary-digit {
+        color: #1d1d1d;
+        font-size: 19px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    &-salary-currency {
+        margin-left: 2px;
+        font-size: 17px;
+    }
+}
+
+
+@media screen
+and (max-width: $desktop){
+}
+
+@media screen
+and (max-width: $tablet){
+    .vacancies {
+        &-link {
+            margin-right: 5px;
+        }
+        &-links-label {
+            margin-right: 5px;
+        }
+    }
+}
+
+@media screen
+and (max-width: $mobile){
+    .vacancies {
+        margin-bottom: 20px;
+        &-label {
+            padding-right: 35px;
+            font-size: 15px;
+        }
+    }
+}

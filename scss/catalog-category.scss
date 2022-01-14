@@ -1,0 +1,287 @@
+
+.catalog-category {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+    &-wrapper {
+        padding-bottom: 53px;
+        margin-bottom: 51px;
+        border-bottom: 1px solid #eeeeee;
+    }
+    &-item {
+        width: 33.3%;
+        min-height: 100%;
+        height: auto;
+        padding-left: $gutter;
+        padding-right: $gutter;
+    }
+    &-link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 160px;
+        height: 100%;
+        padding: 35px 30px 30px;
+        background-color: #f1f2f6;
+        text-decoration: none;
+    }
+    &-decor {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 51%;
+            height: 100%;
+            width: 100%;
+            transform: skew(163deg);
+            background-color: rgba(1, 65, 97, 0.03);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 51%;
+            height: 100%;
+            width: 100%;
+            transform: skew(-163deg);
+            background-color: rgba(1, 65, 97, 0.03);
+        }
+    }
+    &-img {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        z-index: 1;
+        max-width: 50%;
+        max-height: 182px;
+    }
+    &-name {
+        position: relative;
+        z-index: 1;
+        font-size: 22px;
+        color: rgb( 28, 28, 28 );
+        font-weight: 700;
+    }
+    &-link:hover &-name {
+        color: #00597d;
+    }
+    &-icon {
+        margin-left: 5px;
+        font-size: 20px;
+        vertical-align: middle;
+    }
+}
+
+.catalog-section {
+    margin-bottom: 21px;
+    &-list {}
+    &-item {
+        margin-bottom: 30px;
+    }
+    &-link {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-decoration: none;
+    }
+    &-img {
+        display: block;
+        width: 100%;
+    }
+    &-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        min-height: 66px;
+        padding: 10px 20px;
+        border: 1px solid #e6e8ed;
+        text-align: center;
+        color: #1d1d1d;
+        font-size: 17px;
+        text-decoration: underline;
+    }
+    &-link:hover {
+        text-decoration: none;
+    }
+    &-link:hover &-name {
+        background-color: #242424;
+        border-color: #242424;
+        color: #fff;
+        text-decoration: none;
+    }
+    &-buttons {
+        display: none;
+        text-align: center;
+    }
+    &-more { }
+    &-more-label {}
+
+    &-products {}
+    &-actions {}
+    &-lookbook {}
+}
+
+.information {
+    margin-top: 50px;
+    padding-top: 48px;
+    border-top: 1px solid #eeeeee;
+    &_simple {
+        margin-top: 57px;
+    }
+    &-content {
+        column-count: 2;
+        column-gap: 30px;
+        margin-bottom: 15px;
+    }
+    &-element_hide {
+    }
+    &-actions {
+        display: none;
+        margin-bottom: 33px;
+    }
+}
+
+@media screen
+and (max-width: $desktop) {
+}
+
+@media screen
+and (max-width: $tablet){
+    .catalog-category {
+        &-link {
+            flex-direction: column;
+            padding-bottom: 0;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        &-img {
+            position: static;
+            margin-top: auto;
+            max-width: 100%;
+        }
+        &-name {
+            margin-bottom: 30px;
+        }
+        &-decor {
+            &:before {
+                right: 80px;
+            }
+            &:after {
+                right: 73px;
+            }
+        }
+    }
+    .catalog-section {
+        margin-bottom: 40px;
+        &-list {
+            margin-bottom: 13px;
+        }
+        &-item_hide {
+            display: none;
+        }
+        &.showmore-start &-buttons {
+            display: block;
+        }
+        &.showmore-active &-buttons {
+            display: none;
+        }
+        &-lookbook .lookbook {
+            margin-bottom: 50px;
+        }
+    }
+    .information {
+        &_simple {
+            margin-top: 50px;
+            padding-top: 48px;
+        }
+        &-content {
+            column-count: auto;
+        }
+        &-actions {
+            display: block;
+        }
+        &-element_hide {
+            display: none;
+        }
+    }
+}
+
+@media screen
+and (max-width: $mobile){
+    .catalog-category {
+        flex-wrap: nowrap;
+        margin-left: 0;
+        margin-right: 0;
+        &-wrapper {
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+        }
+        &-item {
+            position: relative;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        }
+        &-item.swiper-slide-active {
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .catalog-section {
+        margin-bottom: 35px;
+        &-list {
+            margin-right: -5px;
+            margin-left: -5px;
+            margin-bottom: 20px;
+        }
+        &-item {
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-bottom: 10px;
+        }
+        &-name {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &-more {
+            width: 100%;
+        }
+        &-more-label {
+            width: 100%;
+        }
+        &-products .products {
+            padding-bottom: 15px;
+        }
+        &-actions .actions {
+            margin-bottom: 4px;
+        }
+    }
+    .information {
+        &_simple {
+            margin-top: 50px;
+            padding-top: 35px;
+        }
+    }
+}

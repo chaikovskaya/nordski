@@ -1,0 +1,34 @@
+
+<div class="popup">
+    <div class="popup-content">
+        <span class="popup-title">Вход или регистрация</span>
+        <form class="js-form-validate js-form" action="/">
+            <div class="field js-form-validate-field">
+                <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
+                    <label class="field-label field-label_simple JS-FieldText-Label" for="phone-1">Телефон</label>
+                    <input class="input input_simple JS-FieldText-Input js-mask-phone" type="text" placeholder="" id="phone-1" name="phone-1" required />
+                </span>
+            </div>
+            <div class="switch-field">
+                <label class="switch switch_simple">
+                    <input class="switch-checkbox js-form-checkbox" type="checkbox" name="agreement" checked="checked" />
+                    <span class="switch-decor">
+                        <span class="switch-icon"></span>
+                    </span>
+                    <span class="switch-label">Я согласен на <a href="#">обработку персональных данных</a></span>
+                </label>
+            </div>
+            <div class="field-button field-button_simple">
+                <button class="popup-button button js-form-button">Получить код</button>
+                <!-- Выполнить код после отправки формы, чтобы открылся попап "Введите код":
+                <script>
+                     openPopupCode('./ajax/code.html');
+                </script>
+                -->
+            </div>
+            <div class="field-actions">
+                <a class="field-actions-link link js-open-registration" href="javascript:;" data-src="./ajax/registration.html">Войти, используя почту</a>
+            </div>
+        </form>
+    </div>
+</div>

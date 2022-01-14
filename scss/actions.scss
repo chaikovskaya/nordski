@@ -1,0 +1,199 @@
+
+.actions-list {
+    margin-bottom: 14px;
+    &-item {
+        margin-bottom: 30px;
+    }
+}
+
+.actions-description {
+    margin-top: 27px;
+    margin-bottom: 38px;
+    &-title {
+        margin-top: -8px;
+        margin-bottom: 17px;
+    }
+    &-panel {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+    }
+    &-data {
+        margin-right: 30px;
+        font-size: 16px;
+    }
+    &-data-icon {
+        margin-top: -2px;
+        margin-right: 5px;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+    &-end {
+        display: flex;
+    }
+    &-end-amount {
+        min-width: 30px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background-color: #d52030;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: center;
+    }
+    &-end-label {
+        position: relative;
+        padding: 3px 6px;
+        color: #fff;
+        font-size: 15px;
+        line-height: 15px;
+        background-color: #014161;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 100%;
+            width: 10px;
+            margin-left: -5px;
+            background-color: #014161;
+            transform: skew(163deg);
+        }
+    }
+    &-pic {
+        float: left;
+        width: 51%;
+        padding-right: $gutters;
+    }
+    &-info {
+        overflow: hidden;
+    }
+    &-box {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        height: 100%;
+        background-color: #f1f2f6;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        background-image: url(../images/actions/actions-bgr.png);
+        background-position: center center;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -90px;
+            width: 39%;
+            height: 100%;
+            transform: skew(165deg);
+            background-color: rgba(1, 65, 97, 0.03);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -80px;
+            width: 40%;
+            height: 100%;
+            transform: skew(-165deg);
+            background-color: rgba(1, 65, 97, 0.03);
+        }
+    }
+    &-img-block {
+        width: 60%;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        margin-left: auto;
+        padding-top: 10px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -50px;
+            height: 100%;
+            width: 170px;
+            transform: skew(163deg);
+            background-color: #014161;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 36px;
+            height: 323px;
+            background: url(../images/actions/logo-decor.png) no-repeat 0 0;
+        }
+    }
+    &-img {
+        position: relative;
+        z-index: 1;
+        margin-left: auto;
+        margin-right: 50px;
+    }
+}
+
+@media screen
+and (max-width: $desktop){
+}
+
+@media screen
+and (max-width: $tablet){
+    .actions-description {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        &-title {
+            margin-top: 0;
+        }
+        &-pic {
+            order: 1;
+            float: none;
+            width: 100%;
+            padding-right: 0;
+        }
+        &-info {
+            margin-bottom: 15px;
+        }
+        &-box {
+            background-position: calc(50% + 235px) bottom, center center;
+            &:before {
+                width: 40%;
+            }
+            &:after {
+                width: 41%;
+            }
+        }
+    }
+}
+
+@media screen
+and (max-width: $mobile){
+    .actions-description {
+        &-box {
+            &:before {
+                width: 90%;
+            }
+            &:after {
+                width: 99%;
+            }
+        }
+        &-img-block {
+            width: 100%;
+            height: 244px;
+            &:before {
+                display: none;
+            }
+            &:after {
+                display: none;
+            }
+        }
+        &-img {
+            margin-right: auto;
+        }
+    }
+}
