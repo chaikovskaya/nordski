@@ -152,6 +152,12 @@
         &:hover {
             color: #014160;
         }
+        .content & {
+            color: #1d1d1d;
+            &:hover {
+                color: #014160;
+            }
+        }
     }
     &-price {
     }
@@ -163,8 +169,23 @@
     &-actions-link {
         color: #7d7d7d;
         font-size: 16px;
+        &:hover {
+            color: #7d7d7d;
+        }
+        .content & {
+            color: #7d7d7d;
+            &:hover {
+                color: #7d7d7d;
+            }
+        }
     }
     &-button {
+        .content & {
+            color: #fff;
+            &:hover {
+                color: #fff;
+            }
+        }
     }
     &-container {
         display: none;
@@ -191,6 +212,19 @@
         position: absolute;
         top: 20px;
         right: 20px;
+        .content & {
+            margin-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    &-links-item {
+    }
+    .content &-links-item {
+        margin-bottom: 0;
+        &:before {
+            display: none;
+        }
     }
     &-links-label {
         display: block;
@@ -264,9 +298,20 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 21px;
+    .content & {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 21px;
+    }
     &-item {
         margin-right: 8px;
         margin-bottom: 8px;
+    }
+    .content &-item {
+        margin-bottom: 8px;
+        &:before {
+            display: none;
+        }
     }
     &-link {
         display: inline-block;
@@ -294,6 +339,11 @@
             border-color: #242424;
             color: #fff;
         }
+        .content & {
+            &:hover {
+                color: #fff;
+            }
+        }
     }
 }
 
@@ -302,8 +352,19 @@
     top: 58px;
     right: 20px;
     visibility: hidden;
+    .content & {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     &-item {
         margin-bottom: 9px;
+    }
+    .content &-item {
+        margin-bottom: 9px;
+        &:before {
+            display: none;
+        }
     }
     &-link {
         display: block;
@@ -343,7 +404,19 @@
     position: absolute;
     top: 20px;
     left: 0;
-    &-item {}
+    .content & {
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &-item {
+        .content & {
+            margin-bottom: 0;
+            &:before {
+                display: none;
+            }
+        }
+    }
     &-label {
         display: block;
         min-height: 22px;

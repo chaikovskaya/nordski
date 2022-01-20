@@ -69,6 +69,21 @@
         color: #242424;
         font-size: 20px;
     }
+
+    &_simple {}
+    &_simple &-counter {
+        min-width: 36px;
+        width: 36px;
+        height: 36px;
+    }
+    &_simple &-digit {
+        min-width: 36px;
+        width: 36px;
+        height: 36px;
+    }
+    &_simple &-icon {
+        font-size: 17px;
+    }
 }
 
 .product-detail {

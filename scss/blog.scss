@@ -262,51 +262,6 @@
     &-side-title_category {
         margin-bottom: 0;
     }
-    &-menu {
-        margin-bottom: 30px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background-color: #fff;
-    }
-    &-menu-list {
-    }
-    &-menu-item {
-        border-bottom: 1px dotted #e2e2e2;
-    }
-    &-menu-item_hide {
-        display: none;
-    }
-    &-menu-link {
-        display: block;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        text-decoration: none;
-        font-size: 17px;
-        color: #7d7d7d;
-        &:hover {
-            color: #00597d;
-        }
-    }
-    &-menu-more {
-        margin-top: 10px;
-    }
-
-    &-menu-mob {
-        display: none;
-        margin-bottom: 30px;
-    }
-    &-menu-mob-button {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 30px;
-        color: #fff;
-    }
-    &-menu-mob-icon {
-        width: 25px;
-        height: 20px;
-        fill: #fff;
-    }
 
     &-side-item {
         margin-bottom: 37px;
@@ -359,6 +314,58 @@
     }
     &-publications-pic {
         display: block;
+    }
+}
+
+.sidebar {
+    &-menu-wrapper {}
+    &-menu {
+        padding-top: 3px;
+        padding-bottom: 40px;
+        background-color: #fff;
+    }
+    &-menu-list {
+    }
+    &-menu-item {
+        border-bottom: 1px dotted #e2e2e2;
+    }
+    &-menu-item_hide {
+        display: none;
+    }
+    &-menu-link {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        font-size: 17px;
+        color: #7d7d7d;
+        &:hover {
+            color: #00597d;
+        }
+    }
+    &-menu-item_active {}
+    &-menu-item_active &-menu-link {
+        color: #00597d;
+    }
+    &-menu-more {
+        margin-top: 10px;
+    }
+
+    &-menu-mob {
+        display: none;
+        margin-bottom: 30px;
+    }
+    &-menu-mob-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+    &-menu-mob-icon {
+        width: 25px;
+        height: 20px;
+        fill: #fff;
     }
 }
 
@@ -418,8 +425,13 @@ and (max-width: $tablet){
                 display: none;
             }
         }
+    }
+    .sidebar {
         &-menu {
-            display: none;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+            padding: 0;
         }
         &-menu-mob {
             display: block;

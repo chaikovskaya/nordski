@@ -541,6 +541,19 @@ body.mob-form-show .wrapper {
     }
 }
 
+.country-popup {
+    padding-bottom: 87px;
+    &:before {
+        display: none;
+    }
+    &:after {
+        display: none;
+    }
+    &-title {
+        margin-bottom: 25px;
+    }
+}
+
 @media screen
 and (max-width: $tablet){
 }

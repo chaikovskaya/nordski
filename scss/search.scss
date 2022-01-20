@@ -1,0 +1,24 @@
+
+.search-result {
+    &-title {
+        margin-bottom: 15px;
+    }
+    &-info {
+        margin-bottom: 25px;
+    }
+    &-not-found {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen
+and (max-width: $desktop){
+}
+
+@media screen
+and (max-width: $tablet){
+}
+
+@media screen
+and (max-width: $mobile){
+}

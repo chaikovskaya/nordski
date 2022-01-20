@@ -1241,7 +1241,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9">
-                        <div class="blog-detail-menu-mob JS-MobileMenu" data-mobilemenu="{
+                        <div class="sidebar-menu-mob JS-MobileMenu" data-mobilemenu="{
                                 'classActive': 'open',
                                 'classShow': 'mob-menu-show',
                                 'classElementActive': 'mob-menu_active'
@@ -1333,9 +1333,8 @@
                                 <div class="quote-info">Чтобы хорошо жить, нужно много работать. А для того, чтобы стать богатым, нужно придумать что-то другое.</div>
                                 <cite>Мухтар Гусенгаджиев</cite>
                             </blockquote>
-                        </div>
 
-                        <div class="blog-detail-products swiper js-slider-blog">
+                            <div class="blog-detail-products swiper js-slider-blog">
                             <div class="blog-detail-products-list swiper-wrapper">
                                 <div class="blog-detail-products-item swiper-slide">
                                     <div class="products-box js-switch">
@@ -1565,7 +1564,6 @@
                             </div>
                         </div>
 
-                        <div class="content">
                             <h2 id="what-to-do">В чем заниматься?</h2>
                             <p>Как и для любого вида спорта, для скандинавской ходьбы нужна правильно подобранная одежда. Главное требования – удобство, практичность, комфорт при движении.</p>
                             <b>Остальные параметры зависят от разных факторов:</b>
@@ -1843,7 +1841,7 @@
                             <h2 class="title h1">Рекомендуем вам полезные статьи</h2>
                             <div class="articles-inner swiper js-slider-articles">
                                 <div class="articles-list swiper-wrapper">
-                                    <div class="articles-item swiper-slide">
+                                    <div class="articles-item swiper-slide" data-slider-index="0">
                                         <div class="articles-block">
                                             <a class="articles-link" href="#">
                                                 <img class="articles-img" src="./images/articles/articles-img-4.jpg" alt="" />
@@ -1863,7 +1861,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="articles-item swiper-slide">
+                                    <div class="articles-item swiper-slide" data-slider-index="1">
                                         <div class="articles-block">
                                             <a class="articles-link" href="#">
                                                 <img class="articles-img" src="./images/articles/articles-img-5.jpg" alt="" />
@@ -1883,7 +1881,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="articles-item swiper-slide">
+                                    <div class="articles-item swiper-slide" data-slider-index="2">
                                         <div class="articles-block">
                                             <a class="articles-link" href="#">
                                                 <img class="articles-img" src="./images/articles/articles-img-2.jpg" alt="" />
@@ -1903,7 +1901,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="articles-item swiper-slide">
+                                    <div class="articles-item swiper-slide" data-slider-index="3">
                                         <div class="articles-block">
                                             <a class="articles-link" href="#">
                                                 <img class="articles-img" src="./images/articles/articles-img-4.jpg" alt="" />
@@ -1923,7 +1921,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="articles-item swiper-slide">
+                                    <div class="articles-item swiper-slide" data-slider-index="4">
                                         <div class="articles-block">
                                             <a class="articles-link" href="#">
                                                 <img class="articles-img" src="./images/articles/articles-img-5.jpg" alt="" />
@@ -1964,32 +1962,32 @@
                         </div>
                     </div>
                     <aside class="blog-detail-side col-lg-3" data-sticky-container>
-                        <div class="blog-detail-menu js-fix-sticky">
+                        <div class="sidebar-menu js-fix-sticky" data-sticky-wrap>
                             <span class="blog-detail-side-title blog-detail-side-title_category">Категории</span>
-                            <ul class="blog-detail-menu-list JS-ShowMore" data-showmore="{
+                            <ul class="sidebar-menu-list JS-ShowMore" data-showmore="{
                                     'amount': 5,
-                                    'classHide': 'blog-detail-menu-item_hide',
-                                    'elementItem': '.blog-detail-menu-item'
+                                    'classHide': 'sidebar-menu-item_hide',
+                                    'elementItem': '.sidebar-menu-item'
                                 }">
-                                <li class="blog-detail-menu-item">
-                                    <a class="blog-detail-menu-link" href="#">История бренда</a>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-link" href="#">История бренда</a>
                                 </li>
-                                <li class="blog-detail-menu-item">
-                                    <a class="blog-detail-menu-link" href="#">Как выбрать</a>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-link" href="#">Как выбрать</a>
                                 </li>
-                                <li class="blog-detail-menu-item">
-                                    <a class="blog-detail-menu-link" href="#">Как ухаживать</a>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-link" href="#">Как ухаживать</a>
                                 </li>
-                                <li class="blog-detail-menu-item">
-                                    <a class="blog-detail-menu-link" href="#">Обзор товаров</a>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-link" href="#">Обзор товаров</a>
                                 </li>
-                                <li class="blog-detail-menu-item">
-                                    <a class="blog-detail-menu-link" href="#">Свойства и технологии</a>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-link" href="#">Свойства и технологии</a>
                                 </li>
-                                <li class="blog-detail-menu-item">
-                                    <a class="blog-detail-menu-link" href="#">Важное</a>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-link" href="#">Важное</a>
                                 </li>
-                                <li class="blog-detail-menu-more">
+                                <li class="sidebar-menu-more">
                                     <a class="show-switcher JS-ShowMore-Switcher" href="javascript:;">
                                         <span class="show-more show-more_show">
                                             <span class="show-more-label">Показать еще</span><i class="show-more-icon fa fa-angle-down"></i>

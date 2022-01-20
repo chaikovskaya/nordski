@@ -1,0 +1,105 @@
+
+.payment {
+    &-panel {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 27px;
+        padding-top: 16px;
+        padding-bottom: 6px;
+        border: solid #e6e8ed;
+        border-width: 1px 0;
+    }
+    &-panel-label {
+        margin-right: 14px;
+        font-weight: 700;
+        font-size: 19px;
+        color: #1d1d1d;
+    }
+    &-panel-item {
+        margin-bottom: 10px;
+    }
+    .content &-socials {
+        margin: 0;
+    }
+    .content &-socials-item {
+        margin-bottom: 0;
+        &:before {
+            display: none;
+        }
+    }
+    &-socials-link {
+        border-color: #eeeeee;
+        &:hover {
+            color: #dcdee6;
+            background-color: #f1f2f6;
+        }
+    }
+    &-list {
+        .content & {
+            margin-bottom: 15px;
+            margin-top: 0;
+            margin-left: -15px;
+        }
+    }
+    &-list-item {
+        margin-bottom: 30px;
+        .content & {
+            margin-bottom: 30px;
+            &:before {
+                display: none;
+            }
+        }
+    }
+    &-list-block {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 34px 25px 32px;
+        border: 1px solid #e6e8ed;
+    }
+    &-list-icon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        min-width: 32%;
+        width: 32%;
+        margin-right: 30px;
+        padding-right: 20px;
+        border-right: 1px solid #e6e8ed;
+    }
+    &-list-info {
+        font-size: 15px;
+    }
+    &-list-pic {
+        margin-right: 11px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen
+and (max-width: $desktop){
+}
+
+@media screen
+and (max-width: $tablet){
+    .payment {
+        &-list-icon {
+            min-width: 29%;
+            width: 29%;
+            margin-right: 20px;
+            padding-right: 15px;
+        }
+        &-list {
+            .content & {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media screen
+and (max-width: $mobile){
+}

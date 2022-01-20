@@ -249,12 +249,13 @@ var sliderProducts;
 function initSliderProducts() {
     jQuery('.js-slider-products').each(function() {
         var $slider = $(this),
-            sliderClass = ".js-slider-products";
+            sliderClass = ".js-slider-products",
+            sliderLength = $slider.find('.swiper-slide').length;
 
-        var isStart = $slider.find('.swiper-slide').length > 1 ? true : false;
+        var isStart = sliderLength > 1 ? true : false;
 
         function _buildSliderCounter() {
-            var index = $slider.find('.swiper-slide-active').attr("data-swiper-slide-index");
+            var index = $slider.find('.swiper-slide-active').attr("data-slider-index");
             index = parseInt(index, 10) + 1;
             if (index < 10) {
                 index =  '0' + index;
@@ -284,9 +285,11 @@ function initSliderProducts() {
                     slidesPerView: 2,
                     simulateTouch: false,
                     speed: 100,
+                    loop: sliderLength > 2 ? true : false,
                 },
                 992: {
                     slidesPerView: 3,
+                    loop: sliderLength > 3 ? true : false,
                 },
             },
             on: {
@@ -347,12 +350,13 @@ var sliderLookbook;
 function initSliderLookbook() {
     jQuery('.js-slider-lookbook').each(function() {
         var $slider = $(this),
-            sliderClass = ".js-slider-lookbook";
+            sliderClass = ".js-slider-lookbook",
+            sliderLength = $slider.find('.swiper-slide').length;
 
-        var isStart = $slider.find('.swiper-slide').length > 1 ? true : false;
+        var isStart = sliderLength > 1 ? true : false;
 
         function _buildSliderCounter() {
-            var index = $slider.find('.swiper-slide-active').attr("data-swiper-slide-index");
+            var index = $slider.find('.swiper-slide-active').attr("data-slider-index");
             index = parseInt(index, 10) + 1;
             if (index < 10) {
                 index =  '0' + index;
@@ -370,6 +374,7 @@ function initSliderLookbook() {
             navigation: {
                 nextEl: ".js-slider-next",
                 prevEl: ".js-slider-prev",
+                disabledClass: "slider-button_disabled",
             },
             slidesPerView: 1,
             breakpoints: {
@@ -408,12 +413,13 @@ var sliderArticles;
 function initSliderArticles() {
     jQuery('.js-slider-articles').each(function() {
         var $slider = $(this),
-            sliderClass = ".js-slider-articles";
+            sliderClass = ".js-slider-articles",
+            sliderLength = $slider.find('.swiper-slide').length;
 
-        var isStart = $slider.find('.swiper-slide').length > 1 ? true : false;
+        var isStart = sliderLength > 1 ? true : false;
 
         function _buildSliderCounter() {
-            var index = $slider.find('.swiper-slide-active').attr("data-swiper-slide-index");
+            var index = $slider.find('.swiper-slide-active').attr("data-slider-index");
             index = parseInt(index, 10) + 1;
             if (index < 10) {
                 index =  '0' + index;
@@ -431,6 +437,7 @@ function initSliderArticles() {
             navigation: {
                 nextEl: ".js-slider-next",
                 prevEl: ".js-slider-prev",
+                disabledClass: "slider-button_disabled",
             },
             slidesPerView: "auto",
             autoHeight: true,
@@ -443,9 +450,11 @@ function initSliderArticles() {
                 720: {
                     simulateTouch: false,
                     spaceBetween: 10,
+                    loop: sliderLength > 2 ? true : false,
                 },
                 992: {
                     spaceBetween: 30,
+                    loop: sliderLength > 3 ? true : false,
                 },
             },
             on: {
@@ -471,12 +480,13 @@ var sliderKinds;
 function initSliderKinds() {
     jQuery('.js-slider-kinds').each(function() {
         var $slider = $(this),
-            sliderClass = ".js-slider-kinds";
+            sliderClass = ".js-slider-kinds",
+            sliderLength = $slider.find('.swiper-slide').length;
 
-        var isStart = $slider.find('.swiper-slide').length > 1 ? true : false;
+        var isStart = sliderLength > 1 ? true : false;
 
         function _buildSliderCounter() {
-            var index = $slider.find('.swiper-slide-active').attr("data-swiper-slide-index");
+            var index = $slider.find('.swiper-slide-active').attr("data-slider-index");
             index = parseInt(index, 10) + 1;
             if (index < 10) {
                 index =  '0' + index;
@@ -494,6 +504,7 @@ function initSliderKinds() {
             navigation: {
                 nextEl: ".js-slider-next",
                 prevEl: ".js-slider-prev",
+                disabledClass: "slider-button_disabled",
             },
             slidesPerView: "auto",
             breakpoints: {
@@ -532,12 +543,13 @@ var sliderAdditionalProducts;
 function initSliderAdditionalProducts() {
     jQuery('.js-slider-additional-products').each(function() {
         var $slider = $(this),
-            sliderClass = ".js-slider-additional-products";
+            sliderClass = ".js-slider-additional-products",
+            sliderLength = $slider.find('.swiper-slide').length;
 
-        var isStart = $slider.find('.swiper-slide').length > 1 ? true : false;
+        var isStart = sliderLength > 1 ? true : false;
 
         function _buildSliderCounter() {
-            var index = $slider.find('.swiper-slide-active').attr("data-swiper-slide-index");
+            var index = $slider.find('.swiper-slide-active').attr("data-slider-index");
             index = parseInt(index, 10) + 1;
             if (index < 10) {
                 index =  '0' + index;
@@ -567,12 +579,15 @@ function initSliderAdditionalProducts() {
                     slidesPerView: 2,
                     simulateTouch: false,
                     speed: 100,
+                    loop: sliderLength > 2 ? true : false,
                 },
                 992: {
                     slidesPerView: 3,
+                    loop: sliderLength > 3 ? true : false,
                 },
                 1440: {
                     slidesPerView: 4,
+                    loop: sliderLength > 4 ? true : false,
                 },
             },
             on: {
@@ -598,12 +613,13 @@ var sliderSimilarProducts;
 function initSliderSimilarProducts() {
     jQuery('.js-slider-similar-products').each(function() {
         var $slider = $(this),
-            sliderClass = ".js-slider-similar-products";
+            sliderClass = ".js-slider-similar-products",
+            sliderLength = $slider.find('.swiper-slide').length;
 
-        var isStart = $slider.find('.swiper-slide').length > 1 ? true : false;
+        var isStart = sliderLength > 1 ? true : false;
 
         function _buildSliderCounter() {
-            var index = $slider.find('.swiper-slide-active').attr("data-swiper-slide-index");
+            var index = $slider.find('.swiper-slide-active').attr("data-slider-index");
             index = parseInt(index, 10) + 1;
             if (index < 10) {
                 index =  '0' + index;
@@ -633,12 +649,15 @@ function initSliderSimilarProducts() {
                     slidesPerView: 2,
                     simulateTouch: false,
                     speed: 100,
+                    loop: sliderLength > 2 ? true : false,
                 },
                 992: {
                     slidesPerView: 3,
+                    loop: sliderLength > 3 ? true : false,
                 },
                 1440: {
                     slidesPerView: 4,
+                    loop: sliderLength > 4 ? true : false,
                 },
             },
             on: {
@@ -664,9 +683,10 @@ var sliderBlog;
 function initSliderBlog() {
     jQuery('.js-slider-blog').each(function() {
         var $slider = $(this),
-            sliderClass = ".js-slider-blog";
+            sliderClass = ".js-slider-blog",
+            sliderLength = $slider.find('.swiper-slide').length;
 
-        var isStart = $slider.find('.swiper-slide').length > 1 ? true : false;
+        var isStart = sliderLength > 1 ? true : false;
 
         sliderBlog = new Swiper(sliderClass, {
             loop: false,
@@ -684,13 +704,13 @@ function initSliderBlog() {
                 0: {
                     slidesPerView: 1,
                     simulateTouch: false,
-                    loop: true,
+                    loop: isStart,
                 },
                 720: {
                     slidesPerView: 2,
                     simulateTouch: false,
                     speed: 100,
-                    loop: true,
+                    loop: sliderLength > 2 ? true : false,
                 },
                 992: {
                     slidesPerView: 3,
@@ -1553,7 +1573,98 @@ function initAdaptiveMenu() {
 }
 
 function initFixSticky() {
-    var sticky = new Sticky('.js-fix-sticky');
+    var sticky = new Sticky('.js-fix-sticky', { });
+}
+
+function initSearchСountry() {
+    $('.js-search-country').each(function(){
+        var $element = $(this),
+            classDynamic = $(this).data('search-dynamic'),
+            $input = $(this).find('.js-search-input'),
+            $link = $(this).find('.js-search-reset');
+
+        $link.on('click', function(e, data) {
+            $input.val('');
+            $element.removeClass(classDynamic);
+            initFind();
+        });
+
+        $input.on('input', function(e, data) {
+            var val = $input.val();
+            if (val != '') {
+                $element.addClass(classDynamic);
+            } else {
+                $element.removeClass(classDynamic);
+            }
+        });
+    });
+}
+
+function initFind() {
+    $('.js-find').each(function () {
+        var $element = $(this),
+            $input = $element.find('.js-find-input'),
+            $item = $element.find('.js-find-container'),
+            $value = $element.find('.js-find-value'),
+            classHide = $element.data('find-hide') || 'find-hide';
+
+        function startFind() {
+            var value = $input.val().toUpperCase();
+
+            $item.removeClass(classHide);
+
+            if (value.length) {
+                for (let i = 0; i < $value.length; i++) {
+                    var text = $($value[i]).text().toUpperCase();
+                    if (!(text.indexOf(value) + 1)) {
+                        $($value[i]).closest('.js-find-container').addClass(classHide);
+                    }
+                }
+            }
+        }
+        startFind();
+
+        $input.on('input', function(){
+            startFind();
+        });
+    });
+}
+
+function openPopupCountry($element) {
+    if (typeof($element) == 'undefined') {
+        $element = $('.js-popup-country');
+    }
+
+    $.fancybox.open({
+        src  : $element.data('src'),
+        type : 'ajax',
+        toolbar  : false,
+        smallBtn : true,
+        afterShow: function (data) {
+            initSearchСountry();
+            initScroll();
+            initFind();
+        },
+        btnTpl: {
+            smallBtn:
+                '<button type="button" data-fancybox-close class="fancybox-close" title="{{CLOSE}}">' +
+                '<i class="fancybox-close-icon las la-times"></i>' +
+                "</button>"
+        },
+        lang: "ru",
+        i18n: {
+            ru: {
+                CLOSE: "Закрыть",
+            },
+        }
+    });
+}
+
+function initPopupCountry() {
+    $(".js-open-country").on('click', function() {
+        $.fancybox.close();
+        openPopupCountry($(".js-open-country"));
+    });
 }
 
 function initResizeWindow() {
@@ -1638,4 +1749,6 @@ $(document).ready(function () {
     initTextareaSize();
     initAdaptiveMenu();
     initFixSticky();
+    initPopupCountry();
+    initFind();
 });

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Главная. Nordski</title>
+    <title>Доставка. Nordski</title>
 
     <link rel="stylesheet" href="./libs/fontawesome-5.15.4/css/all.css" />
     <link rel="stylesheet" href="./libs/fontawesome/css/font-awesome.min.css" />
@@ -16,11 +16,13 @@
     <link rel="stylesheet" href="./libs/simplebar/simplebar.min.css" />
     <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./libs/Selectric/public/selectric.css" />
+    <link rel="stylesheet" href="./libs/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./libs/tipped/css/tipped.css" />
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" href="./css/common.css" />
  </head>
 
-<body class="main-page">
+<body>
 
     <div class="svg-box">
         <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -1224,1031 +1226,150 @@
         </header>
 
         <main class="main-content">
-            <div class="main-banner">
-                <div class="main-banner-slider container swiper js-slider-banner">
-                    <div class="swiper-wrapper main-banner-slider-list">
-                        <div class="swiper-slide main-banner-item">
-                            <a class="main-banner-link" href="#">
-                                <img class="main-banner-common-img" src="./images/header/banner-1.jpg" alt="" />
-                                <span class="main-banner-decor-bottom"></span>
-                            </a>
-                        </div>
-                        <div class="swiper-slide main-banner-item">
-                            <a class="main-banner-link" href="#">
-                                <img class="main-banner-common-img" src="./images/header/banner-1.jpg" alt="" />
-                                <span class="main-banner-decor-bottom"></span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="main-banner-detail">
-                        <div class="main-banner-detail-box">
-                            <div class="main-banner-detail-item js-slider-banner-detail">
-                                <div class="main-banner-description">Функциональная одежда для тренировок и&nbsp;фитнеса</div>
-                                <a class="main-banner-more" href="#">
-                                    <span class="main-banner-more-label">Подробнее</span>
-                                </a>
-                              </div>
-                            <div class="main-banner-detail-item js-slider-banner-detail">
-                                <div class="main-banner-description">Функциональная одежда для тренировок</div>
-                                <a class="main-banner-more" href="#">
-                                    <span class="main-banner-more-label">Подробнее</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="main-banner-nav js-slider-buttons">
-                            <span class="counter">
-                                <span class="counter-number js-slider-current"></span>
-                                <span class="counter-total">/<span class="counter-total-number js-slider-amount"></span></span>
-                            </span>
-                            <button class="main-banner-button js-slider-prev">
-                                <i class="slider-button-icon fa fa-angle-left"></i>
-                            </button>
-                            <button class="main-banner-button js-slider-next">
-                                <i class="slider-button-icon fa fa-angle-right"></i>
-                            </button>
-                        </div>
-                        <div class="main-banner-detail-decor">
-                            <div class="main-banner-detail-decor-1"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination js-slider-pagination"></div>
-                </div>
-            </div>
-
-            <div class="container">
-                <section>
-                    <h2 class="title h1">Популярное сейчас</h2>
-
-                    <div class="links">
-                        <div class="links-block swiper js-slider-links">
-                            <div class="links-list swiper-wrapper">
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label links-label_active" href="javascript:;">Все новинки</a>
-                                </div>
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label" href="javascript:;">Беговые лыжи</a>
-                                </div>
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label" href="javascript:;">Горные лыжи</a>
-                                </div>
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label" href="javascript:;">Бег / Running</a>
-                                </div>
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label" href="javascript:;">Trail running</a>
-                                </div>
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label" href="javascript:;">Ski туризм</a>
-                                </div>
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label" href="javascript:;">Outdoor</a>
-                                </div>
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label" href="javascript:;">Sport Casual</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="products swiper js-slider-products">
-                        <ul class="products-list swiper-wrapper">
-                            <li class="products-item swiper-slide js-filter-item" data-slider-index="0">
-                                <div class="products-box js-switch">
-                                    <div class="products-photo">
-                                        <a class="products-link" href="#">
-                                            <span class="products-images">
-                                                <img class="products-img products-img_active js-switch-img" src="./images/products/products-img-1.jpg" alt="" />
-                                                <img class="products-img js-switch-img" src="./images/products/products-img-3.jpg" alt="" />
-                                            </span>
-                                            <span class="products-menu">
-                                                <span class="products-menu-item js-switch-link"></span>
-                                                <span class="products-menu-item js-switch-link"></span>
-                                            </span>
-                                        </a>
-                                        <ul class="colors">
-                                            <li class="colors-item colors-item_active">
-                                                <a class="colors-link" href="javascript:;">
-                                                    <span style="background: #da1461;" class="colors-label"></span>
-                                                </a>
-                                            </li>
-                                            <li class="colors-item">
-                                                <a class="colors-link" href="javascript:;">
-                                                    <span style="background: #194a95;" class="colors-label"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="products-links">
-                                            <li class="products-links-item">
-                                                <a class="products-links-label" href="javascript:;">
-                                                    <span class="icon icon_wishlist"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="marks">
-                                            <li class="marks-item">
-                                                <span class="marks-label marks-label_action">Акция</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="products-block">
-                                        <div class="products-main">
-                                            <span class="products-panel">
-                                                <a class="products-name" href="#">Футболка Nordski Pro Black с длинным рукавом NEW</a>
-                                            </span>
-                                            <div class="products-price">
-                                                <span class="price-old">6 300<span class="price-old-currency currency">i</span></span>
-                                                <span class="price">6 300<span class="price-currency currency">i</span></span>
-                                                <span class="discount">-20%</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-container">
-                                            <ul class="size">
-                                                <li class="size-item">
-                                                    <span class="size-link">2XS</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">XS</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <a class="size-link size-link_active" href="javascript:;">S</a>
-                                                </li>
-                                                <li class="size-item">
-                                                    <a class="size-link size-link_active" href="javascript:;">M</a>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">L</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">2XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">3XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">4XL</span>
-                                                </li>
-                                            </ul>
-                                            <div class="products-actions">
-                                                <a class="products-actions-link link" href="javascript:;">Быстрый просмотр</a>
-                                                <a class="products-button button" href="javascript:;">В корзину</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="products-item swiper-slide js-filter-item" data-slider-index="1">
-                                <div class="products-box js-switch">
-                                    <div class="products-photo">
-                                        <a class="products-link" href="#">
-                                            <span class="products-images">
-                                                <img class="products-img products-img_active js-switch-img" src="./images/products/products-img-2.jpg" alt="" />
-                                                <img class="products-img js-switch-img" src="./images/products/products-img-3.jpg" alt="" />
-                                            </span>
-                                            <span class="products-menu">
-                                                <span class="products-menu-item js-switch-link"></span>
-                                                <span class="products-menu-item js-switch-link"></span>
-                                            </span>
-                                        </a>
-                                        <ul class="colors">
-                                            <li class="colors-item colors-item_active">
-                                                <a class="colors-link" href="javascript:;">
-                                                    <span style="background: #da1461;" class="colors-label"></span>
-                                                </a>
-                                            </li>
-                                            <li class="colors-item">
-                                                <a class="colors-link" href="javascript:;">
-                                                    <span style="background: #194a95;" class="colors-label"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="products-links">
-                                            <li class="products-links-item">
-                                                <a class="products-links-label" href="javascript:;">
-                                                    <span class="icon icon_wishlist"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="marks">
-                                            <li class="marks-item">
-                                                <span class="marks-label marks-label_color">Новый цвет</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="products-block">
-                                        <div class="products-main">
-                                            <span class="products-panel">
-                                                <a class="products-name" href="#">Футболка Nordski Pro Black с длинным рукавом NEW</a>
-                                            </span>
-                                            <div class="products-price">
-                                                <span class="price-old">6 300<span class="price-old-currency currency">i</span></span>
-                                                <span class="price">6 300<span class="price-currency currency">i</span></span>
-                                                <span class="discount">-20%</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-container">
-                                            <ul class="size">
-                                                <li class="size-item">
-                                                    <span class="size-link">2XS</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">XS</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <a class="size-link size-link_active" href="javascript:;">S</a>
-                                                </li>
-                                                <li class="size-item">
-                                                    <a class="size-link size-link_active" href="javascript:;">M</a>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">L</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">2XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">3XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">4XL</span>
-                                                </li>
-                                            </ul>
-                                            <div class="products-actions">
-                                                <a class="products-actions-link link js-popup-product" href="javascript:;" data-src="./ajax/product.html">Быстрый просмотр</a>
-                                                <a class="products-button button" href="javascript:;">В корзину</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="products-item swiper-slide js-filter-item" data-slider-index="2">
-                                <div class="products-box js-switch">
-                                    <div class="products-photo">
-                                        <a class="products-link" href="#">
-                                            <span class="products-images">
-                                                <img class="products-img products-img_active js-switch-img" src="./images/products/products-img-3.jpg" alt="" />
-                                            </span>
-                                            <span class="products-menu">
-                                                <span class="products-menu-item js-switch-link"></span>
-                                            </span>
-                                        </a>
-                                        <ul class="colors">
-                                            <li class="colors-item colors-item_active">
-                                                <a class="colors-link" href="javascript:;">
-                                                    <span style="background: #da1461;" class="colors-label"></span>
-                                                </a>
-                                            </li>
-                                            <li class="colors-item">
-                                                <a class="colors-link" href="javascript:;">
-                                                    <span style="background: #194a95;" class="colors-label"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="products-links">
-                                            <li class="products-links-item">
-                                                <a class="products-links-label" href="javascript:;">
-                                                    <span class="icon icon_wishlist-dark"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="marks">
-                                            <li class="marks-item">
-                                                <span class="marks-label marks-label_new">Новинка</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="products-block">
-                                        <div class="products-main">
-                                            <span class="products-panel">
-                                                <a class="products-name" href="#">Футболка Nordski Pro Black с длинным рукавом NEW</a>
-                                            </span>
-                                            <div class="products-price">
-                                                <span class="price-old">6 300<span class="price-old-currency currency">i</span></span>
-                                                <span class="price">6 300<span class="price-currency currency">i</span></span>
-                                                <span class="discount">-20%</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-container">
-                                            <ul class="size">
-                                                <li class="size-item">
-                                                    <span class="size-link">2XS</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">XS</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <a class="size-link size-link_active" href="javascript:;">S</a>
-                                                </li>
-                                                <li class="size-item">
-                                                    <a class="size-link size-link_active" href="javascript:;">M</a>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">L</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">2XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">3XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">4XL</span>
-                                                </li>
-                                            </ul>
-                                            <div class="products-actions">
-                                                <a class="products-actions-link link" href="javascript:;">Быстрый просмотр</a>
-                                                <a class="products-button button" href="javascript:;">В корзину</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="products-item swiper-slide js-filter-item" data-slider-index="3">
-                                <div class="products-box js-switch">
-                                    <div class="products-photo">
-                                        <a class="products-link" href="#">
-                                            <span class="products-images">
-                                                <img class="products-img products-img_active js-switch-img" src="./images/products/products-img-1.jpg" alt="" />
-                                                <img class="products-img js-switch-img" src="./images/products/products-img-3.jpg" alt="" />
-                                            </span>
-                                            <span class="products-menu">
-                                                <span class="products-menu-item js-switch-link"></span>
-                                                <span class="products-menu-item js-switch-link"></span>
-                                            </span>
-                                        </a>
-                                        <ul class="colors">
-                                            <li class="colors-item colors-item_active">
-                                                <a class="colors-link" href="javascript:;">
-                                                    <span style="background: #da1461;" class="colors-label"></span>
-                                                </a>
-                                            </li>
-                                            <li class="colors-item">
-                                                <a class="colors-link" href="javascript:;">
-                                                    <span style="background: #194a95;" class="colors-label"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="products-links">
-                                            <li class="products-links-item">
-                                                <a class="products-links-label" href="javascript:;">
-                                                    <span class="icon icon_wishlist"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="marks">
-                                            <li class="marks-item">
-                                                <span class="marks-label marks-label_action">Акция</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="products-block">
-                                        <div class="products-main">
-                                            <span class="products-panel">
-                                                <a class="products-name" href="#">Футболка Nordski Pro Black с длинным рукавом NEW</a>
-                                            </span>
-                                            <div class="products-price">
-                                                <span class="price-old">6 300<span class="price-old-currency currency">i</span></span>
-                                                <span class="price">6 300<span class="price-currency currency">i</span></span>
-                                                <span class="discount">-20%</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-container">
-                                            <ul class="size">
-                                                <li class="size-item">
-                                                    <span class="size-link">2XS</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">XS</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <a class="size-link size-link_active" href="javascript:;">S</a>
-                                                </li>
-                                                <li class="size-item">
-                                                    <a class="size-link size-link_active" href="javascript:;">M</a>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">L</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">2XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">3XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">4XL</span>
-                                                </li>
-                                            </ul>
-                                            <div class="products-actions">
-                                                <a class="products-actions-link link" href="javascript:;">Быстрый просмотр</a>
-                                                <a class="products-button button" href="javascript:;">В корзину</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="products-item swiper-slide js-filter-item" data-slider-index="4">
-                                <div class="products-box js-switch">
-                                    <div class="products-photo">
-                                        <a class="products-link" href="#">
-                                            <span class="products-images">
-                                                <img class="products-img products-img_active js-switch-img" src="./images/products/products-img-2.jpg" alt="" />
-                                                <img class="products-img js-switch-img" src="./images/products/products-img-3.jpg" alt="" />
-                                            </span>
-                                            <span class="products-menu">
-                                                <span class="products-menu-item js-switch-link"></span>
-                                                <span class="products-menu-item js-switch-link"></span>
-                                            </span>
-                                        </a>
-                                        <ul class="colors">
-                                            <li class="colors-item colors-item_active">
-                                                <a class="colors-link" href="javascript:;">
-                                                    <span style="background: #da1461;" class="colors-label"></span>
-                                                </a>
-                                            </li>
-                                            <li class="colors-item">
-                                                <a class="colors-link" href="javascript:;">
-                                                    <span style="background: #194a95;" class="colors-label"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="products-links">
-                                            <li class="products-links-item">
-                                                <a class="products-links-label" href="javascript:;">
-                                                    <span class="icon icon_wishlist"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="marks">
-                                            <li class="marks-item">
-                                                <span class="marks-label marks-label_color">Новый цвет</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="products-block">
-                                        <div class="products-main">
-                                            <span class="products-panel">
-                                                <a class="products-name" href="#">Футболка Nordski Pro Black с длинным рукавом NEW</a>
-                                            </span>
-                                            <div class="products-price">
-                                                <span class="price-old">6 300<span class="price-old-currency currency">i</span></span>
-                                                <span class="price">6 300<span class="price-currency currency">i</span></span>
-                                                <span class="discount">-20%</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-container">
-                                            <ul class="size">
-                                                <li class="size-item">
-                                                    <span class="size-link">2XS</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">XS</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <a class="size-link size-link_active" href="javascript:;">S</a>
-                                                </li>
-                                                <li class="size-item">
-                                                    <a class="size-link size-link_active" href="javascript:;">M</a>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">L</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">2XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">3XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">4XL</span>
-                                                </li>
-                                            </ul>
-                                            <div class="products-actions">
-                                                <a class="products-actions-link link js-popup-product" href="javascript:;" data-src="./ajax/product.html">Быстрый просмотр</a>
-                                                <a class="products-button button" href="javascript:;">В корзину</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="products-item swiper-slide js-filter-item" data-slider-index="5">
-                                <div class="products-box js-switch">
-                                    <div class="products-photo">
-                                        <a class="products-link" href="#">
-                                            <span class="products-images">
-                                                <img class="products-img products-img_active js-switch-img" src="./images/products/products-img-3.jpg" alt="" />
-                                            </span>
-                                            <span class="products-menu">
-                                                <span class="products-menu-item js-switch-link"></span>
-                                            </span>
-                                        </a>
-                                        <ul class="colors">
-                                            <li class="colors-item colors-item_active">
-                                                <a class="colors-link" href="javascript:;">
-                                                    <span style="background: #da1461;" class="colors-label"></span>
-                                                </a>
-                                            </li>
-                                            <li class="colors-item">
-                                                <a class="colors-link" href="javascript:;">
-                                                    <span style="background: #194a95;" class="colors-label"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="products-links">
-                                            <li class="products-links-item">
-                                                <a class="products-links-label" href="javascript:;">
-                                                    <span class="icon icon_wishlist-dark"></span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="marks">
-                                            <li class="marks-item">
-                                                <span class="marks-label marks-label_new">Новинка</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="products-block">
-                                        <div class="products-main">
-                                            <span class="products-panel">
-                                                <a class="products-name" href="#">Футболка Nordski Pro Black с длинным рукавом NEW</a>
-                                            </span>
-                                            <div class="products-price">
-                                                <span class="price-old">6 300<span class="price-old-currency currency">i</span></span>
-                                                <span class="price">6 300<span class="price-currency currency">i</span></span>
-                                                <span class="discount">-20%</span>
-                                            </div>
-                                        </div>
-                                        <div class="products-container">
-                                            <ul class="size">
-                                                <li class="size-item">
-                                                    <span class="size-link">2XS</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">XS</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <a class="size-link size-link_active" href="javascript:;">S</a>
-                                                </li>
-                                                <li class="size-item">
-                                                    <a class="size-link size-link_active" href="javascript:;">M</a>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">L</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">2XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">3XL</span>
-                                                </li>
-                                                <li class="size-item">
-                                                    <span class="size-link">4XL</span>
-                                                </li>
-                                            </ul>
-                                            <div class="products-actions">
-                                                <a class="products-actions-link link" href="javascript:;">Быстрый просмотр</a>
-                                                <a class="products-button button" href="javascript:;">В корзину</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="products-slider-panel slider-panel">
-                            <span class="counter">
-                                <span class="counter-number js-slider-current"></span>
-                                <span class="counter-total">/<span class="counter-total-number js-slider-amount"></span></span>
-                            </span>
-                            <div class="swiper-pagination js-slider-pagination"></div>
-                            <a class="slider-more link" href="javascript:;">Смотреть все</a>
-                            <div class="slider-nav">
-                                <div class="slider-button js-slider-prev">
-                                    <i class="slider-button-icon fa fa-angle-left"></i>
-                                </div>
-                                <div class="slider-button js-slider-next">
-                                    <i class="slider-button-icon fa fa-angle-right"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="kinds swiper js-slider-kinds">
-                    <div class="kinds-list swiper-wrapper">
-                        <div class="kinds-item kinds-item_trail-running swiper-slide" data-slider-index="0">
-                            <a class="kinds-link" href="#">
-                                <img class="kinds-img" src="./images/kinds/kinds-img-1.jpg" alt="" />
-                                <span class="kinds-button">Трейлраннинг</span>
-                            </a>
-                        </div>
-                        <div class="kinds-item kinds-item_run swiper-slide" data-slider-index="1">
-                            <a class="kinds-link" href="#">
-                                <img class="kinds-img" src="./images/kinds/kinds-img-2.jpg" alt="" />
-                                <span class="kinds-button">Бег</span>
-                            </a>
-                        </div>
-                        <div class="kinds-item kinds-item_sport-style swiper-slide" data-slider-index="2">
-                            <a class="kinds-link" href="#">
-                                <img class="kinds-img" src="./images/kinds/kinds-img-3.jpg" alt="" />
-                                <span class="kinds-button">Спортивный стиль</span>
-                            </a>
-                        </div>
-                        <div class="kinds-item kinds-item_fitness swiper-slide" data-slider-index="3">
-                            <a class="kinds-link" href="#">
-                                <img class="kinds-img" src="./images/kinds/kinds-img-4.jpg" alt="" />
-                                <span class="kinds-button">Фитнес / Тренинг</span>
-                            </a>
-                        </div>
-                        <div class="kinds-item kinds-item_city swiper-slide" data-slider-index="4">
-                            <a class="kinds-link" href="#">
-                                <img class="kinds-img" src="./images/kinds/kinds-img-5.jpg" alt="" />
-                                <span class="kinds-button">Одежда для города</span>
-                            </a>
-                        </div>
-                        <div class="kinds-item kinds-item_tranning swiper-slide" data-slider-index="5">
-                            <a class="kinds-link" href="#">
-                                <img class="kinds-img" src="./images/kinds/kinds-img-8.jpg" alt="" />
-                                <span class="kinds-button">Зимние тренировки</span>
-                            </a>
-                        </div>
-                        <div class="kinds-item kinds-item_cross-skiing swiper-slide" data-slider-index="6">
-                            <a class="kinds-link" href="#">
-                                <img class="kinds-img" src="./images/kinds/kinds-img-9.jpg" alt="" />
-                                <span class="kinds-button">Беговые лыжи</span>
-                            </a>
-                        </div>
-                        <div class="kinds-item kinds-item_active swiper-slide" data-slider-index="7">
-                            <a class="kinds-link" href="#">
-                                <img class="kinds-img" src="./images/kinds/kinds-img-7.jpg" alt="" />
-                                <span class="kinds-button">Активный отдых</span>
-                            </a>
-                        </div>
-                        <div class="kinds-item kinds-item_skis swiper-slide" data-slider-index="8">
-                            <a class="kinds-link" href="#">
-                                <img class="kinds-img" src="./images/kinds/kinds-img-6.jpg" alt="" />
-                                <span class="kinds-button">Горные лыжи</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="kinds-slider-panel slider-panel">
-                        <span class="counter">
-                            <span class="counter-number js-slider-current"></span>
-                            <span class="counter-total">/<span class="counter-total-number js-slider-amount"></span></span>
-                        </span>
-                        <div class="swiper-pagination js-slider-pagination"></div>
-                        <div class="slider-nav">
-                            <div class="slider-button js-slider-prev">
-                                <i class="slider-button-icon fa fa-angle-left"></i>
-                            </div>
-                            <div class="slider-button js-slider-next">
-                                <i class="slider-button-icon fa fa-angle-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="actions row">
-                    <div class="actions-item col-12">
-                        <a href="#" class="actions-box">
-                            <span class="actions-detail">
-                                <span class="actions-data"><i class="actions-data-icon las la-calendar"></i>3 ноября - 20 октября</span>
-                                <span class="actions-name">Скидки до 60% на мужскую одежду</span>
-                                <span class="actions-end">
-                                    <span class="actions-end-amount">12</span>
-                                    <span class="actions-end-label">осталось дней</span>
-                                </span>
-                            </span>
-                            <span class="actions-img-block">
-                                <img class="actions-img" src="./images/actions/actions-img-1.png" alt="" />
-                            </span>
-                        </a>
-                    </div>
-                    <div class="actions-item col-lg-6">
-                        <a href="#" class="actions-box actions-box_simple">
-                            <span class="actions-detail">
-                                <span class="actions-data"><i class="actions-data-icon las la-calendar"></i>3 ноября - 20 октября</span>
-                                <span class="actions-name">Скидки до 60% на мужскую одежду</span>
-                                <span class="actions-end">
-                                    <span class="actions-end-amount">25</span>
-                                    <span class="actions-end-label">осталось дней</span>
-                                </span>
-                            </span>
-                            <span class="actions-img-block">
-                                <img class="actions-img" src="./images/actions/actions-img-2.png" alt="" />
-                            </span>
-                        </a>
-                    </div>
-                    <div class="actions-item col-lg-6">
-                        <a href="#" class="actions-box actions-box_simple">
-                            <span class="actions-detail">
-                                <span class="actions-data"><i class="actions-data-icon las la-calendar"></i>3 ноября - 20 октября</span>
-                                <span class="actions-name">Скидки до 60% на мужскую одежду</span>
-                                <span class="actions-end">
-                                    <span class="actions-end-amount">6</span>
-                                    <span class="actions-end-label">осталось дней</span>
-                                </span>
-                            </span>
-                            <span class="actions-img-block">
-                                <img class="actions-img" src="./images/actions/actions-img-3.png" alt="" />
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-                <section class="lookbook">
-                    <h2 class="title h1">Лук бук</h2>
-
-                    <div class="links">
-                        <div class="links-block swiper js-slider-links">
-                            <div class="links-list swiper-wrapper">
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label links-label_active" href="javascript:;">Все</a>
-                                </div>
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label" href="javascript:;">Беговые лыжи</a>
-                                </div>
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label" href="javascript:;">Горные лыжи</a>
-                                </div>
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label" href="javascript:;">Бег / Running</a>
-                                </div>
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label" href="javascript:;">Trail running</a>
-                                </div>
-                                <div class="links-item swiper-slide">
-                                    <a class="links-label" href="javascript:;">Ski туризм</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="lookbook-wrapper swiper js-slider-lookbook">
-                        <ul class="lookbook-list swiper-wrapper">
-                            <li class="lookbook-item swiper-slide" data-slider-index="0">
-                                <div class="lookbook-block">
-                                    <a class="lookbook-link" href="#">
-                                        <img class="lookbook-img" src="./images/lookbook/lookbook-img-1.jpg" alt="" />
-                                    </a>
-                                    <div class="lookbook-panel">
-                                        <ul class="lookbook-tags">
-                                            <li class="lookbook-tags-item">
-                                                <a class="lookbook-tags-link" href="#">#Воркаут</a>
-                                            </li>
-                                        </ul>
-                                        <div class="lookbook-name">Фитнес городских улиц</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="lookbook-item swiper-slide" data-slider-index="1">
-                                <div class="lookbook-block">
-                                    <a class="lookbook-link" href="#">
-                                        <img class="lookbook-img" src="./images/lookbook/lookbook-img-1.jpg" alt="" />
-                                    </a>
-                                    <div class="lookbook-panel">
-                                        <ul class="lookbook-tags">
-                                            <li class="lookbook-tags-item">
-                                                <a class="lookbook-tags-link" href="#">#Воркаут</a>
-                                            </li>
-                                        </ul>
-                                        <div class="lookbook-name">Фитнес городских улиц</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="lookbook-item swiper-slide" data-slider-index="2">
-                                <div class="lookbook-block">
-                                    <a class="lookbook-link" href="#">
-                                        <img class="lookbook-img" src="./images/lookbook/lookbook-img-2.jpg" alt="" />
-                                    </a>
-                                    <div class="lookbook-panel">
-                                        <ul class="lookbook-tags">
-                                            <li class="lookbook-tags-item">
-                                                <a class="lookbook-tags-link" href="#">#Воркаут</a>
-                                            </li>
-                                        </ul>
-                                        <div class="lookbook-name">Фитнес городских улиц</div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="lookbook-item swiper-slide" data-slider-index="3">
-                                <div class="lookbook-block">
-                                    <a class="lookbook-link" href="#">
-                                        <img class="lookbook-img" src="./images/lookbook/lookbook-img-3.jpg" alt="" />
-                                    </a>
-                                    <div class="lookbook-panel">
-                                        <ul class="lookbook-tags">
-                                            <li class="lookbook-tags-item">
-                                                <a class="lookbook-tags-link" href="#">#Воркаут</a>
-                                            </li>
-                                        </ul>
-                                        <div class="lookbook-name">Фитнес городских улиц</div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="lookbook-slider-panel slider-panel">
-                            <span class="counter">
-                                <span class="counter-number js-slider-current"></span>
-                                <span class="counter-total">/<span class="counter-total-number js-slider-amount"></span></span>
-                            </span>
-                            <div class="swiper-pagination js-slider-pagination"></div>
-                            <a class="slider-more link" href="javascript:;">Смотреть все</a>
-                            <div class="slider-nav">
-                                <div class="slider-button js-slider-prev">
-                                    <i class="slider-button-icon fa fa-angle-left"></i>
-                                </div>
-                                <div class="slider-button js-slider-next">
-                                    <i class="slider-button-icon fa fa-angle-right"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="club-orders">
-                    <div class="club-orders-detail">
-                        <h2 class="club-orders-title h1">Клубные заказы</h2>
-                        <div class="club-orders-panel">
-                            <a class="club-orders-link" href="#">
-                                <i class="club-orders-icon lab la-whatsapp"></i><span class="club-orders-label link">Связаться с менеджером</span>
-                            </a>
-                        </div>
-                        <a class="club-orders-more" href="#">Узнать подробнее</a>
-                    </div>
-                    <div class="club-orders-picture">
-                        <img class="club-orders-img" src="./images/club-order/club-order-img.png" alt="" />
-                    </div>
-                </section>
-
-            </div>
-
-            <div class="feedback">
-                <div class="feedback-container container">
-                    <div class="feedback-detail">
-                        <h2 class="feedback-title h1">Стань официальным партнером Nordski</h2>
-                        <div class="feedback-info content">
-                            – бренда функциональной спортивной одежды для зимних и летних видов спорта
-                        </div>
-                        <a class="feedback-button button" href="#">узнать подробнее</a>
-                    </div>
-                    <div class="feedback-form">
-                        <div class="feedback-form-block">
-                            <span class="feedback-form-name">Оставьте телефон и e-mail и получите условия сотрудничества</span>
-                            <form class="js-form-validate" action="/">
-                                <div class="field js-form-validate-field">
-                                    <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
-                                        <label class="field-label JS-FieldText-Label" for="phone">Телефон</label>
-                                        <input class="input JS-FieldText-Input js-mask-phone" type="text" placeholder="" id="phone" name="phone" required />
-                                    </span>
-                                </div>
-                                <div class="field js-form-validate-field">
-                                    <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
-                                        <label class="field-label JS-FieldText-Label" for="email">Email</label>
-                                        <input class="input JS-FieldText-Input js-mask-email" type="text" placeholder="" id="email" name="email" required />
-                                    </span>
-                                </div>
-                                <div class="field js-form-validate-field">
-                                    <span class="field-input JS-FieldText" data-fieldtext="{'classActive':'field-input_active'}">
-                                        <label class="field-label JS-FieldText-Label" for="inn">ИНН</label>
-                                        <input class="input JS-FieldText-Input" type="text" placeholder="" id="inn" name="inn" />
-                                    </span>
-                                </div>
-                                <div class="switch-field">
-                                    <label class="switch">
-                                        <input class="switch-checkbox" type="checkbox" name="agreement" checked="checked" />
-                                        <span class="switch-decor">
-                                            <span class="switch-icon"></span>
-                                        </span>
-                                        <span class="switch-label">Я согласен на <a href="#">обработку персональных данных</a></span>
-                                    </label>
-                                </div>
-                                <div class="field-button">
-                                    <button class="popup-button button button_simple">Отправить</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="feedback-form-decor">
-                            <div class="feedback-form-decor-inner"></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="breadcrumbs container js-expand" data-expand="{
+                'classActive': 'breadcrumbs_active',
+                'classShow': 'breadcrumbs_show'
+            }">
+                <ul class="breadcrumbs-list js-expand-block">
+                    <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="/">Главная<i class="breadcrumbs-icon fa fa-angle-right"></i></a></li>
+                    <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Покупателям<i class="breadcrumbs-icon fa fa-angle-right"></i></a></li>
+                    <li class="breadcrumbs-item">Доставка</li>
+                    <li class="breadcrumbs-item breadcrumbs-item_more"><a class="breadcrumbs-link js-expand-link" href="javascript:;">...</a></li>
+                </ul>
             </div>
 
             <div class="container">
 
-                <div class="articles">
-                    <h2 class="title h1">Статьи</h2>
-                    <div class="articles-inner swiper js-slider-articles">
-                        <div class="articles-list swiper-wrapper">
-                            <div class="articles-item articles-item_wide swiper-slide" data-slider-index="0">
-                                <div class="articles-block articles-block_video">
-                                    <a class="articles-link js-popup" href="https://youtu.be/srepKrsWsbg">
-                                        <img class="articles-img" src="./images/articles/articles-img-1.jpg" alt="" />
-                                        <span class="articles-panel">
-                                            <span class="articles-name">Как правильно выбрать туристический коврик. Варианты и решения</span>
-                                        </span>
-                                        <span class="articles-play">
-                                            <span class="articles-play-block">
-                                                <i class="articles-play-icon fas fa-play"></i>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="articles-item swiper-slide" data-slider-index="1">
-                                <div class="articles-block">
-                                    <a class="articles-link" href="#">
-                                        <img class="articles-img" src="./images/articles/articles-img-2.jpg" alt="" />
-                                        <span class="articles-date">
-                                            <span class="articles-date-icon"><i class="las la-calendar"></i></span>
-                                            <span class="articles-date-label">19 мая 2020</span>
-                                        </span>
-                                    </a>
-                                    <div class="articles-box">
-                                        <a href="#" class="articles-category">как выбрать</a>
-                                        <a class="articles-name" href="#">Как правильно выбрать туристический коврик. Варианты и решения</a>
-                                        <div class="articles-info content">В этой статье мы расскажем о видах и особенностях ковриков, покажем на конкретных примерах</div>
-                                        <ul class="tags">
-                                            <li class="tags-item"><a class="tags-link" href="#"># одежда</a></li>
-                                            <li class="tags-item"><a class="tags-link" href="#"># бег</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="articles-item swiper-slide" data-slider-index="2">
-                                <div class="articles-block">
-                                    <a class="articles-link" href="#">
-                                        <img class="articles-img" src="./images/articles/articles-img-3.jpg" alt="" />
-                                        <span class="articles-date">
-                                            <span class="articles-date-icon"><i class="las la-calendar"></i></span>
-                                            <span class="articles-date-label">19 мая 2020</span>
-                                        </span>
-                                    </a>
-                                    <div class="articles-box">
-                                        <a href="#" class="articles-category">как выбрать</a>
-                                        <a class="articles-name" href="#">Солнцезащитные очки Northug: норвежское качество и дизайн от Короля лыж</a>
-                                        <div class="articles-info content">В этой статье мы расскажем о видах и особенностях ковриков, покажем на конкретных примерах</div>
-                                        <ul class="tags">
-                                            <li class="tags-item"><a class="tags-link" href="#"># кросовки для бега</a></li>
-                                            <li class="tags-item"><a class="tags-link" href="#"># велосипеды</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="articles-item swiper-slide" data-slider-index="1">
-                                <div class="articles-block">
-                                    <a class="articles-link" href="#">
-                                        <img class="articles-img" src="./images/articles/articles-img-2.jpg" alt="" />
-                                        <span class="articles-date">
-                                            <span class="articles-date-icon"><i class="las la-calendar"></i></span>
-                                            <span class="articles-date-label">19 мая 2020</span>
-                                        </span>
-                                    </a>
-                                    <div class="articles-box">
-                                        <a href="#" class="articles-category">как выбрать</a>
-                                        <a class="articles-name" href="#">Как правильно выбрать туристический коврик. Варианты и решения</a>
-                                        <div class="articles-info content">В этой статье мы расскажем о видах и особенностях ковриков, покажем на конкретных примерах</div>
-                                        <ul class="tags">
-                                            <li class="tags-item"><a class="tags-link" href="#"># одежда</a></li>
-                                            <li class="tags-item"><a class="tags-link" href="#"># бег</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="row">
+                    <aside class="col-lg-3" data-sticky-container>
+                        <div class="sidebar-menu js-fix-sticky" data-sticky-wrap>
+                            <span class="blog-detail-side-title blog-detail-side-title_category">Покупателям</span>
+                            <ul class="sidebar-menu-list">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-link" href="#">Оплата и возврат</a>
+                                </li>
+                                <li class="sidebar-menu-item sidebar-menu-item_active">
+                                    <a class="sidebar-menu-link" href="#">Доставка</a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-link" href="#">Таблицы и размеры</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="slider-panel">
-                            <span class="counter">
-                                <span class="counter-number js-slider-current"></span>
-                                <span class="counter-total">/<span class="counter-total-number js-slider-amount"></span></span>
-                            </span>
-                            <div class="swiper-pagination js-slider-pagination"></div>
-                            <a class="slider-more link" href="javascript:;">Смотреть все</a>
-                            <div class="slider-nav">
-                                <div class="slider-button js-slider-prev">
-                                    <i class="slider-button-icon fa fa-angle-left"></i>
+
+                        <div class="sidebar-menu-mob JS-MobileMenu" data-mobilemenu="{
+                                'classActive': 'open',
+                                'classShow': 'mob-menu-show',
+                                'classElementActive': 'mob-menu_active'
+                            }">
+                            <a class="catalog-link-mob button button_dark JS-MobileMenu-Burger" href="javascript:;">
+                                Покупателям<svg class="mob-menu-switcher-icon"><use xlink:href="#burger-icon"></use></svg>
+                            </a>
+                            <div class="mob-block JS-MobileMenu-Dropdown">
+                                <div class="mob-close-panel mob-close-panel_simple">
+                                    <span class="catalog-name-mob">Покупателям</span>
+                                    <a href="javascript:;" class="mob-close JS-MobileMenu-Close"><i class="mob-close-icon las la-times"></i></a>
                                 </div>
-                                <div class="slider-button js-slider-next">
-                                    <i class="slider-button-icon fa fa-angle-right"></i>
+                                <div class="mob-nav">
+                                    <ul class="mob-list">
+                                        <li class="mob-list-item">
+                                            <a class="mob-list-link" href="#">Оплата и возврат</a>
+                                        </li>
+                                        <li class="mob-list-item mob-list-item_active">
+                                            <a class="mob-list-link" href="#">Доставка</a>
+                                        </li>
+                                        <li class="mob-list-item">
+                                            <a class="mob-list-link" href="#">Таблицы и размеры</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
+                            <div class="mob-menu-decor JS-MobileMenu-Close"></div>
+                        </div>
+                    </aside>
+                    <div class="col-lg-9">
+                        <h1 class="delivery-title">Доставка</h1>
+                        <div class="delivery-place">
+                            <span class="delivery-place-item delivery-place-label">Доставка в:</span>
+                            <span class="delivery-place-item delivery-place-country">
+                                <img class="delivery-place-img" src="./images/delivery/country-img-1.jpg" alt="" />Россия
+                            </span>
+                            <a class="delivery-place-item delivery-place-button button button_dark-simple js-open-country" href="javascript:;" data-src="./ajax/country.html">Изменить</a>
+                        </div>
+
+                        <div class="content">
+                            <p>Мы хотим, чтобы как можно больше людей по всей стране использовали в повседневной жизни и занимались спортом не только в удобной, но и стильной одежде. Для профессиональных спортсменов правильно подобранная форма – одна из составляющих успеха. А для новичков и тех, кто активно живет в свое удовольствие, красивый костюм – дополнительная мотивация отправиться на пробежку или в тренажерный зал, или просто чувствовать себя комфортно.</p>
+                            <p>Поэтому интернет-магазин спортивной одежды Nordski производит и доставляет товары <b>по России удобными для клиентов способами.</b></p>
+                            <h2>Кто может воспользоваться доставкой?</h2>
+                            <p>Одно из преимуществ нашей одежды в том, что она подходит всем: как профессиональным спортсменам, так тем, кто любит с комфортом активно проводить время. При разработке моделей одежде наши дизайнеры учитывают все новейшие тренды, благодаря чему в Nordski вы чувствуете себя не только удобно, но и выглядите эффектно. Раздел «Look BooK» предлагает уже готовые луки. Собранные из ассортимента каталога, но мы сохранили возможность сбора комплект на индивидуальный вкус из многообразия брюк, шортов, футболок и толстовок.</p>
+                            <p>Производим продукцию для любого времени года. В ассортименте интернет-магазина футболки, толстовки и другая одежда в спортивном стиле, доставку которой можно оформить на сайте. Заботимся об удобстве любителей активного отдыха всех возрастов: детская коллекция, женская и мужская.</p>
+                            <p>Купить мужскую или женскую куртку с доставкой можно из любого региона страны. В зависимости от территориального расположения и климата, у нас есть выбор вариантов на любые погодные условия: легкие футболки, ветровки, тонкие, либо утепленные брюки. Дополнят комплект стильные аксессуары – повязки, перчатки, рюкзаки и многое другое. Актуальный ассортимент доступен на сайте в разделе «Каталог».</p>
+                            <b>Работаем:</b>
+                            <ul>
+                                <li>с физическими лицами</li>
+                                <li>спортивными командами,</li>
+                                <li>оптовыми покупателями.</li>
+                            </ul>
+                            <p><b>О работе с юридическими лицами больше информации доступно в разделе «<a href="#">Оптовым клиентам</a>».</b></p>
+                            <h2>Как доставляем?</h2>
+                            <p><b>Независимо от того, нужна доставка одной женской футболки или нескольких позиций, предлагаем варианты:</b></p>
+
+                            <ul class="delivery-list row">
+                                <li class="delivery-list-item col-md-4">
+                                    <div class="delivery-block">
+                                        <img class="delivery-img" src="./images/delivery/delivery-img-1.jpg" alt="" />
+                                        <span class="delivery-name">Самовывоз</span>
+                                        <div>Забрать заказ самостоятельно можно по адресу г. Пенза, ул. Горная, д.3а.к.6, оф.32.</div>
+                                    </div>
+                                </li>
+                                <li class="delivery-list-item col-md-4">
+                                    <div class="delivery-block">
+                                        <img class="delivery-img" src="./images/delivery/delivery-img-2.jpg" alt="" />
+                                        <span class="delivery-name">Доставка почтой России</span>
+                                        <div>стоимость доставки наложенным платежом составляет 4% от суммы заказа, по предоплате в зависимости от ргегиона</div>
+                                    </div>
+                                </li>
+                                <li class="delivery-list-item col-md-4">
+                                    <div class="delivery-block">
+                                        <img class="delivery-img" src="./images/delivery/delivery-img-3.jpg" alt="" />
+                                        <span class="delivery-name">Доставка ТК СДЭК</span>
+                                        <div>стоимость доставки при оплате наложенным платежом и по предоплате составляет от 300 руб., в зависимости от региона</div>
+                                    </div>
+                                </li>
+                                <li class="delivery-list-item col-md-4">
+                                    <div class="delivery-block">
+                                        <img class="delivery-img" src="./images/delivery/delivery-img-4.jpg" alt="" />
+                                        <span class="delivery-name">BoxBerry</span>
+                                        <div> Забрать заказ самостоятельно можно по адресу г. Пенза, ул. Горная, д.3а.к.6, оф.32.</div>
+                                    </div>
+                                </li>
+                                <li class="delivery-list-item col-md-4">
+                                    <div class="delivery-block">
+                                        <img class="delivery-img" src="./images/delivery/delivery-img-5.jpg" alt="" />
+                                        <span class="delivery-name">PickPoint</span>
+                                        <div>стоимость доставки наложенным платежом составляет 4% от суммы заказа, по предоплате в зависимости от ргегиона</div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="delivery-free">
+                                <i class="delivery-free-icon las la-exclamation-circle"></i>
+                                <div class="delivery-free-info"><b class="delivery-free-label">Бесплатная</b> доставка при покупке от <span class="delivery-free-price">5 000<span class="delivery-free-price-currency currency">i</span></span></div>
+                            </div>
+
+                            <p>При оформлении заказа, либо перед покупкой, вы можете связаться с нашими специалистами и обсудить наиболее подходящий вариант. Забрать заказ самостоятельно можно по адресу г. Пенза, ул. Горная, д.3а.к.6, оф.32.</p>
+                            <p><b>Для покупателей из других городов</b> доступна доставка почтой России, либо транспортной компанией СДЭК. При выборе ТК можно забрать посылку в пункте выдачи, либо курьер привезет по назначенному адресу (до двери).</p>
+                            <div class="important">
+                                <b>Кстати!</b>
+                                <p>При получении возможна примерка.</p>
+                            </div>
+
+                            <p><b>Доставка в регионы России</b> составляет до 5 дней с момента оформления заказа. Точные сроки и стоимость поможет рассчитать менеджер, при оформлении заказа.</p>
+                            <p><b>Оптовые заказы</b> в интернет магазине спортивной одежды Nordski оформляются с доставкой по России и СНГ. После оформления и оплаты, отправка осуществляется через 1-2 дня, чтобы вы могли как можно быстрее получить товар.</p>
+                            <h2>Остались вопросы? Свяжитесь с нами по электронной почте или по телефону.</h2>
+                            <a class="mail" href="mailto:zakaz@nordski.ru"><i class="mail-icon las la-envelope"></i>zakaz@nordski.ru</a><br />
+                            <a class="mail" href="mailto:opt@nordski.ru"><i class="mail-icon las la-envelope"></i>opt@nordski.ru</a><br />
+                            <b><a class="mail" href="tel:+78004441053"><i class="mail-icon las la-phone"></i>8 (800) 444-10-53</a></b>
                         </div>
                     </div>
                 </div>
@@ -2553,6 +1674,9 @@
     <script src="./libs/swiper/swiper-bundle.min.js"></script>
     <script src="./libs/masonry/masonry.pkgd.min.js"></script>
     <script src="./libs/Selectric/public/jquery.selectric.min.js"></script>
+    <script src="./libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./libs/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+    <script src="./libs/tipped/js/tipped.min.js"></script>
     <script src="./libs/sticky/sticky.min.js"></script>
     <script src="./js/JSC.Dropdown.js"></script>
     <script src="./js/JSC.MobileMenu.js"></script>
@@ -2562,8 +1686,8 @@
     <script src="./js/JSC.Accordion.js"></script>
     <script src="./js/JSC.ShowMore.js"></script>
     <script src="./js/JSC.AjaxMore.js"></script>
+    <script src="./js/JSC.Quantity.js"></script>
 
     <script src="./js/main.js"></script>
-
 </body>
 </html>
