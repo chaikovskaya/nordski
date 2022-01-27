@@ -111,6 +111,11 @@ function initValidate($element) {
         validator = $element.validate({
             errorClass: 'form-error',
             validClass: 'form-success',
+            submitHandler: function(form) {
+                if (typeof(ajaxSubmit) == 'function') {
+                    ajaxSubmit(form);
+                }
+            }
         });
 
         $.validator.messages.required = GLOBAL.FORMERROR.REQUIRED;
