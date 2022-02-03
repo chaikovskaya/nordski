@@ -1,0 +1,648 @@
+.js-add-extra-telephone{
+    font-size: 17px;
+    display: flex;
+    align-items:left;
+    max-width: 170px;
+}
+
+.js-add-extra-telephone:hover{
+    cursor:pointer;
+    color: #00597d;
+}
+
+.add-extra-telephone-text{
+    margin-left: 5px;
+    text-underline-offset: 3px;
+    text-decoration: dotted;
+    text-decoration-line:underline;
+}
+
+.profile-data-title_mrgfix{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e6e8ed;
+}
+
+.input_right_image{
+    position: absolute;
+    right: -25px;
+    top: 33px;
+}
+.input_right_image:hover{
+    cursor: pointer;
+}
+div.input_right_image.input_right_image_pass{
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    top: 28px;
+    background-image: url("../images/img/eye_pass.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.input_right_image:mousedown{
+    cursor:grab;
+}
+.input_right_image_pass{
+    top: 44px;
+}
+
+
+.pass_input_outer{
+    position: relative;
+}
+.pass_input_outer .eye-icon{
+    bottom: 10px;
+}
+.field-label-common-mrgfix{
+    margin-bottom: 6px;
+    font-size: 17px;
+}
+.field-mrgfix{
+    margin-bottom: 15px;
+}
+
+.btn_save{
+    padding: 0;
+    margin-top: 25px;
+}
+.btn_save-link {
+    min-height: 50px;
+    line-height: 48px;
+    padding-right: 22px;
+    padding-left: 22px; 
+}
+.btn_save-link:hover {
+    background-color: #025077;
+}
+.btn_abort{
+    padding: 0;
+    margin-top: 25px;
+    position: absolute;
+    left: 250px;
+}
+.btn_abort-link {
+    color: black;
+    display: inline-block;
+    min-width: 205px;
+    min-height: 50px;
+    line-height: 48px;
+    padding-right: 22px;
+    padding-left: 22px; 
+    background-color: #fff;
+    border: 1px solid #000;
+}
+.btn_abort-link:hover {
+    border: 1px solid #025077;
+    color: #025077;
+}
+.buttons_on_line_outer
+{
+    margin-bottom: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+}
+
+.selectric-wrapper.selectric-selectSexForm .selectric .selectric-button{
+    right: 5px;
+}
+.selectric-wrapper.selectric-selectSexForm .selectric .label{
+    line-height: 42px;
+    height: 42px;
+    margin-left: 15px;
+    border-bottom: none;
+}
+.selectric-wrapper.selectric-selectSexForm.selectric-input_modified.selectric-hover{
+    text-decoration: none;
+}
+
+.selectric-selectSexForm{
+    border: 1px solid #e6e8ed;
+}
+
+.adress-list{
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.adress-list-item{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #e6e8ed;
+}
+.adress-list-text{
+    margin-top: 3px;
+}
+
+.trash-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 50px;
+    max-height: 50px;
+
+    margin-left: auto;
+}
+
+.trash-col:hover{
+    cursor: pointer;
+    border:1px solid #dcdee6;
+}
+
+.club-banner-inner{
+    max-width: 320px;
+}
+.club-banner-contact{
+    margin-top: 30px;
+    font-size: 16px;
+    display: flex;
+    justify-content: left;
+    align-items: self-end;
+}
+.club-banner-contact i{
+    margin-right: 5px;
+}
+.club-banner-text{
+    color: #707070;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'OpenSans';
+}
+.club-banner-contact a{
+    color: #000;
+    text-underline-offset: 3px;
+}
+.club-banner-contact:hover{
+    color: #007aff;/*#7d7d7d*/
+    cursor: pointer;
+}
+.club-banner-detail{
+    padding-left: 45px;
+    padding-top: 45px;
+    width: 35%;
+    position: relative;
+    z-index: 1;
+}
+.club-banner-wrapper{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #dcdee6;
+}
+.club-banner-img{
+    margin-right: 55px;
+}
+
+.assortymentius-h3{
+    padding-top: 20px;
+}
+.assortymentius-block{
+    margin-bottom: 40px;
+}
+.assortymentius-slider-block{
+    margin: 0 auto;
+}
+.club-purchase-slide-undertext{
+    max-width: 100%;
+    height: 50px;
+    background-color: #025077;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.club-purchase-slide-undertext:hover{
+    background-color: #00597d;
+    cursor: pointer;
+}
+
+.products-box-assortymentus {
+    min-height: 100%; 
+}
+.products-box-assortymentus:hover {
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.09); 
+}
+
+.print-tech-wrapper{
+    margin: 0 auto;
+}
+.print-tech{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+}
+.print-tech-item{
+    margin: 15px;
+}
+.print-tech-item-text-block{
+    max-width: 200px;
+    margin-left: 30px;
+}
+.print-tech-item-title{
+    font-size: 22px;
+    color: #000;
+}
+.print-tech-item-text{
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.catalog-category-img-block{
+    height: 125px;
+    width: 125px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.catalog-category-image{
+    padding: 5px;
+}
+
+
+.club-banner.club-banner-question{
+    background-image: url("../images/club-purchase/have_a_questions_woman_bkg.png");
+    background-size: cover;
+    margin-top: 40px;
+    padding-left: 0;
+    margin-bottom: -70px;
+}
+.club-banner-question-inner{
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.club-banner-form{
+    background-color:transparent;
+}
+.club-banner-form-name{
+    color: #fff;
+    text-align: left;
+}
+.input.club-banner-field-input{
+    color: #a0bbc9;
+}
+.field-label-club-banner{
+    color: #a0bbc9;
+    position: initial;
+}
+.club-banner-question-form-title{
+    font-size: 40px;
+    text-align: left;
+}
+.club-banner-question-form-text{
+    font-size: 25px;
+    text-align: left;
+}
+.club-banner-text-block{
+    margin-top: 50px;
+}
+.form.club-banner-form{
+    overflow: visible;
+}
+
+.products-item.products-item-assortyments::after{
+    content: none;
+}
+.products-assortyments{
+    overflow: hidden;
+}
+.products-list-assortyments{
+    margin-bottom: 50px;
+}
+.products-item-assortyments{
+    width: 100%;
+    height: 100%;
+}
+.products-photo-assortyments{
+    background: url("../assets/images/club-purchase/pic_gradient.png");
+    text-align: center;
+    border: 1px solid #e6e8ed;
+}
+.products-img-assortyments{
+    height: 100%;
+}
+.ui-datepicker-trigger{
+    background: url("../images/img/calendary.png");
+    position: absolute;
+    right: -25px;
+    top: 33px;
+    width: 21px;
+    height: 21px;
+}
+
+.feedback-mrgfix{
+    margin-bottom: -70px;
+}
+.club-feedback-info{
+    max-width: 390px;
+}
+
+/*ЛукБук*/
+.look-book-categories{
+    font-family: 'PFDinDisplayPro';
+    font-size: 15px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+.look-book-categories-item{
+    position: relative;
+    margin-right: 40px;
+    color: #707070;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.look-book-categories-item:hover{
+    cursor: pointer;
+    color: #282829;
+}
+.look-book-categories-item-active{
+    color: #282829;
+    text-decoration: underline;
+    text-decoration-color: #025077;
+    text-decoration-style: solid;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 2px;
+}
+.look-book-number{
+    font-family: 'PFDinDisplayPro';
+    font-weight: 900;
+    font-size: 35px;
+    color: #fff;
+    font-style:normal;
+    text-shadow: 1px 0 1px #282829, 
+    0 1px 1px #282829, 
+    -1px 0 1px #282829, 
+    0 -1px 1px #282829;
+}
+.look-book-categories{
+    display: flex;
+    justify-content: left;
+    border-bottom: 2px solid #e6e8ed;
+
+}
+
+.look-book-item{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e6e8ed;
+}
+.look-book-item:last-child{
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+.look-book-item_desc{
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+
+.look-book-item-little_pic{
+    align-items: center;
+    display: flex;
+}
+.look-book-item-big_pic{
+    align-items: center;
+    display: flex;
+}
+
+.look-book-item-text_right{
+    text-align: right;
+}
+
+.look-book-load-more{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+/*\\\\ЛукБук*/
+
+/*Лукбук Детальная*/
+.look-book-prev-next-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.look-book-prev-next-little-block-item{
+    display: flex;
+    align-items: center;
+}
+.look-book-prev-next-little-block-item_link_left{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.look-book-prev-next-little-block-item_link_right{
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.breadcrumbs-icon-mrgright{
+    margin-right: 10px;
+    margin-left: 0;
+}
+.look-book-detail-video{
+    max-height: 500px;
+}
+.look-book-detail-item{
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.look-book-item-detail_pic_col
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.look-book-item-detail_pic_col .look-book-item-little_pic:first-child{
+    align-items: flex-start;
+}
+.look-book-item-detail_pic_col .look-book-item-little_pic:last-child{
+    align-items: flex-end;
+}
+.card-block-look-book-detail-big_pic{
+    display: flex;
+    align-items: flex-start;
+}
+.look-book-microcard-item-pic img{
+    width: 90px;
+}
+.look-book-microcard-product-detail-color{
+    margin-bottom: 20px;
+}
+.look-book-microcard-product-detail-size{
+    margin-bottom: 7px;
+}
+.look-book-microcard-product-detail-price{
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+.look-book-microcard-item{
+    border-bottom: 1px solid #e6e8ed;
+    margin-bottom: 25px;
+}
+
+.h1-align-center{
+    text-align: center;
+}
+
+.look-book-microcard-card-buttons .amount{
+    margin: 0;
+}
+.card-buttons.product-detail-buttons.look-book-microcard-card-buttons{
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+}
+.look-book-microcard-card-buttons-item{
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+.look-book-microcard-card-buttons-item:last-child{
+    margin-right: 0;
+}
+.look-book-microcard-card-buttons-item a{
+    margin: 0;
+}
+.look-book-microcard-product-detail-panel{
+    margin-bottom: 0;
+    border-bottom: none;
+}
+.look-book-prev-next-big-block-item {
+    display: flex;
+    align-items: center;
+  }
+.look-book-prev-next-block-big{
+    max-height: 490px;
+    overflow: hidden;
+}
+.look-book-prev-next-big-block-item_img{
+    margin: 0  auto;
+}
+
+.look-book-prev-next-big-block-item_link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.look-book-prev-next-big-block-item_link a, .look-book-prev-next-big-block-item_link i{
+    font-size: 22px;
+    color: #fff;
+}
+.look-book-microcard-title{
+    color: black;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+/*\\\\Лукбук Детальная*/
+@media (max-width: 1200px){
+    .look-book-microcard-card-buttons-item{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width: 992px){
+    .card-block-look-book-detail-big_pic{
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .look-book-block-more-button{
+        text-align: center;
+    }
+    .look-book-detail-video{
+        margin-top: 30px;
+    }
+    .look-book-item_title{
+        font-size: 25px;
+        line-height: 27px;
+    }
+    .look-book-item{
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+    .assortymentius.content{
+        margin-bottom: 30px;
+    }
+    .print-tech-item-title, .print-tech-item-text{
+        text-align: center;
+    }
+    .print-tech-item-text-block{
+        margin: 15px;
+    }
+    .club-banner-question-form-title{
+        text-align: center;
+        color: #e6e8ed;
+    }
+    .club-banner-question-form-text{
+        text-align: center;
+        color: #e6e8ed;
+    }
+    .products.js-slider-ClubPurchase-products{
+        overflow:hidden;
+    }
+    .slider-panel.slider-pandel-ClubPurchase{
+        display:flex;
+    }
+    .js-slider-ClubPurchase-products .products-list{
+        margin-bottom: 25px;
+    }
+    .ui-datepicker-trigger{
+        right: 25px;
+    }
+}
+@media (max-width: 720px){
+    .look-book-microcard-item-pic{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .look-book-item-text_right{
+        order: -1;
+    }
+    .print-tech-item{
+        width: 100%;
+    }
+    .buttons_on_line_outer
+    {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .btn_abort{
+        margin-top: 15px;
+        position: unset;
+        display: flex;
+        justify-content: center;
+    }
+    .btn_save{
+        margin-top: 15px;
+        position: unset;
+        display: flex;
+        justify-content: center;
+    }
+    .btn_save-link{
+        max-width: 100%;
+        width: 100%;
+    }
+    .btn_abort-link{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .look-book-microcard-card-buttons-item:last-child{
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .look-book-microcard-card-buttons-item:nth-child(2){
+        flex-grow: 1;
+        margin-right: 0;
+    }
+    .look-book-microcard-card-buttons-item:nth-child(2) a{
+        width: 100%;
+    }
+    .card-buttons.product-detail-buttons.look-book-microcard-card-buttons{
+        margin-bottom: 0;
+    }
+}
+

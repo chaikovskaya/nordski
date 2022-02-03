@@ -1071,7 +1071,6 @@ function openPopupProductArrival($element) {
 
 function initPopupProductArrival() {
     $(".js-open-product-arrival").on('click', function() {
-        $.fancybox.close();
         openPopupProductArrival($(".js-open-product-arrival"));
     });
 }
@@ -1161,7 +1160,44 @@ function initPopupProduct() {
             initTooltip();
             initAccordion();
             initPopupGallery();
+            initPopupSizeChart();
+            initPopupProductArrival();
         },
+    });
+}
+
+function openPopupSizeChart($element) {
+    if (typeof($element) == 'undefined') {
+        $element = $('.js-popup-size-chart');
+    }
+
+    $.fancybox.open({
+        src  : $element.data('src'),
+        type : 'ajax',
+        toolbar  : false,
+        smallBtn : true,
+        touch: false,
+        afterShow: function (data) {
+            initScroll();
+        },
+        btnTpl: {
+            smallBtn:
+                '<button type="button" data-fancybox-close class="fancybox-close" title="{{CLOSE}}">' +
+                '<i class="fancybox-close-icon las la-times"></i>' +
+                "</button>"
+        },
+        lang: "ru",
+        i18n: {
+            ru: {
+                CLOSE: "Закрыть",
+            },
+        }
+    });
+}
+
+function initPopupSizeChart() {
+    $(".js-open-size-chart").on('click', function() {
+        openPopupSizeChart($(".js-open-size-chart"));
     });
 }
 
@@ -1672,6 +1708,37 @@ function initPopupCountry() {
     });
 }
 
+function initIndicator() {
+    $('.js-indicator').each(function() {
+        var $element = $(this),
+            total = $element.data("indicator-total"),
+            percent = $element.data("indicator-percent"),
+            $value = $element.find('.js-indicator-value');
+
+        var res = (total * percent)/100;
+        if (res) {
+            $value.attr('stroke-dasharray', res + ',' + total);
+        }
+    });
+}
+
+function initAjaxMoreOrders() {
+    if (typeof(AjaxMore) === 'undefined' || !jQuery.isFunction(AjaxMore)) {
+        return false;
+    }
+
+    var common = {
+        success: function () {
+            initAccordion();
+        }
+    };
+
+    $('.JS-AjaxMore-Orders').not('.JS-AjaxMore-ready').each(function(){
+        var local = GLOBAL.parseData(jQuery(this).data('ajaxmore'));
+        new AjaxMore(this, jQuery.extend({}, common, local));
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -1733,6 +1800,7 @@ $(document).ready(function () {
     initPassword();
     initPopupFastbuy();
     initPopupProductArrival();
+    initPopupSizeChart();
     initTab();
     initSearch();
     initDropdownSearch();
@@ -1756,4 +1824,6 @@ $(document).ready(function () {
     initFixSticky();
     initPopupCountry();
     initFind();
+    initIndicator();
+    initAjaxMoreOrders();
 });
