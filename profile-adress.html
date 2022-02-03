@@ -1248,10 +1248,10 @@
                                 <li class="sidebar-menu-item">
                                     <a class="sidebar-menu-link" href="#">Мои заказы</a>
                                 </li>
-                                <li class="sidebar-menu-item sidebar-menu-item_active">
+                                <li class="sidebar-menu-item">
                                     <a class="sidebar-menu-link" href="#">Личные данные</a>
                                 </li>
-                                <li class="sidebar-menu-item">
+                                <li class="sidebar-menu-item sidebar-menu-item_active">
                                     <a class="sidebar-menu-link" href="#">Мои адреса</a>
                                 </li>
                                 <li class="sidebar-menu-item">
@@ -1307,7 +1307,7 @@
 
                         <h1 class="profile-orders-title profile-data-title_mrgfix">Мои адреса</h1>
 
-                        <form>
+                        <form class="js-form-validate js-form">
                             <div class="profile-data-group ">
 
                                 <div class="profile-data-col row">
@@ -1342,7 +1342,7 @@
 
                                     <div class="field field-mrgfix js-form-validate-field col-lg-6 col-md-12">
                                         <label class="field-label-common field-label-common-mrgfix" for="secondname">Отчество</label>
-                                        <input class="input input_modified" type="text" id="secondname" name="secondname" required>
+                                        <input class="input input_modified" type="text" id="secondname" name="secondname">
                                     </div>
 
                                     <div class="field field-mrgfix js-form-validate-field col-lg-6 col-md-12">
@@ -1350,15 +1350,22 @@
                                         <input class="input input_modified" type="text" name="apartmentNumber" required>
                                     </div>
 
-                                    <div class="field  field-mrgfix field-mrgfix js-form-validate-field col-lg-6 col-md-12">
-                                        <label class="field-label-common field-label-common-mrgfix" for="telephone">Телефон</label>
-                                        <input class="input input_modified js-mask-phone" type="tel" placeholder="" id="telephone" name="telephone" required />
+                                    <div class="telephone-list-block col-lg-6 col-md-12">
+                                        <label class="field-label-common field-label-common-mrgfix">Телефон</label>
+                                        <div class="field field-mrgfix field-mrgfix js-form-validate-field telephone-field">
+                                            <input class="input input_modified js-mask-phone js-phone-item" type="tel" placeholder="" name="phone1" required />
+                                        </div>
                                     </div>   
                                 </div>
-
-                                <div class="js-add-extra-telephone">
-                                    <div>+</div>
-                                    <div class="add-extra-telephone-text">Добавить еще номер</div>
+                                <div class="add-remove-extra-telephone-block">
+                                    <div class="js-add-extra-telephone">
+                                        <div>+</div>
+                                        <div class="add-extra-telephone-text">Добавить еще номер</div>
+                                    </div>
+                                    <div class="js-remove-extra-telephone">
+                                        <div>-</div>
+                                        <div class="add-extra-telephone-text">Удалить номер</div>
+                                    </div>
                                 </div>
                             </div>
                         </form>

@@ -1,11 +1,23 @@
+.add-remove-extra-telephone-block{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
 .js-add-extra-telephone{
     font-size: 17px;
-    display: flex;
-    align-items:left;
     max-width: 170px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: left;
+}
+.js-remove-extra-telephone{
+    font-size: 17px;
+    max-width: 170px;
+    display: flex;
+    justify-content: left;
 }
 
-.js-add-extra-telephone:hover{
+.js-add-extra-telephone:hover, .js-remove-extra-telephone:hover{
     cursor:pointer;
     color: #00597d;
 }
@@ -318,7 +330,7 @@ div.input_right_image.input_right_image_pass{
     height: 100%;
 }
 .products-photo-assortyments{
-    background: url("../assets/images/club-purchase/pic_gradient.png");
+    background: url("../images/club-purchase/pic_gradient.png");
     text-align: center;
     border: 1px solid #e6e8ed;
 }
@@ -339,6 +351,13 @@ div.input_right_image.input_right_image_pass{
 }
 .club-feedback-info{
     max-width: 390px;
+}
+.club-purchase-feedback-container{
+    position: relative;
+}
+.feedback-form-img {
+    position: absolute;
+    transform: translateX(50%);
 }
 
 /*ЛукБук*/
@@ -403,6 +422,7 @@ div.input_right_image.input_right_image_pass{
 .look-book-item-little_pic{
     align-items: center;
     display: flex;
+    width: 100%;
 }
 .look-book-item-big_pic{
     align-items: center;
@@ -453,11 +473,12 @@ div.input_right_image.input_right_image_pass{
     display: flex;
     flex-wrap: wrap;
 }
-.look-book-item-detail_pic_col .look-book-item-little_pic:first-child{
-    align-items: flex-start;
+
+.look-book-item-detail_pic_col .look-book-item-little_pic_single_col:first-child{
+    padding-bottom: 15px;
 }
-.look-book-item-detail_pic_col .look-book-item-little_pic:last-child{
-    align-items: flex-end;
+.look-book-item-detail_pic_col .look-book-item-little_pic_single_col:last-child{
+    padding-top: 15px;
 }
 .card-block-look-book-detail-big_pic{
     display: flex;
@@ -507,18 +528,25 @@ div.input_right_image.input_right_image_pass{
     border-bottom: none;
 }
 .look-book-prev-next-big-block-item {
+    max-height: 490px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
 .look-book-prev-next-block-big{
     max-height: 490px;
     overflow: hidden;
 }
 .look-book-prev-next-big-block-item_img{
-    margin: 0  auto;
+    width: 100%;
+}
+.full-cover-block-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .look-book-prev-next-big-block-item_link{
+    width: 185px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -528,6 +556,16 @@ div.input_right_image.input_right_image_pass{
 .look-book-prev-next-big-block-item_link a, .look-book-prev-next-big-block-item_link i{
     font-size: 22px;
     color: #fff;
+    margin-bottom: 4px;
+}
+.look-book-prev-next-big-block-item:hover{
+    filter: grayscale(50%);
+}
+.look-book-prev-next-big-block-item:hover .look-book-prev-next-big-block-item_link a, .look-book-prev-next-big-block-item_link i{
+    color: #fff;
+}
+.look-book-prev-next-big-block-item:hover .look-book-prev-next-big-block-item_link a{
+    border-bottom: 2px solid #fff;
 }
 .look-book-microcard-title{
     color: black;
@@ -535,10 +573,14 @@ div.input_right_image.input_right_image_pass{
     display: block;
     margin-bottom: 10px;
 }
+
 /*\\\\Лукбук Детальная*/
 @media (max-width: 1200px){
     .look-book-microcard-card-buttons-item{
         flex-wrap: wrap;
+    }
+    .feedback-form-img {
+        display: none;
     }
 }
 
@@ -593,6 +635,9 @@ div.input_right_image.input_right_image_pass{
     }
 }
 @media (max-width: 720px){
+    .club-banner-detail{
+        width: 100%;
+    }
     .look-book-microcard-item-pic{
         display: flex;
         justify-content: center;
@@ -629,7 +674,9 @@ div.input_right_image.input_right_image_pass{
         max-width: 100%;
         width: 100%;
     }
-
+    .look-book-item-text{
+        margin-bottom: 10px;
+    }
     .look-book-microcard-card-buttons-item:last-child{
         margin-bottom: 25px;
         width: 100%;

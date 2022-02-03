@@ -2,18 +2,19 @@ $( function() {
     $('#datepicker').datepicker({showOn: "button", buttonText: ""});
     $(".selectSexForm").selectric();
 } );
-/*
-$('.input_right_image.input_right_image_pass').mousedown(function()
-{
-    $(this).prev()[0]['type'] = "text";
-    $(this).prev().css("font-size", "12px");
+
+$('.js-add-extra-telephone').click(function(){
+    let elem = $('.js-phone-item');
+    $(".telephone-list-block").append($(".telephone-field:last").clone(true, true));
+    $(".telephone-field:last").attr('name', 'phone'+ (elem.length + 1))
 });
-$('.input_right_image.input_right_image_pass').mouseup(function()
-{
-    $(this).prev()[0]['type'] = "password";
-    $(this).prev().css("font-size", "16px");
+
+$('.js-remove-extra-telephone').click(function(){
+    let elem = $('.js-phone-item');
+    if(elem.length > 1)
+        $(".telephone-field:last").remove(".telephone-field:last");
 });
-*/
+
 function initSelSexForm() {
     $('.selectSexForm').selectric({
         disableOnMobile: false,

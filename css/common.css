@@ -4446,7 +4446,8 @@ label.form-error {
       transform: skew(0deg);
       background-position: -305px bottom; }
     .feedback-form-name {
-      text-align: center; } }
+      text-align: center; }
+    }
 
 /* /feedback */
 /* articles */
