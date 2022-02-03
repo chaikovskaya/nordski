@@ -420,13 +420,14 @@ div.input_right_image.input_right_image_pass{
 }
 
 .look-book-item-little_pic{
-    align-items: center;
-    display: flex;
+    /*align-items: center;
+    display: flex;*/
     width: 100%;
 }
 .look-book-item-big_pic{
-    align-items: center;
-    display: flex;
+    /*align-items: center;
+    display: flex;*/
+    width: 100%;
 }
 
 .look-book-item-text_right{
@@ -440,26 +441,13 @@ div.input_right_image.input_right_image_pass{
 /*\\\\ЛукБук*/
 
 /*Лукбук Детальная*/
-.look-book-prev-next-block{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.look-book-prev-next-little-block-item{
-    display: flex;
-    align-items: center;
-}
-.look-book-prev-next-little-block-item_link_left{
-    margin-left: 10px;
-    margin-bottom: 5px;
-}
-.look-book-prev-next-little-block-item_link_right{
-    margin-right: 10px;
-    margin-bottom: 5px;
-}
 .breadcrumbs-icon-mrgright{
     margin-right: 10px;
     margin-left: 0;
+}
+.breadcrumbs-icon-mrgleft{
+    margin-right: 0;
+    margin-left: 10px;
 }
 .look-book-detail-video{
     max-height: 500px;
@@ -473,7 +461,9 @@ div.input_right_image.input_right_image_pass{
     display: flex;
     flex-wrap: wrap;
 }
-
+.look-book-block{
+    margin-bottom: 50px;
+}
 .look-book-item-detail_pic_col .look-book-item-little_pic_single_col:first-child{
     padding-bottom: 15px;
 }
@@ -483,6 +473,10 @@ div.input_right_image.input_right_image_pass{
 .card-block-look-book-detail-big_pic{
     display: flex;
     align-items: flex-start;
+}
+.look-book-card-content{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e6e8ed;;
 }
 .look-book-microcard-item-pic img{
     width: 90px;
@@ -500,6 +494,10 @@ div.input_right_image.input_right_image_pass{
 .look-book-microcard-item{
     border-bottom: 1px solid #e6e8ed;
     margin-bottom: 25px;
+}
+.look-book-microcard-item:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
 .h1-align-center{
@@ -527,14 +525,45 @@ div.input_right_image.input_right_image_pass{
     margin-bottom: 0;
     border-bottom: none;
 }
-.look-book-prev-next-big-block-item {
-    max-height: 490px;
+
+.look-book-prev-next-block{
     display: flex;
-    align-items: flex-start;
-  }
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e6e8ed;
+    border-top: 1px solid #e6e8ed;
+    margin-bottom: 50px;    
+}
+.look-book-prev-next-block .breadcrumbs-link:hover{
+    text-decoration: underline;
+}
+.look-book-prev-next-little-block-item{
+    display: flex;
+    align-items: center;
+    filter: grayscale(30%);
+}
+.look-book-prev-next-little-block-item:hover{
+    filter: grayscale(60%);
+    cursor: pointer;
+}
+
+.look-book-prev-next-little-block-item_link_left{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.look-book-prev-next-little-block-item_link_right{
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
 .look-book-prev-next-block-big{
     max-height: 490px;
     overflow: hidden;
+}
+.look-book-prev-next-big-block-item {
+    max-height: 490px;
+    filter: grayscale(30%);
 }
 .look-book-prev-next-big-block-item_img{
     width: 100%;
@@ -546,34 +575,31 @@ div.input_right_image.input_right_image_pass{
 }
 
 .look-book-prev-next-big-block-item_link{
-    width: 185px;
+    width: 190px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-.look-book-prev-next-big-block-item_link a, .look-book-prev-next-big-block-item_link i{
     font-size: 22px;
     color: #fff;
-    margin-bottom: 4px;
+}
+.look-book-prev-next-big-block-item{
+    filter: grayscale(30%);
 }
 .look-book-prev-next-big-block-item:hover{
-    filter: grayscale(50%);
+    filter: grayscale(60%);
 }
-.look-book-prev-next-big-block-item:hover .look-book-prev-next-big-block-item_link a, .look-book-prev-next-big-block-item_link i{
-    color: #fff;
-}
-.look-book-prev-next-big-block-item:hover .look-book-prev-next-big-block-item_link a{
+.look-book-prev-next-big-block-item:hover .look-book-prev-next-big-block-item_link-text{
     border-bottom: 2px solid #fff;
 }
+
 .look-book-microcard-title{
     color: black;
     font-size: 18px;
     display: block;
     margin-bottom: 10px;
 }
-
 /*\\\\Лукбук Детальная*/
 @media (max-width: 1200px){
     .look-book-microcard-card-buttons-item{
@@ -674,6 +700,12 @@ div.input_right_image.input_right_image_pass{
         max-width: 100%;
         width: 100%;
     }
+    .look-book-prev-next-block{
+        margin-bottom: 25px;
+    }
+    .look-book-block{
+        margin-bottom: -25px;
+    }
     .look-book-item-text{
         margin-bottom: 10px;
     }
@@ -690,6 +722,58 @@ div.input_right_image.input_right_image_pass{
     }
     .card-buttons.product-detail-buttons.look-book-microcard-card-buttons{
         margin-bottom: 0;
+    }
+    .look-book-prev-next-little-block-item .look-book-prev-next-little-block-item_link_left .breadcrumbs-link .breadcrumbs-link_text{
+        display: none;
+    }
+    .look-book-prev-next-little-block-item .look-book-prev-next-little-block-item_link_right .breadcrumbs-link .breadcrumbs-link_text{
+        display: none;
+    }
+    .look-book-prev-next-big-block-item:first-child{
+        padding-right: 7.5px;
+    }
+    .look-book-prev-next-big-block-item:last-child{
+        padding-left: 7.5px;
+    }
+    .look-book-prev-next-big-block-item_link-text .breadcrumbs-link_text{
+        display: none;
+    }
+    .look-book-prev-next-big-block-item_link i.breadcrumbs-icon-mrgleft, .look-book-prev-next-big-block-item_link i.breadcrumbs-icon-mrgright{
+        margin: 0;
+    }
+
+
+    /*aga aga a kak inache?*/
+    .look-book-detail-item{
+        margin-top: 0;
+    }
+    /*kogda 2 kolonki*/
+    .look-book-detail-item .look-book-item-little_pic:first-child{
+        padding-right: 7.5px;
+    }
+    .look-book-detail-item .look-book-item-little_pic:last-child{
+        padding-left: 7.5px;
+    }
+    /*kogda 2 kartinki v kolonke sleva i 1 sprava */
+    .look-book-detail-item.look-book-detail-item_big_pic_first .look-book-item-detail_pic_col:last-child{
+        padding-left: 7.5px;
+    }
+    .look-book-detail-item.look-book-detail-item_big_pic_first .look-book-item-detail_pic_col:first-child{
+        padding-right: 7.5px;
+    }
+    /*kogda 2 kartinki v kolonke sprava i 1 sleva */
+    .look-book-detail-item.look-book-detail-item_big_pic_last .look-book-item-detail_pic_col:first-child{
+        padding-right: 7.5px;
+    }
+    .look-book-detail-item.look-book-detail-item_big_pic_last .look-book-item-detail_pic_col:last-child{
+        padding-left: 7.5px;
+    }
+    /*dlya 2 kartinok v kolonke*/
+    .look-book-item-detail_pic_col .look-book-item-little_pic_single_col:first-child{
+        padding-bottom: 7.5px;
+    }
+    .look-book-item-detail_pic_col .look-book-item-little_pic_single_col:last-child{
+        padding-top: 7.5px;
     }
 }
 
