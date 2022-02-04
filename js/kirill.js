@@ -4,15 +4,29 @@ $( function() {
 } );
 
 $('.js-add-extra-telephone').click(function(){
-    let elem = $('.js-phone-item');
+    var elem = $('.js-phone-item');
     $(".telephone-list-block").append($(".telephone-field:last").clone(true, true));
     $(".telephone-field:last").attr('name', 'phone'+ (elem.length + 1))
+    $(".js-remove-extra-telephone.hidden").removeClass("hidden");
 });
 
 $('.js-remove-extra-telephone').click(function(){
-    let elem = $('.js-phone-item');
+    var elem = $('.js-phone-item');
     if(elem.length > 1)
         $(".telephone-field:last").remove(".telephone-field:last");
+    if(elem.length == 2)
+        $(this).addClass("hidden");
+});
+
+$('.js-add-extra-adress').click(function(){
+    $(".form-add-adress").removeClass("hidden");
+    $(this).addClass("hidden");
+    $('.js-remove-extra-adress').removeClass("hidden");
+});
+$('.js-remove-extra-adress').click(function(){
+    $(".form-add-adress").addClass("hidden");
+    $(this).addClass("hidden");
+    $(".js-add-extra-adress").removeClass("hidden");
 });
 
 function initSelSexForm() {

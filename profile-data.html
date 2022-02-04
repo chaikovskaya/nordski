@@ -1349,28 +1349,37 @@
                                         </select>
                                     </div>
 
-                                    <div class="field field-mrgfix js-form-validate-field col-md-6 col-12">
-                                        <label class="field-label-common field-label-common-mrgfix" for="telephone">Телефон</label>
-                                        <input class="input input_modified js-mask-phone" type="tel" placeholder="" id="telephone" name="telephone" required />
-                                    </div>   
+                                    <div class="telephone-list-block col-lg-6 col-md-12">
+                                        <label class="field-label-common field-label-common-mrgfix">Телефон</label>
+                                        <div class="field field-mrgfix field-mrgfix js-form-validate-field telephone-field">
+                                            <input class="input input_modified js-mask-phone js-phone-item" type="tel" placeholder="" name="phone1" required />
+                                        </div>
+                                    </div>  
                                 </div>
 
-                                <div class="js-add-extra-telephone">
-                                    <div>+</div>
-                                    <div class="add-extra-telephone-text">Добавить еще номер</div>
+                                <div class="add-remove-extra-telephone-block">
+                                    <div class="js-add-extra-telephone">
+                                        <div>+</div>
+                                        <div class="add-extra-telephone-text">Добавить еще номер</div>
+                                    </div>
+                                    <div class="js-remove-extra-telephone hidden">
+                                        <div>-</div>
+                                        <div class="add-extra-telephone-text">Удалить номер</div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="buttons_on_line_outer">
+                                <div class="btn_save col-12">
+                                    <button class="btn_save-link button" href="javascript:;">Сохранить изменения</button>
+                                </div>
+    
+                                <div class="btn_abort col-12">
+                                    <button class="btn_abort-link button button_light" href="javascript:;">Отмена</button>
+                                </div>
+                            </div>
+
                         </form>
-
-                        <div class="buttons_on_line_outer">
-                            <div class="btn_save col-12">
-                                <a class="btn_save-link button" href="javascript:;" >Сохранить изменения</a>
-                            </div>
-
-                            <div class="btn_abort col-12">
-                                <a class="btn_abort-link button button_light " href="javascript:;">Отмена</a>
-                            </div>
-                        </div>
 
                     </div>
                 </div>

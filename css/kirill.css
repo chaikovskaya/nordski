@@ -1,3 +1,6 @@
+.hidden{
+    display: none !important;
+}
 .add-remove-extra-telephone-block{
     display: flex;
     justify-content: left;
@@ -23,6 +26,38 @@
 }
 
 .add-extra-telephone-text{
+    margin-left: 5px;
+    text-underline-offset: 3px;
+    text-decoration: dotted;
+    text-decoration-line:underline;
+}
+
+.add-remove-extra-adress-block{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.js-add-extra-adress{
+    font-size: 17px;
+    max-width: 170px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: left;
+}
+.js-remove-extra-adress{    
+    font-size: 17px;
+    max-width: 170px;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 25px;
+}
+
+.js-add-extra-adress:hover, .js-remove-extra-adress:hover{
+    cursor:pointer;
+    color: #00597d;
+}
+
+.add-extra-adress-text{
     margin-left: 5px;
     text-underline-offset: 3px;
     text-decoration: dotted;
