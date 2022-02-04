@@ -634,8 +634,95 @@ div.input_right_image.input_right_image_pass{
     font-size: 18px;
     display: block;
     margin-bottom: 10px;
+    grid-auto-columns: minmax(20%, 80vmax);
 }
 /*\\\\Лукбук Детальная*/
+
+/*для партнеров*/
+.turbo-mozaika{
+    display: grid;
+    grid-template-columns: [col1-start] auto [col2-start] auto [col3-start] auto [col4-start] auto [col5-start] auto [col5-end] auto ;
+    grid-template-rows: [row1-start] auto [row2-start] auto[row3-start] auto [row4-start] auto [row4-end] auto;
+    gap: 10px;
+}
+.turbo-mozaika-img_block .product-detail-gallery-link{
+    display: initial;
+}
+.turbo-mozaika-img_block{
+    width: 100%;
+}
+.turbo-mozaika-img_block:hover{
+    filter: grayscale(60%);
+}
+
+.turbo-mozaika-el1{
+    grid-column: col1-start;
+    grid-row: row1-start;
+}
+.turbo-mozaika-el2{
+    grid-column: col1-start;
+    grid-row: row2-start / row4-start;
+}
+.turbo-mozaika-el3{
+    grid-column: col1-start;
+    grid-row: row4-start;
+}
+.turbo-mozaika-el4{
+    grid-column: col2-start;
+    grid-row: row1-start;
+}
+.turbo-mozaika-el5{
+    grid-column: col2-start;
+    grid-row: row2-start;
+}
+.turbo-mozaika-el6{
+    grid-column: col2-start;
+    grid-row: row3-start / row4-end;
+}
+.turbo-mozaika-el7{
+    grid-column: col3-start;
+    grid-row: row1-start / row3-start;
+}
+.turbo-mozaika-el8{
+    grid-column: col3-start;
+    grid-row: row3-start;
+}
+.turbo-mozaika-el9{
+    grid-column: col3-start;
+    grid-row: row4-start;
+}
+.turbo-mozaika-el10{
+    grid-column: col4-start;
+    grid-row: row1-start;
+}
+.turbo-mozaika-el11{
+    grid-column: col4-start;
+    grid-row: row2-start / row4-start;
+}
+.turbo-mozaika-el12{
+    grid-column: col4-start;
+    grid-row: row4-start;
+}
+.turbo-mozaika-el13{
+    grid-column: col5-start;
+    grid-row: row1-start;
+}
+.turbo-mozaika-el14{
+    grid-column: col5-start;
+    grid-row: row2-start;
+}
+.turbo-mozaika-el15{
+    grid-column: col5-start;
+    grid-row: row3-start;
+}
+.turbo-mozaika-el16{
+    grid-column: col5-start;
+    grid-row: row4-start;
+}
+
+
+
+/*\\\для партнеров*/
 @media (max-width: 1200px){
     .look-book-microcard-card-buttons-item{
         flex-wrap: wrap;
