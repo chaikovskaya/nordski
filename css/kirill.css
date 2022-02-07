@@ -639,6 +639,11 @@ div.input_right_image.input_right_image_pass{
 /*\\\\Лукбук Детальная*/
 
 /*для партнеров*/
+.block-title-center{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+}
 .turbo-mozaika{
     display: grid;
     grid-template-columns: [col1-start] auto [col2-start] auto [col3-start] auto [col4-start] auto [col5-start] auto [col5-end] auto ;

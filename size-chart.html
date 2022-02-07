@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Личный кабинет. Мои заказы. Nordski</title>
+    <title>Таблицы и размеры. Nordski</title>
 
     <link rel="stylesheet" href="./libs/fontawesome-5.15.4/css/all.css" />
     <link rel="stylesheet" href="./libs/fontawesome/css/font-awesome.min.css" />
@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="./libs/tipped/css/tipped.css" />
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/kirill.css" />
  </head>
 
 <body>
@@ -1233,145 +1232,340 @@
             }">
                 <ul class="breadcrumbs-list js-expand-block">
                     <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="/">Главная<i class="breadcrumbs-icon fa fa-angle-right"></i></a></li>
-                    <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="./look-book.html">Партнерам</a></li>
+                    <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Покупателям<i class="breadcrumbs-icon fa fa-angle-right"></i></a></li>
+                    <li class="breadcrumbs-item">Таблицы и размеры</li>
                     <li class="breadcrumbs-item breadcrumbs-item_more"><a class="breadcrumbs-link js-expand-link" href="javascript:;">...</a></li>
                 </ul>
             </div>
 
             <div class="container">
-                <div class="block-title-center">
-                    <h2 class="h2">Выгодное сотрудничество</h2>
-                    <div>
-                        Для экипировочных центров, мультибрендовых и сетевых спортивных магазинов, магазинов термобелья и аксессуаров
-                    </div>
-                </div>
-                <!--TOP SLIDER-->  
-                <div class="lookbook-wrapper swiper js-slider-lookbook">
-                    <ul class="lookbook-list swiper-wrapper">
-                        <li class="lookbook-item swiper-slide" data-slider-index="0">
-                            <div class="lookbook-block">
-                                <a class="lookbook-link" href="#">
-                                    <img class="lookbook-img" src="./images/for-partners/top_slider1.png" alt="" />
-                                </a>
+
+                <div class="row">
+                    <aside class="col-lg-3" data-sticky-container>
+                        <div class="sidebar-menu js-fix-sticky" data-sticky-wrap>
+                            <span class="blog-detail-side-title blog-detail-side-title_category">Покупателям</span>
+                            <ul class="sidebar-menu-list">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-link" href="#">Оплата и возврат</a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-link" href="#">Доставка</a>
+                                </li>
+                                <li class="sidebar-menu-item sidebar-menu-item_active">
+                                    <a class="sidebar-menu-link" href="#">Таблицы и размеры</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-menu-mob JS-MobileMenu" data-mobilemenu="{
+                                'classActive': 'open',
+                                'classShow': 'mob-menu-show',
+                                'classElementActive': 'mob-menu_active'
+                            }">
+                            <a class="catalog-link-mob button button_dark JS-MobileMenu-Burger" href="javascript:;">
+                                Покупателям<svg class="mob-menu-switcher-icon"><use xlink:href="#burger-icon"></use></svg>
+                            </a>
+                            <div class="mob-block JS-MobileMenu-Dropdown">
+                                <div class="mob-close-panel mob-close-panel_simple">
+                                    <span class="catalog-name-mob">Покупателям</span>
+                                    <a href="javascript:;" class="mob-close JS-MobileMenu-Close"><i class="mob-close-icon las la-times"></i></a>
+                                </div>
+                                <div class="mob-nav">
+                                    <ul class="mob-list">
+                                        <li class="mob-list-item">
+                                            <a class="mob-list-link" href="#">Оплата и возврат</a>
+                                        </li>
+                                        <li class="mob-list-item">
+                                            <a class="mob-list-link" href="#">Доставка</a>
+                                        </li>
+                                        <li class="mob-list-item mob-list-item_active">
+                                            <a class="mob-list-link" href="#">Таблицы и размеры</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </li>
-                        <li class="lookbook-item swiper-slide" data-slider-index="1">
-                            <div class="lookbook-block">
-                                <a class="lookbook-link" href="#">
-                                    <img class="lookbook-img" src="./images/for-partners/top_slider2.png" alt="" />
-                                </a>
-                            </div>
-                        </li>
-                        <li class="lookbook-item swiper-slide" data-slider-index="2">
-                            <div class="lookbook-block">
-                                <a class="lookbook-link" href="#">
-                                    <img class="lookbook-img" src="./images/for-partners/top_slider3.png" alt="" />
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="lookbook-slider-panel slider-panel">
-                        <span class="counter">
-                            <span class="counter-number js-slider-current"></span>
-                            <span class="counter-total">/<span class="counter-total-number js-slider-amount"></span></span>
-                        </span>
-                        <div class="swiper-pagination js-slider-pagination"></div>
-                        <a class="slider-more link" href="javascript:;">Смотреть все</a>
-                        <div class="slider-nav">
-                            <div class="slider-button js-slider-prev">
-                                <i class="slider-button-icon fa fa-angle-left"></i>
-                            </div>
-                            <div class="slider-button js-slider-next">
-                                <i class="slider-button-icon fa fa-angle-right"></i>
+                            <div class="mob-menu-decor JS-MobileMenu-Close"></div>
+                        </div>
+                    </aside>
+                    <div class="col-lg-9">
+                        <h1>Таблицы и размеры</h1>
+
+                        <h2>Одежда</h2>
+                        <div class="size-chart-item">
+                            <div class="tabs-simple JS-Tab-Card" data-tab="{
+                                 'classSwitcherActive': 'tabs-simple-menu-item_active',
+                                 'classItemActive': 'tabs-simple-item_active'
+                            }">
+                                <ul class="tabs-simple-menu">
+                                    <li class="tabs-simple-menu-item tabs-simple-menu-item_active JS-Tab-Switcher JS-Accordion-Card" data-accordion="{'classActive': 'tabs-simple-menu-item_active'}" data-accordion-id="tabs-simple-menu">
+                                        <a class="tabs-simple-menu-link JS-Accordion-Switcher" href="javascript:;">
+                                            Мужчины
+                                            <i class="tabs-simple-menu-icon fa fa-angle-down"></i>
+                                        </a>
+                                        <div class="tabs-simple-item JS-Tab-Item JS-Accordion-Menu">
+                                            <div class="size-chart-info">
+                                                <div class="size-chart-grid">
+                                                    <div class="js-custom-scroll">
+                                                        <table class="size-chart-table table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="size-chart-table-size" rowspan="2">Размер</th>
+                                                            <th class="table-col">42</th>
+                                                            <th class="table-col">44</th>
+                                                            <th class="table-col">46</th>
+                                                            <th class="table-col">48</th>
+                                                            <th class="table-col">50</th>
+                                                            <th class="table-col">52</th>
+                                                            <th class="table-col">54</th>
+                                                            <th class="table-col">56</th>
+                                                            <th class="table-col">58</th>
+                                                            <th class="table-col">60</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="table-col">2XS</th>
+                                                            <th class="table-col">XS</th>
+                                                            <th class="table-col">S</th>
+                                                            <th class="table-col">M</th>
+                                                            <th class="table-col">L</th>
+                                                            <th class="table-col">XL</th>
+                                                            <th class="table-col">2XL</th>
+                                                            <th class="table-col">3XL</th>
+                                                            <th class="table-col">4XL</th>
+                                                            <th class="table-col">5XL</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="size-chart-table-size">Рост, см</td>
+                                                            <td class="table-col">164-166</td>
+                                                            <td class="table-col">170-172</td>
+                                                            <td class="table-col">176-178</td>
+                                                            <td class="table-col">180-182</td>
+                                                            <td class="table-col">180-183</td>
+                                                            <td class="table-col">185-187</td>
+                                                            <td class="table-col">188-190</td>
+                                                            <td class="table-col">188-191</td>
+                                                            <td class="table-col">188-191</td>
+                                                            <td class="table-col">188-191</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="size-chart-table-size">Обхват груди, см</td>
+                                                            <td class="table-col">86-90</td>
+                                                            <td class="table-col">91-94</td>
+                                                            <td class="table-col">95-98</td>
+                                                            <td class="table-col">99-102</td>
+                                                            <td class="table-col">103-106</td>
+                                                            <td class="table-col">107-110</td>
+                                                            <td class="table-col">111-114</td>
+                                                            <td class="table-col">115-118</td>
+                                                            <td class="table-col">119-122</td>
+                                                            <td class="table-col">123-126</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="size-chart-table-size">Обхват талии, см</td>
+                                                            <td class="table-col">74-78</td>
+                                                            <td class="table-col">79-82</td>
+                                                            <td class="table-col">83-86</td>
+                                                            <td class="table-col">87-90</td>
+                                                            <td class="table-col">91-94</td>
+                                                            <td class="table-col">95-98</td>
+                                                            <td class="table-col">99-102</td>
+                                                            <td class="table-col">103-107</td>
+                                                            <td class="table-col">108-111</td>
+                                                            <td class="table-col">112-115</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="size-chart-table-size">Обхват бедер, см</td>
+                                                            <td class="table-col">93-95</td>
+                                                            <td class="table-col">96-98</td>
+                                                            <td class="table-col">99-102</td>
+                                                            <td class="table-col">103-105</td>
+                                                            <td class="table-col">106-109</td>
+                                                            <td class="table-col">110-112</td>
+                                                            <td class="table-col">113-116</td>
+                                                            <td class="table-col">117-120</td>
+                                                            <td class="table-col">121-124</td>
+                                                            <td class="table-col">125-128</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                    </div>
+                                                </div>
+                                                <div class="size-chart-img">
+                                                    <img src="./images/size-chart/size-chart-man.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tabs-simple-menu-item JS-Tab-Switcher JS-Accordion-Card" data-accordion="{'classActive': 'tabs-simple-menu-item_active'}" data-accordion-id="tabs-simple-menu">
+                                        <a class="tabs-simple-menu-link JS-Accordion-Switcher" href="javascript:;">
+                                            Женщины
+                                            <i class="tabs-simple-menu-icon fa fa-angle-down"></i>
+                                        </a>
+                                        <div class="tabs-simple-item JS-Tab-Item JS-Accordion-Menu">
+                                            <div class="size-chart-info">
+                                                <div class="size-chart-grid">
+                                                </div>
+                                                <div class="size-chart-img">
+                                                    <img src="./images/size-chart/size-chart-woman.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tabs-simple-menu-item JS-Tab-Switcher JS-Accordion-Card" data-accordion="{'classActive': 'tabs-simple-menu-item_active'}" data-accordion-id="tabs-simple-menu">
+                                        <a class="tabs-simple-menu-link JS-Accordion-Switcher" href="javascript:;">
+                                            Дети
+                                            <i class="tabs-simple-menu-icon fa fa-angle-down"></i>
+                                        </a>
+                                        <div class="tabs-simple-item JS-Tab-Item JS-Accordion-Menu">
+                                            <div class="size-chart-info">
+                                                <div class="size-chart-grid">
+                                                </div>
+                                                <div class="size-chart-img">
+                                                    <img src="./images/size-chart/size-chart-cild.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+
+                        <h2>Размерная сетка перчаток</h2>
+                        <div class="size-chart-item">
+                            <div class="tabs-simple JS-Tab-Card" data-tab="{
+                                 'classSwitcherActive': 'tabs-simple-menu-item_active',
+                                 'classItemActive': 'tabs-simple-item_active'
+                            }">
+                                <ul class="tabs-simple-menu">
+                                    <li class="tabs-simple-menu-item tabs-simple-menu-item_active JS-Tab-Switcher JS-Accordion-Card" data-accordion="{'classActive': 'tabs-simple-menu-item_active'}" data-accordion-id="tabs-simple-menu">
+                                        <a class="tabs-simple-menu-link JS-Accordion-Switcher" href="javascript:;">
+                                            Взрослая коллекция
+                                            <i class="tabs-simple-menu-icon fa fa-angle-down"></i>
+                                        </a>
+                                        <div class="tabs-simple-item JS-Tab-Item JS-Accordion-Menu">
+                                            <div class="size-chart-info size-chart-info_modified">
+                                                <div class="size-chart-grid">
+                                                    <div class="js-custom-scroll">
+                                                        <table class="size-chart-table table table_simple">
+                                                            <thead>
+                                                            <tr>
+                                                                <th class="size-chart-table-size">Размер</th>
+                                                                <th class="table-col">2XS</th>
+                                                                <th class="table-col">XS</th>
+                                                                <th class="table-col">S</th>
+                                                                <th class="table-col">M</th>
+                                                                <th class="table-col">L</th>
+                                                                <th class="table-col">XL</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td class="size-chart-table-size">Длина ладони, см</td>
+                                                                <td class="table-col">164-166</td>
+                                                                <td class="table-col">170-172</td>
+                                                                <td class="table-col">176-178</td>
+                                                                <td class="table-col">180-182</td>
+                                                                <td class="table-col">180-183</td>
+                                                                <td class="table-col">185-187</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="size-chart-img">
+                                                    <img src="./images/size-chart/size-chart-gloves.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tabs-simple-menu-item JS-Tab-Switcher JS-Accordion-Card" data-accordion="{'classActive': 'tabs-simple-menu-item_active'}" data-accordion-id="tabs-simple-menu">
+                                        <a class="tabs-simple-menu-link JS-Accordion-Switcher" href="javascript:;">
+                                            Детская коллекция
+                                            <i class="tabs-simple-menu-icon fa fa-angle-down"></i>
+                                        </a>
+                                        <div class="tabs-simple-item JS-Tab-Item JS-Accordion-Menu">
+                                            <div class="size-chart-info size-chart-info_modified">
+                                                <div class="size-chart-grid">
+                                                </div>
+                                                <div class="size-chart-img">
+                                                    <img src="./images/size-chart/size-chart-gloves.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h2>Размерная сетка шапок и повязок</h2>
+                        <div class="size-chart-item">
+                            <div class="tabs-simple JS-Tab-Card" data-tab="{
+                                 'classSwitcherActive': 'tabs-simple-menu-item_active',
+                                 'classItemActive': 'tabs-simple-item_active'
+                            }">
+                                <ul class="tabs-simple-menu">
+                                    <li class="tabs-simple-menu-item tabs-simple-menu-item_active JS-Tab-Switcher JS-Accordion-Card" data-accordion="{'classActive': 'tabs-simple-menu-item_active'}" data-accordion-id="tabs-simple-menu">
+                                        <a class="tabs-simple-menu-link JS-Accordion-Switcher" href="javascript:;">
+                                            Взрослая коллекция
+                                            <i class="tabs-simple-menu-icon fa fa-angle-down"></i>
+                                        </a>
+                                        <div class="tabs-simple-item JS-Tab-Item JS-Accordion-Menu">
+                                            <div class="size-chart-info size-chart-info_modified">
+                                                <div class="size-chart-grid">
+                                                    <div class="js-custom-scroll">
+                                                        <table class="size-chart-table table table_simple">
+                                                            <thead>
+                                                            <tr>
+                                                                <th class="size-chart-table-size">Размер</th>
+                                                                <th class="table-col">ONE SIZE</th>
+                                                                <th class="table-col">S</th>
+                                                                <th class="table-col">M</th>
+                                                                <th class="table-col">L</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="size-chart-table-size">Обхват головы, см</td>
+                                                                    <td class="table-col">54-58</td>
+                                                                    <td class="table-col">53,5-54,5</td>
+                                                                    <td class="table-col">54,5-55,5</td>
+                                                                    <td class="table-col">57,5-58,5</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="size-chart-img">
+                                                    <img src="./images/size-chart/size-chart-cap.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tabs-simple-menu-item JS-Tab-Switcher JS-Accordion-Card" data-accordion="{'classActive': 'tabs-simple-menu-item_active'}" data-accordion-id="tabs-simple-menu">
+                                        <a class="tabs-simple-menu-link JS-Accordion-Switcher" href="javascript:;">
+                                            Детская коллекция
+                                            <i class="tabs-simple-menu-icon fa fa-angle-down"></i>
+                                        </a>
+                                        <div class="tabs-simple-item JS-Tab-Item JS-Accordion-Menu">
+                                            <div class="size-chart-info size-chart-info_modified">
+                                                <div class="size-chart-grid">
+                                                </div>
+                                                <div class="size-chart-img">
+                                                    <img src="./images/size-chart/size-chart-cap.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="turbo-mozaika">
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el1">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/1.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/1.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el2">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/6.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image " src="./images/for-partners/6.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el3">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/10.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/10.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el4">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/2.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/2.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el5">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/7.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/7.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el6">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/11.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/11.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el7">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/3.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/3.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el8">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/12.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/12.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el9">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/13.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/13.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el10">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/4.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/4.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el11">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/8.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/8.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el12">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/14.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/14.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el13">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/5.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/5.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el14">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/9.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/9.png">.
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el15">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/16.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/16.png">
-                        </a>
-                    </div>
-                    <div class="turbo-mozaika-img_block turbo-mozaika-el16">
-                        <a class="product-detail-gallery-link js-popup-gallery" href="javascript:;" data-src="./images/for-partners/15.png" data-fancybox="gallery">
-                            <img class="full-cover-block-image" src="./images/for-partners/15.png">
-                        </a>
-                    </div>
-                </div>
             </div>
-            <!--\\TOP SLIDER-->
+
         </main>
 
         <footer class="footer">
@@ -1685,7 +1879,5 @@
     <script src="./js/JSC.Quantity.js"></script>
 
     <script src="./js/main.js"></script>
-    <script src="./js/datepicker-ru.js"></script>
-    <script src="./js/kirill.js"></script>
 </body>
 </html>
