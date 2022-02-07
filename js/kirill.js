@@ -37,6 +37,7 @@ function initSelSexForm() {
     });
 }
 
+
 var sliderClubPurchaseProducts;
 function initSliderClubPurchaseProducts() {
     jQuery('.js-slider-ClubPurchase-products').each(function() {
@@ -118,8 +119,80 @@ function initAjaxMoreLookBook() {
     });
 }
 
+var mozaic = '';
+function initMozaic() {
+    $('.masonry-mozaika').each(function() {
+        mozaic = $(this).masonry({
+            itemSelector: '.masonry-mozaika-item',
+            columnWidth: '.masonry-mozaika-item',
+            percentPosition: true
+        });
+    });
+}
+function reInitMozaic() {
+    if (mozaic != '') {
+        $('.masonry-mozaika').masonry('destroy');
+    }
+}
+/*MAP*/
+$(document).ready(function () {
+    function regionItemHover(regionId, hover) {
+      (hover === true) ? document.querySelector('.js-region-item[data-region="'+regionId+'"]').classList.add('region-item-hover') : document.querySelector('.js-region-item[data-region="'+regionId+'"]').classList.remove('region-item-hover');
+    }
+    
+    function regionBaloonHover(regionId, hover) {
+      var items = document.querySelectorAll('.js-region-baloon[data-region="'+regionId+'"]');
+      for (var i = 0; i < items.length; i++) {
+        (hover === true) ? items[i].classList.add('region-baloon-open-hover') : items[i].classList.remove('region-baloon-open-hover');
+      }
+    }
+  
+    function regionBaloonShow(regionId, show) {
+      var regionBaloon = document.querySelector('.js-region-baloon-item[data-region="'+regionId+'"]');
+      if (!regionBaloon) return;
+      var regionArea = document.querySelector('.js-region-item[data-region="'+regionId+'"]');
+      if (show) {
+        var mapRect = document.querySelector('.js-region-map').getBoundingClientRect();
+        var baloonRect = regionArea.getBoundingClientRect();
+        var center = {
+          x: (baloonRect.left - mapRect.left) + baloonRect.width / 2,
+          y: (baloonRect.top - mapRect.top) + baloonRect.height / 2 - 10
+        }
+        regionBaloon.style.top = center.y + 'px';
+        regionBaloon.style.left = center.x + 'px';
+        regionBaloon.classList.add('banners-fon-list__baloon-active');
+      } else {
+        regionBaloon.classList.remove('banners-fon-list__baloon-active');
+      }
+    }
+    
+    function regionLinesHide(regionId, hide) {
+      if (regionId == 'russia') {
+        (hide === true) ? document.querySelector('.js-region-lines').classList.add('region-lines-hide') : document.querySelector('.js-region-lines').classList.remove('region-lines-hide');
+      }
+    }
+  
+    $('.js-region-baloon').hover(
+      function() {
+        var regionId = $(this).attr('data-region');
+        regionItemHover(regionId, true);
+        regionBaloonHover(regionId, true);
+        regionBaloonShow(regionId, true);
+        regionLinesHide(regionId, true);
+      }, function() {
+        var regionId = $(this).attr('data-region');
+        regionItemHover(regionId, false);
+        regionBaloonHover(regionId, false);
+        regionBaloonShow(regionId, false);
+        regionLinesHide(regionId, false);
+      }
+    );
+  });
+
 $(document).ready(function () {
     initSelSexForm();
     initSliderClubPurchaseProducts();
     initAjaxMoreLookBook();
+    initMozaic();
+    reInitMozaic()
 });
