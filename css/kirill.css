@@ -923,6 +923,13 @@ div.input_right_image.input_right_image_pass{
     .minibanner-variant{
         height: 50px;
     }
+
+    .for-partners-slider-lookbook-img{
+        height: 400px;
+    }
+    .for-partners-slider ul .swiper-slide-next, .for-partners-slider ul .swiper-slide-prev{
+        height: 300px;
+    }
 }
 @media (max-width: 720px){
     .club-banner-detail{
@@ -1038,6 +1045,13 @@ div.input_right_image.input_right_image_pass{
     }
     .look-book-item-detail_pic_col .look-book-item-little_pic_single_col:last-child{
         padding-top: 7.5px;
+    }
+
+    .for-partners-slider-lookbook-img{
+        height: 300px;
+    }
+    .for-partners-slider ul .swiper-slide-next, .for-partners-slider ul .swiper-slide-prev{
+        height: 200px;
     }
 }
 
