@@ -387,12 +387,26 @@ div.input_right_image.input_right_image_pass{
 .club-feedback-info{
     max-width: 390px;
 }
+
+.for-partners-feedback-detail{
+    margin-top: 50px;
+    max-width: 550px;
+}
+.for-partners-feedback-info{
+    max-width: 550px;
+}
 .club-purchase-feedback-container{
     position: relative;
 }
+
 .feedback-form-img {
     position: absolute;
     transform: translateX(50%);
+}
+.feedback-form-img-for-partners{
+    position: absolute;
+    transform: translateX(90%);
+    bottom: 0;
 }
 
 /*ЛукБук*/
@@ -868,10 +882,23 @@ div.input_right_image.input_right_image_pass{
     .feedback-form-img {
         display: none;
     }
+    .feedback-form-img-for-partners{
+        transform: translateX(60%);
+    }
 }
 
 
 @media (max-width: 992px){
+    .feedback-form-img-for-partners{
+        transform: translateX(5%);
+        height: 70%;
+    }
+    .for-partners-feedback-detail{
+        max-width: 400px;
+    }
+    .for-partners-feedback-info{
+        max-width: 400px;
+    }
     .card-block-look-book-detail-big_pic{
         justify-content: center;
         margin-bottom: 30px;
@@ -932,6 +959,17 @@ div.input_right_image.input_right_image_pass{
     }
 }
 @media (max-width: 720px){
+    .feedback-form-img-for-partners{
+        display: none;
+    }
+    .for-partners-feedback-detail{
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .for-partners-feedback-info{
+        max-width: 100%;
+    }
     .club-banner-detail{
         width: 100%;
     }
