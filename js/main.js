@@ -1419,29 +1419,34 @@ function initSliderRange() {
         var min = Number($(this).find('.min-price').attr('data-value'));
         var max = Number($(this).find('.max-price').attr('data-value'));
 
-        var price_id = $(this).attr('data-code');
+        var curMin = Number($(this).find('.min-price').attr('value'));
+        var curMax = Number($(this).find('.max-price').attr('value')) || max;
+
+        //var price_id = $(this).attr('data-code');
 
         $track.slider({
             range: true,
             min: min,
             max: max,
             drag: true,
-            values: [min, max],
+            values: [curMin, curMax],
             classes: {
                 "ui-slider-handle": "slider-range-button",
                 "ui-slider-range": "slider-range-quantity"
             },
             slide: function (event, ui) {
-                $("input#minCost_" + price_id).val(ui.values[0]);
-                $("input#maxCost_" + price_id).val(ui.values[1]);
-
-                $('#minCost_' + price_id).trigger('change');
+                if (ui.values[0] <= min) ui.values[0] = '';
+                if (ui.values[1] >= max) ui.values[1] = '';
+                $element.find('.js-slider-range-min').val(ui.values[0]);
+                $element.find('.js-slider-range-max').val(ui.values[1]);
+                $element.find('.js-slider-range-min').trigger('keyup');
             },
             stop: function (event, ui) {
-                $("input#minCost_" + price_id).val(ui.values[0]);
-                $("input#maxCost_" + price_id).val(ui.values[1]);
-
-                $('#minCost_' + price_id).trigger('change');
+                if (ui.values[0] <= min) ui.values[0] = '';
+                if (ui.values[1] >= max) ui.values[1] = '';
+                $element.find('.js-slider-range-min').val(ui.values[0]);
+                $element.find('.js-slider-range-max').val(ui.values[1]);
+                $element.find('.js-slider-range-min').trigger('keyup');
             }
         });
     });
