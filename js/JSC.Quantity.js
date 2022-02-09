@@ -54,6 +54,7 @@
     $numberValue --;
     if ($numberValue > this.minNumber) {
       this.$number.val($numberValue);
+      this.$number[0].dispatchEvent(new Event("change"));
     }
   };
 
@@ -63,6 +64,7 @@
     $numberValue ++;
     if ($numberValue <= this.maxNumber) {
       this.$number.val($numberValue);
+      this.$number[0].dispatchEvent(new Event("change"));
     }
   };
   /*--/Quantity--*/
