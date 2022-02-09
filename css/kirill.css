@@ -1,3 +1,16 @@
+.black{
+    color: #282829;
+}
+
+.dark-blue{
+    color: #025077;
+}
+.blue{
+    color: #007aff;
+}
+.light-blue{
+    color: #108ec8;
+}
 .hidden{
     display: none !important;
 }
@@ -822,7 +835,9 @@ div.input_right_image.input_right_image_pass{
     font-size: 50px;
     font-weight: 600;
     line-height: 0;
-    color: #e6e8ed;
+
+    color: transparent;
+    -webkit-text-stroke: 1px #2B7EC6;
 
     height: 80%;
     margin: auto 0;
@@ -830,10 +845,6 @@ div.input_right_image.input_right_image_pass{
     align-items: center;
     padding: 0px 19px;
 
-    text-shadow: 1px 0 1px #282829, 
-    0 1px 1px #282829, 
-    -1px 0 1px #282829, 
-    0 -1px 1px #282829;
     margin-right: 20px;
 }
 .minibanner-variant{
@@ -875,6 +886,57 @@ div.input_right_image.input_right_image_pass{
     position: relative;
     box-sizing: border-box;
 }
+
+.switch-label-gray{
+    color: #7d7d7d;
+}
+.switch-label.switch-label-gray a{
+    color: #7d7d7d;
+}
+.like_h3{
+    font-size: 14px;
+    font-weight: 700;
+    color: #282829;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.profile-data-group-form_segment{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dcdee6;
+    margin-bottom: 50px;
+}
+.text-low_visibility{
+    color: #b1b3b9;
+}
+/*order*/
+.input_form_comment{
+    height: 210px;
+    resize: none;
+}
+.content-text-block{
+    font-family: 'OpenSans', sans-serif;
+    margin-bottom: 40px;
+}
+.radio-multilabel{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 300px;
+    font-size: 18px;
+}
+input[type="radio"]:checked + label {
+    color: #282829;
+}
+input[type="radio"] + label:hover {
+    cursor: pointer;
+}
+.delivery-list-order .delivery-list-item{
+    margin-bottom: 30px;
+} 
+.delivery-cost{
+    margin-bottom: 11px;
+    font-weight: 700;
+    color: #1c1c1c;
+}
 @media (max-width: 1200px){
     .look-book-microcard-card-buttons-item{
         flex-wrap: wrap;
@@ -886,7 +948,6 @@ div.input_right_image.input_right_image_pass{
         transform: translateX(60%);
     }
 }
-
 
 @media (max-width: 992px){
     .feedback-form-img-for-partners{
@@ -967,6 +1028,19 @@ div.input_right_image.input_right_image_pass{
         margin-top: 50px;
         text-align: center;
     }
+    .feedback-detail-club-purchase{
+        min-height: 0;
+        max-width: none;
+        margin-left: 0;
+
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        text-align: center;
+        background-image: none;
+    }
+
     .for-partners-feedback-info{
         max-width: 100%;
     }
