@@ -1004,8 +1004,10 @@ function openPopupFastbuy($element) {
         $element = $('.js-popup-fastbuy');
     }
 
+    var url = $element.data('src') + '?id=' + $element.attr('data-id') + '&quantity=' + $element.attr('data-quantity');
+
     $.fancybox.open({
-        src  : $element.data('src'),
+        src  : url,
         type : 'ajax',
         toolbar  : false,
         smallBtn : true,
