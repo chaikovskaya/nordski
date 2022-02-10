@@ -7864,7 +7864,7 @@ label.form-error {
     display: none; }
 
 .delivery-block {
-  height: 100%;
+  min-height: 172px;
   padding: 34px 25px 32px;
   border: 1px solid #e6e8ed;
   text-align: center; }

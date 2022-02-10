@@ -929,14 +929,39 @@ input[type="radio"]:checked + label {
 input[type="radio"] + label:hover {
     cursor: pointer;
 }
+
+.js-delivery-block-order{
+    position: relative;
+    padding: 25px 20px 10px;
+}
+.delivery-block-order-label:hover{
+    cursor: pointer;
+}
+.delivery-block-order-checked {
+    border: 1px solid #282829;
+}
+/**/
+
+
 .delivery-list-order .delivery-list-item{
     margin-bottom: 30px;
+    display: block;
 } 
 .delivery-cost{
     margin-bottom: 11px;
     font-weight: 700;
     color: #1c1c1c;
 }
+.delivery-pick-input{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.delivery-order-img{
+    margin-left: 0;
+    display: block;
+}
+
 @media (max-width: 1200px){
     .look-book-microcard-card-buttons-item{
         flex-wrap: wrap;

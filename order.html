@@ -1249,47 +1249,67 @@
                         <form class="js-form-validate js-form">
 
                             <ul class="delivery-list-order row">
-                                <li class="delivery-list-item col-md-4">
-                                    <div class="delivery-block">
-                                        <img class="delivery-img" src="./images/delivery/delivery-img-1.jpg" alt="">
-                                        <span class="delivery-name">Самовывоз</span>
-                                        <div>Адрес: г. Пенза, ул. Горная, д.3а.к.6, оф.32.</div>
-                                    </div>
+
+                                <li class="delivery-list-item col-md-4 col-sm-6">
+                                    <label for="radioShipment1" class="delivery-block-order-label">
+                                        <div class="delivery-block js-delivery-block-order">
+                                            <input class="delivery-pick-input" type="radio" id="radioShipment1" name="radioShipment">
+                                            <img class="delivery-order-img" src="./images/delivery/delivery-img-1.jpg" alt="">
+                                            <span class="delivery-name">Самовывоз</span>
+                                            <div>Адрес: г. Пенза, ул. Горная, д.3а.к.6, оф.32.</div>
+                                        </div>
+                                    </label>
                                 </li>
-                                <li class="delivery-list-item col-md-4">
-                                    <div class="delivery-block">
-                                        <img class="delivery-img" src="./images/delivery/delivery-img-2.jpg" alt="">
-                                        <span class="delivery-name">Почта РФ</span>
-                                        <div>Бесплатная доставка при заказе от <span class="delivery-cost">12 685 ₽</span></div>
-                                    </div>
+
+                                <li class="delivery-list-item col-md-4 col-sm-6">
+                                    <label for="radioShipment2" class="delivery-block-order-label">
+                                        <div class="delivery-block js-delivery-block-order">
+                                            <input class="delivery-pick-input" type="radio" id="radioShipment2" name="radioShipment">
+                                            <img class="delivery-order-img" src="./images/delivery/delivery-img-2.jpg" alt="">
+                                            <span class="delivery-name">Почта РФ</span>
+                                            <div>Бесплатная доставка при заказе от <span class="delivery-cost">12 685 ₽</span></div>
+                                        </div>
+                                    </label>
                                 </li>
-                                <li class="delivery-list-item col-md-4">
-                                    <div class="delivery-block">
-                                        <img class="delivery-img" src="./images/delivery/delivery-img-3.jpg" alt="">
-                                        <span class="delivery-name">CDEK</span>
-                                        <div>Бесплатная доставка при заказе от <span class="delivery-cost">12 685 ₽</span></div>
-                                    </div>
+
+                                <li class="delivery-list-item col-md-4 col-sm-6">
+                                    <label for="radioShipment3" class="delivery-block-order-label">
+                                        <div class="delivery-block js-delivery-block-order">
+                                            <input class="delivery-pick-input" type="radio" id="radioShipment3" name="radioShipment">
+                                            <img class="delivery-order-img" src="./images/delivery/delivery-img-3.jpg" alt="">
+                                            <span class="delivery-name">CDEK</span>
+                                            <div>Бесплатная доставка при заказе от <span class="delivery-cost">12 685 ₽</span></div>
+                                        </div>
+                                    </label>
                                 </li>
-                                <li class="delivery-list-item col-md-4">
-                                    <div class="delivery-block">
-                                        <img class="delivery-img" src="./images/delivery/delivery-img-4.jpg" alt="">
-                                        <span class="delivery-name">BoxBerry</span>
-                                        <div>Пункты самовывоза по всей россии</div>
-                                    </div>
+
+                                <li class="delivery-list-item col-md-4 col-sm-6">
+                                    <label for="radioShipment4" class="delivery-block-order-label">
+                                        <div class="delivery-block js-delivery-block-order">
+                                            <input class="delivery-pick-input" type="radio" id="radioShipment4" name="radioShipment">
+                                            <img class="delivery-order-img" src="./images/delivery/delivery-img-4.jpg" alt="">
+                                            <span class="delivery-name">BoxBerry</span>
+                                            <div>Пункты самовывоза по всей россии</div>
+                                        </div>
+                                    </label>
                                 </li>
-                                <li class="delivery-list-item col-md-4">
-                                    <div class="delivery-block">
-                                        <img class="delivery-img" src="./images/delivery/delivery-img-5.jpg" alt="">
-                                        <span class="delivery-name">PickPoint</span>
-                                        <div>Пункты самовывоза по всей россии</div>
-                                    </div>
+                                <li class="delivery-list-item col-md-4 col-sm-6">
+                                    <label for="radioShipment5" class="delivery-block-order-label">
+                                        <div class="delivery-block js-delivery-block-order">
+                                            <input class="delivery-pick-input" type="radio" id="radioShipment5" name="radioShipment">
+                                            <img class="delivery-order-img" src="./images/delivery/delivery-img-5.jpg" alt="">
+                                            <span class="delivery-name">PickPoint</span>
+                                            <div>Пункты самовывоза по всей россии</div>
+                                        </div>
+                                    </label>
                                 </li>
                             </ul>
 
-                            <!--почта рф-->
-                            <div class="like_h3">2. Адрес доставки</div>
-                            <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
-                            <div class="profile-data-group profile-data-group-form_segment">
+                            <!--самовывоз-->
+                            <div class="post-order-detail-item" id="post2">
+                                <div class="like_h3">2. Адрес доставки</div>
+                                <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
+                                <div class="profile-data-group profile-data-group-form_segment">
                                 <div class="profile-data-col row">
 
                                     <div class="profile-data-col-left col-md-6 col-12">
@@ -1328,10 +1348,10 @@
                                     </div>
 
                                 </div>
-                            </div>
+                                </div>
 
-                            <div class="like_h3">3. Способы оплаты</div>
-                            <div class="profile-data-group profile-data-group-form_segment">
+                                <div class="like_h3">3. Способы оплаты</div>
+                                <div class="profile-data-group profile-data-group-form_segment">
                                 <div class="profile-data-col row">
 
                                     <div class="profile-data-col-left col-12">
@@ -1363,11 +1383,138 @@
                                     </div>
 
                                 </div>
-                            </div>
+                                </div>
 
-                            <div class="like_h3">4. Контактная информация</div>
-                            <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
-                            <div class="profile-data-group">
+                                <div class="like_h3">4. Контактная информация</div>
+                                <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
+                                <div class="profile-data-group">
+                                <div class="profile-data-col row">
+                                    <div class="profile-data-col-left col-md-6 col-12">
+                                        <div class="field field-mrgfix js-form-validate-field ">
+                                            <label class="field-label-common field-label-common-mrgfix" for="name">Имя</label>
+                                            <input class="input input_modified" type="text" placeholder="" id="name" name="name" required>
+                                        </div>
+
+                                        <div class="field field-mrgfix js-form-validate-field">
+                                            <label class="field-label-common field-label-common-mrgfix" for="forname">Фамилия</label>
+                                            <input class="input input_modified" type="text" placeholder="" id="forname" name="forname" required>
+                                        </div>
+
+
+                                        <div class="field field-mrgfix js-form-validate-field">
+                                            <label class="field-label-common field-label-common-mrgfix" for="secondname">Отчество</label>
+                                            <input class="input input_modified" type="text" placeholder="" id="secondname" name="secondname" required>
+                                        </div>
+
+                                        <div class="telephone-list-block">
+                                            <label class="field-label-common field-label-common-mrgfix">Телефон</label>
+                                            <div class="field field-mrgfix field-mrgfix js-form-validate-field telephone-field">
+                                                <input class="input input_modified js-mask-phone js-phone-item" type="tel" placeholder="" name="phone1" required />
+                                            </div>
+                                        </div>  
+                                    </div>
+                                    <div class="profile-data-col-right col-md-6 col-12">
+
+                                        <div class="field field-mrgfix js-form-validate-field">
+                                            <label class="field-label-common field-label-common-mrgfix" for="email">Email</label>
+                                            <input class="input input_modified" type="text" placeholder="" id="email" name="email" required>
+                                        </div>
+
+                                        <div class="field field-mrgfix js-form-validate-field">
+                                            <label class="field-label-common field-label-common-mrgfix" for="commentToOrder">Комментарии к заказу</label>
+                                             <textarea class="input input_modified input_form_comment" id="commentToOrder" name="commentToOrder" value="{{ textComment }}" maxlength="1000">
+                                            </textarea>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!--\\самовывоз-->
+                            
+                            <!--почта рф-->
+                            <div class="post-order-detail-item" id="post1">
+                                <div class="like_h3">2. Адрес доставки</div>
+                                <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
+                                <div class="profile-data-group profile-data-group-form_segment">
+                                <div class="profile-data-col row">
+
+                                    <div class="profile-data-col-left col-md-6 col-12">
+                                        <div class="field field-mrgfix js-form-validate-field ">
+                                            <label class="field-label-common field-label-common-mrgfix" for="country">Россия</label>
+                                            <input class="input input_modified" type="text" placeholder="" id="country" name="country" required>
+                                        </div>
+
+                                        <div class="field field-mrgfix js-form-validate-field">
+                                            <label class="field-label-common field-label-common-mrgfix" for="city">Город</label>
+                                            <input class="input input_modified" type="text" placeholder="" id="city" name="city" required>
+                                        </div>
+
+
+                                        <div class="field field-mrgfix js-form-validate-field">
+                                            <label class="field-label-common field-label-common-mrgfix" for="street">Улица</label>
+                                            <input class="input input_modified" type="text" placeholder="" id="street" name="street" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="profile-data-col-right col-md-6 col-12">
+                                        <div class="field field-mrgfix js-form-validate-field">
+                                            <label class="field-label-common field-label-common-mrgfix" for="homeNumber">Дом</label>
+                                            <input class="input input_modified" type="text" placeholder="" id="homeNumber" name="homeNumber" required>
+                                        </div>
+
+                                        <div class="field field-mrgfix js-form-validate-field">
+                                            <label class="field-label-common field-label-common-mrgfix" for="apartmentsNumber">Квартира</label>
+                                            <input class="input input_modified" type="text" placeholder="" id="apartmentsNumber" name="apartmentsNumber" required>
+                                        </div>
+
+                                        <div class="field field-mrgfix js-form-validate-field">
+                                            <label class="field-label-common field-label-common-mrgfix" for="postIndex">Индекс</label>
+                                            <input class="input input_modified" type="text" placeholder="" id="postIndex" name="postIndex" required>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                </div>
+
+                                <div class="like_h3">3. Способы оплаты</div>
+                                <div class="profile-data-group profile-data-group-form_segment">
+                                <div class="profile-data-col row">
+
+                                    <div class="profile-data-col-left col-12">
+
+                                        <input type="radio" id="radio1" name="radio1">
+                                        <label for="radio1">
+                                            <span class="radio-multilabel">
+                                                <div>
+                                                    Оплата онлайн
+                                                </div>
+                                            </span>
+                                        </label>
+                                        <p></p>
+                                        <input type="radio" id="radio2" name="radio1">
+                                        <label for="radio2">
+                                            <span class="radio-multilabel">
+                                                <div>Оплата при получении</div>
+                                                <div class="text-low_visibility">Доставка оплачивается сразу</div>
+                                            </span>
+                                        </label>
+                                        <p></p>
+                                        <input type="radio" id="radio3" name="radio1">
+                                        <label for="radio3">
+                                            <span class="radio-multilabel">
+                                                <div>Безначличный через расчетный счет</div>
+                                                <div><a class="dark-blue" href="#">Отправить запрос</a></div>
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                                </div>
+
+                                <div class="like_h3">4. Контактная информация</div>
+                                <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
+                                <div class="profile-data-group">
                                 <div class="profile-data-col row">
                                     <div class="profile-data-col-left col-md-6 col-12">
                                         <div class="field field-mrgfix js-form-validate-field ">
@@ -1407,6 +1554,7 @@
                                         </div>
 
                                     </div>
+                                </div>
                                 </div>
                             </div>
                             <!--\\почта рф-->

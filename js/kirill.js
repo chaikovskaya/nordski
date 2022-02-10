@@ -37,6 +37,10 @@ function initSelSexForm() {
     });
 }
 
+$(".js-delivery-block-order").click(function(){
+    $(".js-delivery-block-order").removeClass("delivery-block-order-checked");
+    $(this).addClass("delivery-block-order-checked");
+});
 
 var sliderClubPurchaseProducts;
 function initSliderClubPurchaseProducts() {
