@@ -863,29 +863,32 @@ div.input_right_image.input_right_image_pass{
 }
 /*\\\для партнеров*/
 
-/*map*/
-.region-border{ 
-    stroke:#108ec8; 
-} 
-.region-item:hover, 
-.region-item:hover path, 
-.region-item-hover, 
-.region-item-hover path { 
-    fill:#108ec8; 
-} 
-.region-item, 
-.region-baloon-open { 
-    cursor:pointer; 
-} 
-.region-baloon-open.region-baloon-open-hover, 
-.region-lines.region-lines-hide { 
-    opacity: 0; 
+/*map style*/
+
+.st_map_country{
+    fill:#D8DDE4; opacity:1;
 }
-/*\\map*/
-.banners-fon-list_svg{
-    position: relative;
-    box-sizing: border-box;
+.st_map_region{
+    fill:#E9ECF0; opacity:1;
 }
+
+.st_map_region:hover, .st_map_country:hover{
+    fill: #025077;
+    cursor: pointer;
+}
+
+.st_map-marker:hover{
+    cursor: pointer;
+    fill: #014161;
+}
+
+
+#mapSvgRegionMarker84:hover + #mapSvgRegion84.st_map_country{
+    fill: #025077;
+    cursor: pointer;
+}
+
+/*\\map style*/
 
 .switch-label-gray{
     color: #7d7d7d;
@@ -908,7 +911,7 @@ div.input_right_image.input_right_image_pass{
 .text-low_visibility{
     color: #b1b3b9;
 }
-/*order*/
+/*order page*/
 .input_form_comment{
     height: 210px;
     resize: none;
@@ -926,7 +929,7 @@ div.input_right_image.input_right_image_pass{
 input[type="radio"]:checked + label {
     color: #282829;
 }
-input[type="radio"] + label:hover {
+input[type="radio"] + label:hover, input[type="radio"]:hover {
     cursor: pointer;
 }
 
@@ -934,13 +937,12 @@ input[type="radio"] + label:hover {
     position: relative;
     padding: 25px 20px 10px;
 }
-.delivery-block-order-label:hover{
+.js-delivery-block-order:hover{
     cursor: pointer;
 }
-.delivery-block-order-checked {
-    border: 1px solid #282829;
+.delivery-block-order-checked{
+    border-color: #282829;
 }
-/**/
 
 
 .delivery-list-order .delivery-list-item{
@@ -962,6 +964,11 @@ input[type="radio"] + label:hover {
     display: block;
 }
 
+/*sidebar*/
+
+/*\\sidebar*/
+
+/*\\order page*/
 @media (max-width: 1200px){
     .look-book-microcard-card-buttons-item{
         flex-wrap: wrap;
@@ -1045,6 +1052,9 @@ input[type="radio"] + label:hover {
     }
 }
 @media (max-width: 720px){
+    .minibanner-variant{
+        height: 60px;
+    }
     .feedback-form-img-for-partners{
         display: none;
     }
@@ -1057,11 +1067,7 @@ input[type="radio"] + label:hover {
         min-height: 0;
         max-width: none;
         margin-left: 0;
-
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 50px;
-        padding-bottom: 20px;
+        padding: 50px 15px 20px 15px;
         text-align: center;
         background-image: none;
     }

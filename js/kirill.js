@@ -40,6 +40,9 @@ function initSelSexForm() {
 $(".js-delivery-block-order").click(function(){
     $(".js-delivery-block-order").removeClass("delivery-block-order-checked");
     $(this).addClass("delivery-block-order-checked");
+    $(".post-order-detail-item").addClass("hidden");
+    var selId = $(this).find(".delivery-pick-input").attr("id").replace("radioShipment", '');
+    $(`#post${selId}`).removeClass("hidden");
 });
 
 var sliderClubPurchaseProducts;

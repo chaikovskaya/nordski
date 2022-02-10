@@ -1242,7 +1242,7 @@
 
                 <div class="row">
 
-                    <div class="col-lg-8">
+                    <div class="col-lg-9">
 
                         <h1 class="profile-orders-title profile-data-title_mrgfix">Оформление заказа</h1>
 
@@ -1253,7 +1253,7 @@
                                 <li class="delivery-list-item col-md-4 col-sm-6">
                                     <label for="radioShipment1" class="delivery-block-order-label">
                                         <div class="delivery-block js-delivery-block-order">
-                                            <input class="delivery-pick-input" type="radio" id="radioShipment1" name="radioShipment">
+                                            <input class="delivery-pick-input" type="radio" id="radioShipment1" name="radioShipment" checked>
                                             <img class="delivery-order-img" src="./images/delivery/delivery-img-1.jpg" alt="">
                                             <span class="delivery-name">Самовывоз</span>
                                             <div>Адрес: г. Пенза, ул. Горная, д.3а.к.6, оф.32.</div>
@@ -1306,48 +1306,26 @@
                             </ul>
 
                             <!--самовывоз-->
-                            <div class="post-order-detail-item" id="post2">
+                            <div class="post-order-detail-item" id="post1">
                                 <div class="like_h3">2. Адрес доставки</div>
                                 <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
                                 <div class="profile-data-group profile-data-group-form_segment">
-                                <div class="profile-data-col row">
+                                    <div class="profile-data-col row">
 
-                                    <div class="profile-data-col-left col-md-6 col-12">
-                                        <div class="field field-mrgfix js-form-validate-field ">
-                                            <label class="field-label-common field-label-common-mrgfix" for="country">Россия</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="country" name="country" required>
+                                        <div class="profile-data-col-left col-md-6 col-12">
+                                            <div class="field field-mrgfix js-form-validate-field ">
+                                                <label class="field-label-common field-label-common-mrgfix" for="country">Россия</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="country" name="country" required>
+                                            </div>
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="city">Город</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="city" name="city" required>
+                                            </div>
+
                                         </div>
 
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="city">Город</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="city" name="city" required>
-                                        </div>
-
-
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="street">Улица</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="street" name="street" required>
-                                        </div>
                                     </div>
-
-                                    <div class="profile-data-col-right col-md-6 col-12">
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="homeNumber">Дом</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="homeNumber" name="homeNumber" required>
-                                        </div>
-
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="apartmentsNumber">Квартира</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="apartmentsNumber" name="apartmentsNumber" required>
-                                        </div>
-
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="postIndex">Индекс</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="postIndex" name="postIndex" required>
-                                        </div>
-                                    </div>
-
-                                </div>
                                 </div>
 
                                 <div class="like_h3">3. Способы оплаты</div>
@@ -1388,176 +1366,554 @@
                                 <div class="like_h3">4. Контактная информация</div>
                                 <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
                                 <div class="profile-data-group">
-                                <div class="profile-data-col row">
-                                    <div class="profile-data-col-left col-md-6 col-12">
-                                        <div class="field field-mrgfix js-form-validate-field ">
-                                            <label class="field-label-common field-label-common-mrgfix" for="name">Имя</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="name" name="name" required>
-                                        </div>
-
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="forname">Фамилия</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="forname" name="forname" required>
-                                        </div>
-
-
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="secondname">Отчество</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="secondname" name="secondname" required>
-                                        </div>
-
-                                        <div class="telephone-list-block">
-                                            <label class="field-label-common field-label-common-mrgfix">Телефон</label>
-                                            <div class="field field-mrgfix field-mrgfix js-form-validate-field telephone-field">
-                                                <input class="input input_modified js-mask-phone js-phone-item" type="tel" placeholder="" name="phone1" required />
+                                    <div class="profile-data-col row">
+                                        <div class="profile-data-col-left col-md-6 col-12">
+                                            <div class="field field-mrgfix js-form-validate-field ">
+                                                <label class="field-label-common field-label-common-mrgfix" for="name">Имя</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="name" name="name" required>
                                             </div>
-                                        </div>  
-                                    </div>
-                                    <div class="profile-data-col-right col-md-6 col-12">
 
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="email">Email</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="email" name="email" required>
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="forname">Фамилия</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="forname" name="forname" required>
+                                            </div>
+
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="secondname">Отчество</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="secondname" name="secondname" required>
+                                            </div>
+
+                                            <div class="telephone-list-block">
+                                                <label class="field-label-common field-label-common-mrgfix">Телефон</label>
+                                                <div class="field field-mrgfix field-mrgfix js-form-validate-field telephone-field">
+                                                    <input class="input input_modified js-mask-phone js-phone-item" type="tel" placeholder="" name="phone1" required />
+                                                </div>
+                                            </div>  
                                         </div>
+                                        <div class="profile-data-col-right col-md-6 col-12">
 
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="commentToOrder">Комментарии к заказу</label>
-                                             <textarea class="input input_modified input_form_comment" id="commentToOrder" name="commentToOrder" value="{{ textComment }}" maxlength="1000">
-                                            </textarea>
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="email">Email</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="email" name="email" required>
+                                            </div>
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="commentToOrder">Комментарии к заказу</label>
+                                                 <textarea class="input input_modified input_form_comment" id="commentToOrder" name="commentToOrder" value="{{ textComment }}" maxlength="1000">
+                                                </textarea>
+                                            </div>
+
                                         </div>
-
                                     </div>
-                                </div>
                                 </div>
                             </div>
                             <!--\\самовывоз-->
                             
                             <!--почта рф-->
-                            <div class="post-order-detail-item" id="post1">
+                            <div class="post-order-detail-item hidden" id="post2">
                                 <div class="like_h3">2. Адрес доставки</div>
                                 <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
                                 <div class="profile-data-group profile-data-group-form_segment">
-                                <div class="profile-data-col row">
+                                    <div class="profile-data-col row">
 
-                                    <div class="profile-data-col-left col-md-6 col-12">
-                                        <div class="field field-mrgfix js-form-validate-field ">
-                                            <label class="field-label-common field-label-common-mrgfix" for="country">Россия</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="country" name="country" required>
+                                        <div class="profile-data-col-left col-md-6 col-12">
+                                            <div class="field field-mrgfix js-form-validate-field ">
+                                                <label class="field-label-common field-label-common-mrgfix" for="country">Россия</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="country" name="country" required>
+                                            </div>
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="city">Город</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="city" name="city" required>
+                                            </div>
+
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="street">Улица</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="street" name="street" required>
+                                            </div>
                                         </div>
 
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="city">Город</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="city" name="city" required>
+                                        <div class="profile-data-col-right col-md-6 col-12">
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="homeNumber">Дом</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="homeNumber" name="homeNumber" required>
+                                            </div>
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="apartmentsNumber">Квартира</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="apartmentsNumber" name="apartmentsNumber" required>
+                                            </div>
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="postIndex">Индекс</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="postIndex" name="postIndex" required>
+                                            </div>
                                         </div>
 
-
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="street">Улица</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="street" name="street" required>
-                                        </div>
                                     </div>
-
-                                    <div class="profile-data-col-right col-md-6 col-12">
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="homeNumber">Дом</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="homeNumber" name="homeNumber" required>
-                                        </div>
-
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="apartmentsNumber">Квартира</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="apartmentsNumber" name="apartmentsNumber" required>
-                                        </div>
-
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="postIndex">Индекс</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="postIndex" name="postIndex" required>
-                                        </div>
-                                    </div>
-
-                                </div>
                                 </div>
 
                                 <div class="like_h3">3. Способы оплаты</div>
                                 <div class="profile-data-group profile-data-group-form_segment">
-                                <div class="profile-data-col row">
+                                    <div class="profile-data-col row">
 
-                                    <div class="profile-data-col-left col-12">
+                                        <div class="profile-data-col-left col-12">
 
-                                        <input type="radio" id="radio1" name="radio1">
-                                        <label for="radio1">
-                                            <span class="radio-multilabel">
-                                                <div>
-                                                    Оплата онлайн
-                                                </div>
-                                            </span>
-                                        </label>
-                                        <p></p>
-                                        <input type="radio" id="radio2" name="radio1">
-                                        <label for="radio2">
-                                            <span class="radio-multilabel">
-                                                <div>Оплата при получении</div>
-                                                <div class="text-low_visibility">Доставка оплачивается сразу</div>
-                                            </span>
-                                        </label>
-                                        <p></p>
-                                        <input type="radio" id="radio3" name="radio1">
-                                        <label for="radio3">
-                                            <span class="radio-multilabel">
-                                                <div>Безначличный через расчетный счет</div>
-                                                <div><a class="dark-blue" href="#">Отправить запрос</a></div>
-                                            </span>
-                                        </label>
+                                            <input type="radio" id="radio1" name="radio1">
+                                            <label for="radio1">
+                                                <span class="radio-multilabel">
+                                                    <div>
+                                                        Оплата онлайн
+                                                    </div>
+                                                </span>
+                                            </label>
+                                            <p></p>
+                                            <input type="radio" id="radio2" name="radio1">
+                                            <label for="radio2">
+                                                <span class="radio-multilabel">
+                                                    <div>Оплата при получении</div>
+                                                    <div class="text-low_visibility">Доставка оплачивается сразу</div>
+                                                </span>
+                                            </label>
+                                            <p></p>
+                                            <input type="radio" id="radio3" name="radio1">
+                                            <label for="radio3">
+                                                <span class="radio-multilabel">
+                                                    <div>Безначличный через расчетный счет</div>
+                                                    <div><a class="dark-blue" href="#">Отправить запрос</a></div>
+                                                </span>
+                                            </label>
+                                        </div>
+
                                     </div>
-
-                                </div>
                                 </div>
 
                                 <div class="like_h3">4. Контактная информация</div>
                                 <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
                                 <div class="profile-data-group">
-                                <div class="profile-data-col row">
-                                    <div class="profile-data-col-left col-md-6 col-12">
-                                        <div class="field field-mrgfix js-form-validate-field ">
-                                            <label class="field-label-common field-label-common-mrgfix" for="name">Имя</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="name" name="name" required>
-                                        </div>
-
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="forname">Фамилия</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="forname" name="forname" required>
-                                        </div>
-
-
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="secondname">Отчество</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="secondname" name="secondname" required>
-                                        </div>
-
-                                        <div class="telephone-list-block">
-                                            <label class="field-label-common field-label-common-mrgfix">Телефон</label>
-                                            <div class="field field-mrgfix field-mrgfix js-form-validate-field telephone-field">
-                                                <input class="input input_modified js-mask-phone js-phone-item" type="tel" placeholder="" name="phone1" required />
+                                    <div class="profile-data-col row">
+                                        <div class="profile-data-col-left col-md-6 col-12">
+                                            <div class="field field-mrgfix js-form-validate-field ">
+                                                <label class="field-label-common field-label-common-mrgfix" for="name">Имя</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="name" name="name" required>
                                             </div>
-                                        </div>  
-                                    </div>
-                                    <div class="profile-data-col-right col-md-6 col-12">
 
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="email">Email</label>
-                                            <input class="input input_modified" type="text" placeholder="" id="email" name="email" required>
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="forname">Фамилия</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="forname" name="forname" required>
+                                            </div>
+
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="secondname">Отчество</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="secondname" name="secondname" required>
+                                            </div>
+
+                                            <div class="telephone-list-block">
+                                                <label class="field-label-common field-label-common-mrgfix">Телефон</label>
+                                                <div class="field field-mrgfix field-mrgfix js-form-validate-field telephone-field">
+                                                    <input class="input input_modified js-mask-phone js-phone-item" type="tel" placeholder="" name="phone1" required />
+                                                </div>
+                                            </div>  
                                         </div>
+                                        <div class="profile-data-col-right col-md-6 col-12">
 
-                                        <div class="field field-mrgfix js-form-validate-field">
-                                            <label class="field-label-common field-label-common-mrgfix" for="commentToOrder">Комментарии к заказу</label>
-                                            <textarea class="input input_modified input_form_comment" id="commentToOrder" name="commentToOrder" value="{{ textComment }}" maxlength="1000">
-                                            </textarea>
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="email">Email</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="email" name="email" required>
+                                            </div>
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="commentToOrder">Комментарии к заказу</label>
+                                                <textarea class="input input_modified input_form_comment" id="commentToOrder" name="commentToOrder" value="{{ textComment }}" maxlength="1000">
+                                                </textarea>
+                                            </div>
+
                                         </div>
-
                                     </div>
-                                </div>
                                 </div>
                             </div>
                             <!--\\почта рф-->
+
+                            <!--сдек-->
+                            <div class="post-order-detail-item hidden" id="post3">
+
+                                <div class="like_h3">2. Доставка</div>
+                                <div class="profile-data-group profile-data-group-form_segment">
+                                    <div class="profile-data-col row">
+                                        <div class="profile-data-col-left col-12">
+
+                                            <input type="radio" id="radioShipmentType1" name="radioShipmentType">
+                                            <label for="radioShipmentType1">
+                                                <span class="radio-multilabel">
+                                                    <div>
+                                                        Курьерская доставка
+                                                    </div>
+                                                </span>
+                                            </label>
+                                            <p></p>
+                                            <input type="radio" id="radioShipmentType2" name="radioShipmentType">
+                                            <label for="radioShipmentType2">
+                                                <span class="radio-multilabel">
+                                                    <div>Доставка в отделение</div>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="like_h3">3. Адрес доставки</div>
+                                <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
+                                <div class="profile-data-group profile-data-group-form_segment">
+                                    <div class="profile-data-col row">
+
+                                        <div class="profile-data-col-left col-md-6 col-12">
+                                            <div class="field field-mrgfix js-form-validate-field ">
+                                                <label class="field-label-common field-label-common-mrgfix" for="country">Россия</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="country" name="country" required>
+                                            </div>
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="city">Город</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="city" name="city" required>
+                                            </div>
+
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="street">Улица</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="street" name="street" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="profile-data-col-right col-md-6 col-12">
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="homeNumber">Дом</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="homeNumber" name="homeNumber" required>
+                                            </div>
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="apartmentsNumber">Квартира</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="apartmentsNumber" name="apartmentsNumber" required>
+                                            </div>
+
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="postIndex">Индекс</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="postIndex" name="postIndex" required>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="like_h3">4. Способы оплаты</div>
+                                <div class="profile-data-group profile-data-group-form_segment">
+                                    <div class="profile-data-col row">
+
+                                        <div class="profile-data-col-left col-12">
+
+                                            <input type="radio" id="radio1" name="radio1">
+                                            <label for="radio1">
+                                                <span class="radio-multilabel">
+                                                    <div>
+                                                        Оплата онлайн
+                                                    </div>
+                                                </span>
+                                            </label>
+                                            <p></p>
+                                            <input type="radio" id="radio2" name="radio1">
+                                            <label for="radio2">
+                                                <span class="radio-multilabel">
+                                                    <div>Оплата при получении</div>
+                                                    <div class="text-low_visibility">Доставка оплачивается сразу</div>
+                                                </span>
+                                            </label>
+                                            <p></p>
+                                            <input type="radio" id="radio3" name="radio1">
+                                            <label for="radio3">
+                                                <span class="radio-multilabel">
+                                                    <div>Безначличный через расчетный счет</div>
+                                                    <div><a class="dark-blue" href="#">Отправить запрос</a></div>
+                                                </span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="like_h3">5. Контактная информация</div>
+                                <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
+                                <div class="profile-data-group">
+                                    <div class="profile-data-col row">
+                                        <div class="profile-data-col-left col-md-6 col-12">
+                                            <div class="field field-mrgfix js-form-validate-field ">
+                                                <label class="field-label-common field-label-common-mrgfix" for="name">Имя</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="name" name="name" required>
+                                            </div>
+                                        
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="forname">Фамилия</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="forname" name="forname" required>
+                                            </div>
+                                        
+                                        
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="secondname">Отчество</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="secondname" name="secondname" required>
+                                            </div>
+                                        
+                                            <div class="telephone-list-block">
+                                                <label class="field-label-common field-label-common-mrgfix">Телефон</label>
+                                                <div class="field field-mrgfix field-mrgfix js-form-validate-field telephone-field">
+                                                    <input class="input input_modified js-mask-phone js-phone-item" type="tel" placeholder="" name="phone1" required />
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        <div class="profile-data-col-right col-md-6 col-12">
+                                        
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="email">Email</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="email" name="email" required>
+                                            </div>
+                                        
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="commentToOrder">Комментарии к заказу</label>
+                                                <textarea class="input input_modified input_form_comment" id="commentToOrder" name="commentToOrder" value="{{ textComment }}" maxlength="1000">
+                                                </textarea>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--\\сдек-->
+
+                            <!--боксбери-->
+                            <div class="post-order-detail-item hidden" id="post4">
+
+                                <div class="like_h3">2. Доставка</div>
+                                <div class="profile-data-group profile-data-group-form_segment">
+                                    <div class="profile-data-col row">
+                                        <div class="profile-data-col-left col-12">
+
+                                            <input type="radio" id="radioShipmentType1" name="radioShipmentType">
+                                            <label for="radioShipmentType1">
+                                                <span class="radio-multilabel">
+                                                    <div>
+                                                        Курьерская доставка
+                                                    </div>
+                                                </span>
+                                            </label>
+                                            <p></p>
+                                            <input type="radio" id="radioShipmentType2" name="radioShipmentType">
+                                            <label for="radioShipmentType2">
+                                                <span class="radio-multilabel">
+                                                    <div>Доставка в отделение</div>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="profile-data-group profile-data-group-form_segment">
+                                    <!--Тут карта с пиком точки-->
+                                </div>
+
+                                <div class="like_h3">3. Способы оплаты</div>
+                                <div class="profile-data-group profile-data-group-form_segment">
+                                    <div class="profile-data-col row">
+
+                                        <div class="profile-data-col-left col-12">
+
+                                            <input type="radio" id="radio1" name="radio1">
+                                            <label for="radio1">
+                                                <span class="radio-multilabel">
+                                                    <div>
+                                                        Оплата онлайн
+                                                    </div>
+                                                </span>
+                                            </label>
+                                            <p></p>
+                                            <input type="radio" id="radio2" name="radio1">
+                                            <label for="radio2">
+                                                <span class="radio-multilabel">
+                                                    <div>Оплата при получении</div>
+                                                    <div class="text-low_visibility">Доставка оплачивается сразу</div>
+                                                </span>
+                                            </label>
+                                            <p></p>
+                                            <input type="radio" id="radio3" name="radio1">
+                                            <label for="radio3">
+                                                <span class="radio-multilabel">
+                                                    <div>Безначличный через расчетный счет</div>
+                                                    <div><a class="dark-blue" href="#">Отправить запрос</a></div>
+                                                </span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="like_h3">4. Контактная информация</div>
+                                <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
+                                <div class="profile-data-group">
+                                    <div class="profile-data-col row">
+                                        <div class="profile-data-col-left col-md-6 col-12">
+                                            <div class="field field-mrgfix js-form-validate-field ">
+                                                <label class="field-label-common field-label-common-mrgfix" for="name">Имя</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="name" name="name" required>
+                                            </div>
+                                        
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="forname">Фамилия</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="forname" name="forname" required>
+                                            </div>
+                                        
+                                        
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="secondname">Отчество</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="secondname" name="secondname" required>
+                                            </div>
+                                        
+                                            <div class="telephone-list-block">
+                                                <label class="field-label-common field-label-common-mrgfix">Телефон</label>
+                                                <div class="field field-mrgfix field-mrgfix js-form-validate-field telephone-field">
+                                                    <input class="input input_modified js-mask-phone js-phone-item" type="tel" placeholder="" name="phone1" required />
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        <div class="profile-data-col-right col-md-6 col-12">
+                                        
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="email">Email</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="email" name="email" required>
+                                            </div>
+                                        
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="commentToOrder">Комментарии к заказу</label>
+                                                <textarea class="input input_modified input_form_comment" id="commentToOrder" name="commentToOrder" value="{{ textComment }}" maxlength="1000">
+                                                </textarea>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--\\боксбери-->
+
+                            <!--Пикпоинт-->
+                            <div class="post-order-detail-item hidden" id="post5">
+
+                                <div class="like_h3">2. Доставка</div>
+                                <div class="profile-data-group profile-data-group-form_segment">
+                                    <div class="profile-data-col row">
+                                        <div class="profile-data-col-left col-12">
+
+                                            <input type="radio" id="radioShipmentType1" name="radioShipmentType">
+                                            <label for="radioShipmentType1">
+                                                <span class="radio-multilabel">
+                                                    <div>
+                                                        Курьерская доставка
+                                                    </div>
+                                                </span>
+                                            </label>
+                                            <p></p>
+                                            <input type="radio" id="radioShipmentType2" name="radioShipmentType">
+                                            <label for="radioShipmentType2">
+                                                <span class="radio-multilabel">
+                                                    <div>Доставка в отделение</div>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="profile-data-group profile-data-group-form_segment">
+                                    <!--Тут карта с пиком точки-->  
+                                </div>
+
+                                <div class="like_h3">3. Способы оплаты</div>
+                                <div class="profile-data-group profile-data-group-form_segment">
+                                    <div class="profile-data-col row">
+
+                                        <div class="profile-data-col-left col-12">
+
+                                            <input type="radio" id="radio1" name="radio1">
+                                            <label for="radio1">
+                                                <span class="radio-multilabel">
+                                                    <div>
+                                                        Оплата онлайн
+                                                    </div>
+                                                </span>
+                                            </label>
+                                            <p></p>
+                                            <input type="radio" id="radio2" name="radio1">
+                                            <label for="radio2">
+                                                <span class="radio-multilabel">
+                                                    <div>Оплата при получении</div>
+                                                    <div class="text-low_visibility">Доставка оплачивается сразу</div>
+                                                </span>
+                                            </label>
+                                            <p></p>
+                                            <input type="radio" id="radio3" name="radio1">
+                                            <label for="radio3">
+                                                <span class="radio-multilabel">
+                                                    <div>Безначличный через расчетный счет</div>
+                                                    <div><a class="dark-blue" href="#">Отправить запрос</a></div>
+                                                </span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="like_h3">4. Контактная информация</div>
+                                <div class="content-text-block">Мы используем контактную информацию только чтобы информировать тебя о заказе</div>
+                                <div class="profile-data-group">
+                                    <div class="profile-data-col row">
+                                        <div class="profile-data-col-left col-md-6 col-12">
+                                            <div class="field field-mrgfix js-form-validate-field ">
+                                                <label class="field-label-common field-label-common-mrgfix" for="name">Имя</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="name" name="name" required>
+                                            </div>
+                                        
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="forname">Фамилия</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="forname" name="forname" required>
+                                            </div>
+                                        
+                                        
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="secondname">Отчество</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="secondname" name="secondname" required>
+                                            </div>
+                                        
+                                            <div class="telephone-list-block">
+                                                <label class="field-label-common field-label-common-mrgfix">Телефон</label>
+                                                <div class="field field-mrgfix field-mrgfix js-form-validate-field telephone-field">
+                                                    <input class="input input_modified js-mask-phone js-phone-item" type="tel" placeholder="" name="phone1" required />
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        <div class="profile-data-col-right col-md-6 col-12">
+                                        
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="email">Email</label>
+                                                <input class="input input_modified" type="text" placeholder="" id="email" name="email" required>
+                                            </div>
+                                        
+                                            <div class="field field-mrgfix js-form-validate-field">
+                                                <label class="field-label-common field-label-common-mrgfix" for="commentToOrder">Комментарии к заказу</label>
+                                                <textarea class="input input_modified input_form_comment" id="commentToOrder" name="commentToOrder" value="{{ textComment }}" maxlength="1000">
+                                                </textarea>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--\\Пикпоинт-->
 
                             <div class="switch-field">
                                 <label class="switch">
@@ -1586,6 +1942,43 @@
                         </form>
 
                     </div>
+
+                    <div class="col-lg-3">
+                        <div class="order-sidebar">
+                            
+                            <div class="order-sidebar-header">
+                                <div class="like_h3">Информация о заказе</div>
+                                <div><a>Изменить</a></div>
+                            </div>
+
+                            <div class="basket-coupon">
+                                <input class="basket-coupon-input input input_modified" type="text" placeholder="Введите промокод">
+                                <button class="basket-coupon-button"><i class="basket-coupon-icon las la-arrow-right"></i></button>
+                            </div>
+
+                            <div class="basket-order-sum-wrapper">
+                                <dl class="basket-order-sum">
+                                    <dt class="basket-order-sum-name">Стоимость заказа:</dt>
+                                    <dd class="basket-order-sum-value">
+                                        <span class="basket-order-price">12 685<span class="basket-order-price-currency currency">i</span></span>
+                                    </dd>
+                                </dl>
+                                <dl class="basket-order-sum">
+                                    <dt class="basket-order-sum-name">Доставка:</dt>
+                                    <dd class="basket-order-sum-value">
+                                        от <span class="basket-order-price">5 280<span class="basket-order-price-currency currency">i</span></span>
+                                    </dd>
+                                </dl>
+                                <dl class="basket-order-sum basket-order-sum_total">
+                                    <dt class="basket-order-sum-name">Итого:</dt>
+                                    <dd class="basket-order-sum-value">
+                                        <span class="basket-order-price basket-order-price_total">4 990<span class="basket-order-price-currency basket-order-price-currency_total currency">i</span></span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
