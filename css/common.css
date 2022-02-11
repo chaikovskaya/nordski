@@ -343,7 +343,9 @@ blockquote {
   .content a {
     color: inherit; }
     .content a:hover {
-      color: #00597d; }
+      color: #00597d; 
+      cursor: pointer;
+    }
   .content ul {
     margin-left: 14px;
     margin-top: 7px;
@@ -1308,7 +1310,9 @@ blockquote {
   padding-bottom: 25px;
   border: solid #eee;
   border-width: 0 0 1px; }
-
+.profile-order-table-item:last-child{
+  border: none;
+}
 .profile-order-table-col {
   padding-right: 20px; }
 
@@ -2430,6 +2434,12 @@ label.form-error {
     background-color: #fff; }
   .radio-input:checked + .radio-check {
     border: 5px solid #242424; }
+  .radio-check:hover {
+    cursor: pointer;
+  }
+  .radio-check + label:hover {
+    cursor: pointer;
+  }
 
 .button {
   display: inline-block;

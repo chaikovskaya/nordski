@@ -37,6 +37,14 @@ function initSelSexForm() {
     });
 }
 
+$(".js-accordion-input-country").click(function(){
+    $(this).find(".js-accordion-input-country-item_choose").removeClass("hidden");
+});
+$(".js-accordion-input-country-item").click(function(){
+    $(".js-accordion-input-country-item_active").attr('name', $(this).attr('name')).html($(this).html());
+    $(".js-accordion-input-country-item_choose").addClass("hidden");
+});
+
 $(".js-delivery-block-order").click(function(){
     $(".js-delivery-block-order").removeClass("delivery-block-order-checked");
     $(this).addClass("delivery-block-order-checked");

@@ -1242,18 +1242,63 @@
 
                 <div class="row">
 
-                    <div class="col-lg-9">
+                    <div class="col-lg-8 col-xl-9">
 
                         <h1 class="profile-orders-title profile-data-title_mrgfix">Оформление заказа</h1>
 
                         <form class="js-form-validate js-form">
+                            
+                            <div class="js-accordion-input-country">
+                                
+                                <div class="js-accordion-input-country-item_active" name="1">
+                                    <div class="accordion-input-country-item_img">
+                                        <img src="./images/delivery/country-img-1.jpg"> 
+                                    </div>
+                                    <div class="accordion-input-country-item_name like_h3">
+                                        Россия
+                                    </div>
+                                </div>
+
+                                <div class="js-accordion-input-country-item_choose hidden">
+
+                                    <div class="js-accordion-input-country-item" name="1">
+                                        <div class="accordion-input-country-item_img">
+                                            <img src="./images/delivery/country-img-1.jpg"> 
+                                        </div>
+                                        <div class="accordion-input-country-item_name like_h3">
+                                            Россия
+                                        </div>
+                                    </div>
+
+                                    <div class="js-accordion-input-country-item" name="1">
+                                        <div class="accordion-input-country-item_img">
+                                            <img src="./images/delivery/country-img-2.jpg"> 
+                                        </div>
+                                        <div class="accordion-input-country-item_name like_h3">
+                                            Беларусь
+                                        </div>
+                                    </div>
+
+                                    <div class="js-accordion-input-country-item" name="1">
+                                        <div class="accordion-input-country-item_img">
+                                            <img src="./images/delivery/country-img-3.jpg"> 
+                                        </div>
+                                        <div class="accordion-input-country-item_name like_h3">
+                                            Казахстан
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
 
                             <ul class="delivery-list-order row">
 
                                 <li class="delivery-list-item col-md-4 col-sm-6">
                                     <label for="radioShipment1" class="delivery-block-order-label">
                                         <div class="delivery-block js-delivery-block-order">
-                                            <input class="delivery-pick-input" type="radio" id="radioShipment1" name="radioShipment" checked>
+                                            <input class="delivery-pick-input radio-input" type="radio" id="radioShipment1" name="radioShipment" checked>
+                                            <div class="radio-check radio-check_delivery-pick-input"></div>
                                             <img class="delivery-order-img" src="./images/delivery/delivery-img-1.jpg" alt="">
                                             <span class="delivery-name">Самовывоз</span>
                                             <div>Адрес: г. Пенза, ул. Горная, д.3а.к.6, оф.32.</div>
@@ -1264,7 +1309,8 @@
                                 <li class="delivery-list-item col-md-4 col-sm-6">
                                     <label for="radioShipment2" class="delivery-block-order-label">
                                         <div class="delivery-block js-delivery-block-order">
-                                            <input class="delivery-pick-input" type="radio" id="radioShipment2" name="radioShipment">
+                                            <input class="delivery-pick-input radio-input" type="radio" id="radioShipment2" name="radioShipment">
+                                            <div class="radio-check radio-check_delivery-pick-input"></div>
                                             <img class="delivery-order-img" src="./images/delivery/delivery-img-2.jpg" alt="">
                                             <span class="delivery-name">Почта РФ</span>
                                             <div>Бесплатная доставка при заказе от <span class="delivery-cost">12 685 ₽</span></div>
@@ -1275,7 +1321,8 @@
                                 <li class="delivery-list-item col-md-4 col-sm-6">
                                     <label for="radioShipment3" class="delivery-block-order-label">
                                         <div class="delivery-block js-delivery-block-order">
-                                            <input class="delivery-pick-input" type="radio" id="radioShipment3" name="radioShipment">
+                                            <input class="delivery-pick-input radio-input" type="radio" id="radioShipment3" name="radioShipment">
+                                            <div class="radio-check radio-check_delivery-pick-input"></div>
                                             <img class="delivery-order-img" src="./images/delivery/delivery-img-3.jpg" alt="">
                                             <span class="delivery-name">CDEK</span>
                                             <div>Бесплатная доставка при заказе от <span class="delivery-cost">12 685 ₽</span></div>
@@ -1286,7 +1333,8 @@
                                 <li class="delivery-list-item col-md-4 col-sm-6">
                                     <label for="radioShipment4" class="delivery-block-order-label">
                                         <div class="delivery-block js-delivery-block-order">
-                                            <input class="delivery-pick-input" type="radio" id="radioShipment4" name="radioShipment">
+                                            <input class="delivery-pick-input radio-input" type="radio" id="radioShipment4" name="radioShipment">
+                                            <div class="radio-check radio-check_delivery-pick-input"></div>
                                             <img class="delivery-order-img" src="./images/delivery/delivery-img-4.jpg" alt="">
                                             <span class="delivery-name">BoxBerry</span>
                                             <div>Пункты самовывоза по всей россии</div>
@@ -1296,7 +1344,8 @@
                                 <li class="delivery-list-item col-md-4 col-sm-6">
                                     <label for="radioShipment5" class="delivery-block-order-label">
                                         <div class="delivery-block js-delivery-block-order">
-                                            <input class="delivery-pick-input" type="radio" id="radioShipment5" name="radioShipment">
+                                            <input class="delivery-pick-input radio-input" type="radio" id="radioShipment5" name="radioShipment">
+                                            <div class="radio-check radio-check_delivery-pick-input"></div>
                                             <img class="delivery-order-img" src="./images/delivery/delivery-img-5.jpg" alt="">
                                             <span class="delivery-name">PickPoint</span>
                                             <div>Пункты самовывоза по всей россии</div>
@@ -1334,30 +1383,39 @@
 
                                     <div class="profile-data-col-left col-12">
 
-                                        <input type="radio" id="radio1" name="radio1">
-                                        <label for="radio1">
-                                            <span class="radio-multilabel">
-                                                <div>
-                                                    Оплата онлайн
-                                                </div>
-                                            </span>
-                                        </label>
+                                        <div class="radio-field">
+                                            <input class="radio-input" type="radio" id="radio1" name="radio1">
+                                            <div class="radio-check"></div>
+                                            <label for="radio1">
+                                                <span class="radio-multilabel">
+                                                    <div>
+                                                        Оплата онлайн
+                                                    </div>
+                                                </span>
+                                            </label>
+                                        </div>
                                         <p></p>
-                                        <input type="radio" id="radio2" name="radio1">
-                                        <label for="radio2">
-                                            <span class="radio-multilabel">
-                                                <div>Оплата при получении</div>
-                                                <div class="text-low_visibility">Доставка оплачивается сразу</div>
-                                            </span>
-                                        </label>
+                                        <div class="radio-field">
+                                            <input class="radio-input" type="radio" id="radio2" name="radio1">
+                                            <div class="radio-check"></div>
+                                            <label for="radio2">
+                                                <span class="radio-multilabel">
+                                                    <div>Оплата при получении</div>
+                                                    <div class="text-low_visibility">Доставка оплачивается сразу</div>
+                                                </span>
+                                            </label>
+                                        </div>
                                         <p></p>
-                                        <input type="radio" id="radio3" name="radio1">
-                                        <label for="radio3">
-                                            <span class="radio-multilabel">
-                                                <div>Безначличный через расчетный счет</div>
-                                                <div><a class="dark-blue" href="#">Отправить запрос</a></div>
-                                            </span>
-                                        </label>
+                                        <div class="radio-field">
+                                            <input class="radio-input" type="radio" id="radio3" name="radio1">
+                                            <div class="radio-check"></div>
+                                            <label for="radio3">
+                                                <span class="radio-multilabel">
+                                                    <div>Безначличный через расчетный счет</div>
+                                                    <div><a class="dark-blue" href="#">Отправить запрос</a></div>
+                                                </span>
+                                            </label>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -1461,30 +1519,40 @@
 
                                         <div class="profile-data-col-left col-12">
 
-                                            <input type="radio" id="radio4" name="radio1">
-                                            <label for="radio4">
-                                                <span class="radio-multilabel">
-                                                    <div>
-                                                        Оплата онлайн
-                                                    </div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radio4" name="radio1">
+                                                <div class="radio-check"></div>
+                                                <label for="radio4">
+                                                    <span class="radio-multilabel">
+                                                        <div>
+                                                            Оплата онлайн
+                                                        </div>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <p></p>
-                                            <input type="radio" id="radio5" name="radio1">
-                                            <label for="radio5">
-                                                <span class="radio-multilabel">
-                                                    <div>Оплата при получении</div>
-                                                    <div class="text-low_visibility">Доставка оплачивается сразу</div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radio5" name="radio1">
+                                                <div class="radio-check"></div>
+                                                <label for="radio5">
+                                                    <span class="radio-multilabel">
+                                                        <div>Оплата при получении</div>
+                                                        <div class="text-low_visibility">Доставка оплачивается сразу</div>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <p></p>
-                                            <input type="radio" id="radio6" name="radio1">
-                                            <label for="radio6">
-                                                <span class="radio-multilabel">
-                                                    <div>Безначличный через расчетный счет</div>
-                                                    <div><a class="dark-blue" href="#">Отправить запрос</a></div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radio6" name="radio1">
+                                                <div class="radio-check"></div>
+                                                <label for="radio6">
+                                                    <span class="radio-multilabel">
+                                                        <div>Безначличный через расчетный счет</div>
+                                                        <div><a class="dark-blue" href="#">Отправить запрос</a></div>
+                                                    </span>
+                                                </label>
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -1545,21 +1613,26 @@
                                     <div class="profile-data-col row">
                                         <div class="profile-data-col-left col-12">
 
-                                            <input type="radio" id="radioShipmentType1" name="radioShipmentType">
-                                            <label for="radioShipmentType1">
-                                                <span class="radio-multilabel">
-                                                    <div>
-                                                        Курьерская доставка
-                                                    </div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radioShipmentType1" name="radioShipmentType">
+                                                <div class="radio-check"></div>
+                                                <label for="radioShipmentType1">
+                                                    <span class="radio-multilabel">
+                                                        <div>Курьерская доставка</div>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <p></p>
-                                            <input type="radio" id="radioShipmentType2" name="radioShipmentType">
-                                            <label for="radioShipmentType2">
-                                                <span class="radio-multilabel">
-                                                    <div>Доставка в отделение</div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                            <input class="radio-input" type="radio" id="radioShipmentType2" name="radioShipmentType">
+                                            <div class="radio-check"></div>
+                                                <label for="radioShipmentType2">
+                                                    <span class="radio-multilabel">
+                                                        <div>Доставка в отделение</div>
+                                                    </span>
+                                                </label>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -1613,30 +1686,40 @@
 
                                         <div class="profile-data-col-left col-12">
 
-                                            <input type="radio" id="radio7" name="radio1">
-                                            <label for="radio7">
-                                                <span class="radio-multilabel">
-                                                    <div>
-                                                        Оплата онлайн
-                                                    </div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radio7" name="radio1">
+                                                <div class="radio-check"></div>
+                                                <label for="radio7">
+                                                    <span class="radio-multilabel">
+                                                        <div>
+                                                            Оплата онлайн
+                                                        </div>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <p></p>
-                                            <input type="radio" id="radio8" name="radio1">
-                                            <label for="radio8">
-                                                <span class="radio-multilabel">
-                                                    <div>Оплата при получении</div>
-                                                    <div class="text-low_visibility">Доставка оплачивается сразу</div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radio8" name="radio1">
+                                                <div class="radio-check"></div>
+                                                <label for="radio8">
+                                                    <span class="radio-multilabel">
+                                                        <div>Оплата при получении</div>
+                                                        <div class="text-low_visibility">Доставка оплачивается сразу</div>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <p></p>
-                                            <input type="radio" id="radio9" name="radio1">
-                                            <label for="radio9">
-                                                <span class="radio-multilabel">
-                                                    <div>Безначличный через расчетный счет</div>
-                                                    <div><a class="dark-blue" href="#">Отправить запрос</a></div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radio9" name="radio1">
+                                                <div class="radio-check"></div>
+                                                <label for="radio9">
+                                                    <span class="radio-multilabel">
+                                                        <div>Безначличный через расчетный счет</div>
+                                                        <div><a class="dark-blue" href="#">Отправить запрос</a></div>
+                                                    </span>
+                                                </label>
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -1697,21 +1780,26 @@
                                     <div class="profile-data-col row">
                                         <div class="profile-data-col-left col-12">
 
-                                            <input type="radio" id="radioShipmentType1" name="radioShipmentType">
-                                            <label for="radioShipmentType1">
-                                                <span class="radio-multilabel">
-                                                    <div>
-                                                        Курьерская доставка
-                                                    </div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radioShipmentType3" name="radioShipmentType">
+                                                <div class="radio-check"></div>
+                                                <label for="radioShipmentType3">
+                                                    <span class="radio-multilabel">
+                                                        <div>Курьерская доставка</div>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <p></p>
-                                            <input type="radio" id="radioShipmentType2" name="radioShipmentType">
-                                            <label for="radioShipmentType2">
-                                                <span class="radio-multilabel">
-                                                    <div>Доставка в отделение</div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                            <input class="radio-input" type="radio" id="radioShipmentType4" name="radioShipmentType">
+                                            <div class="radio-check"></div>
+                                                <label for="radioShipmentType4">
+                                                    <span class="radio-multilabel">
+                                                        <div>Доставка в отделение</div>
+                                                    </span>
+                                                </label>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -1726,30 +1814,40 @@
 
                                         <div class="profile-data-col-left col-12">
 
-                                            <input type="radio" id="radio13" name="radio1">
-                                            <label for="radio13">
-                                                <span class="radio-multilabel">
-                                                    <div>
-                                                        Оплата онлайн
-                                                    </div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radio10" name="radio1">
+                                                <div class="radio-check"></div>
+                                                <label for="radio10">
+                                                    <span class="radio-multilabel">
+                                                        <div>
+                                                            Оплата онлайн
+                                                        </div>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <p></p>
-                                            <input type="radio" id="radio14" name="radio1">
-                                            <label for="radio14">
-                                                <span class="radio-multilabel">
-                                                    <div>Оплата при получении</div>
-                                                    <div class="text-low_visibility">Доставка оплачивается сразу</div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radio11" name="radio1">
+                                                <div class="radio-check"></div>
+                                                <label for="radio11">
+                                                    <span class="radio-multilabel">
+                                                        <div>Оплата при получении</div>
+                                                        <div class="text-low_visibility">Доставка оплачивается сразу</div>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <p></p>
-                                            <input type="radio" id="radio15" name="radio1">
-                                            <label for="radio15">
-                                                <span class="radio-multilabel">
-                                                    <div>Безначличный через расчетный счет</div>
-                                                    <div><a class="dark-blue" href="#">Отправить запрос</a></div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radio12" name="radio1">
+                                                <div class="radio-check"></div>
+                                                <label for="radio12">
+                                                    <span class="radio-multilabel">
+                                                        <div>Безначличный через расчетный счет</div>
+                                                        <div><a class="dark-blue" href="#">Отправить запрос</a></div>
+                                                    </span>
+                                                </label>
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -1810,21 +1908,26 @@
                                     <div class="profile-data-col row">
                                         <div class="profile-data-col-left col-12">
 
-                                            <input type="radio" id="radioShipmentType1" name="radioShipmentType">
-                                            <label for="radioShipmentType1">
-                                                <span class="radio-multilabel">
-                                                    <div>
-                                                        Курьерская доставка
-                                                    </div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radioShipmentType5" name="radioShipmentType">
+                                                <div class="radio-check"></div>
+                                                <label for="radioShipmentType5">
+                                                    <span class="radio-multilabel">
+                                                        <div>Курьерская доставка</div>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <p></p>
-                                            <input type="radio" id="radioShipmentType2" name="radioShipmentType">
-                                            <label for="radioShipmentType2">
-                                                <span class="radio-multilabel">
-                                                    <div>Доставка в отделение</div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                            <input class="radio-input" type="radio" id="radioShipmentType6" name="radioShipmentType">
+                                            <div class="radio-check"></div>
+                                                <label for="radioShipmentType6">
+                                                    <span class="radio-multilabel">
+                                                        <div>Доставка в отделение</div>
+                                                    </span>
+                                                </label>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -1839,30 +1942,40 @@
 
                                         <div class="profile-data-col-left col-12">
 
-                                            <input type="radio" id="radio1" name="radio1">
-                                            <label for="radio1">
-                                                <span class="radio-multilabel">
-                                                    <div>
-                                                        Оплата онлайн
-                                                    </div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radio13" name="radio1">
+                                                <div class="radio-check"></div>
+                                                <label for="radio13">
+                                                    <span class="radio-multilabel">
+                                                        <div>
+                                                            Оплата онлайн
+                                                        </div>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <p></p>
-                                            <input type="radio" id="radio2" name="radio1">
-                                            <label for="radio2">
-                                                <span class="radio-multilabel">
-                                                    <div>Оплата при получении</div>
-                                                    <div class="text-low_visibility">Доставка оплачивается сразу</div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radio14" name="radio1">
+                                                <div class="radio-check"></div>
+                                                <label for="radio14">
+                                                    <span class="radio-multilabel">
+                                                        <div>Оплата при получении</div>
+                                                        <div class="text-low_visibility">Доставка оплачивается сразу</div>
+                                                    </span>
+                                                </label>
+                                            </div>
                                             <p></p>
-                                            <input type="radio" id="radio3" name="radio1">
-                                            <label for="radio3">
-                                                <span class="radio-multilabel">
-                                                    <div>Безначличный через расчетный счет</div>
-                                                    <div><a class="dark-blue" href="#">Отправить запрос</a></div>
-                                                </span>
-                                            </label>
+                                            <div class="radio-field">
+                                                <input class="radio-input" type="radio" id="radio15" name="radio1">
+                                                <div class="radio-check"></div>
+                                                <label for="radio15">
+                                                    <span class="radio-multilabel">
+                                                        <div>Безначличный через расчетный счет</div>
+                                                        <div><a class="dark-blue" href="#">Отправить запрос</a></div>
+                                                    </span>
+                                                </label>
+                                            </div>
+
                                         </div>
 
                                     </div>
@@ -1943,20 +2056,236 @@
 
                     </div>
 
-                    <div class="col-lg-3">
+                    <!--sidebar-->
+                    <div class="col-lg-4 col-xl-3 order-sidebar-col">
                         <div class="order-sidebar">
                             
-                            <div class="order-sidebar-header">
-                                <div class="like_h3">Информация о заказе</div>
-                                <div><a>Изменить</a></div>
+                            <div class="order-sidebar-header sidebar-block-ex_padding">
+                                <div class="like_h3 no_margin">Информация о заказе</div>
+                                <div class="content"><a href="#">Изменить</a></div>
                             </div>
-
-                            <div class="basket-coupon">
-                                <input class="basket-coupon-input input input_modified" type="text" placeholder="Введите промокод">
-                                <button class="basket-coupon-button"><i class="basket-coupon-icon las la-arrow-right"></i></button>
+                            <div class="sidebar-block-ex_padding">
+                                <div class="pos-relative">
+                                    <input class="basket-coupon-input input input_modified" type="text" placeholder="Введите промокод">
+                                    <button class="basket-coupon-button"><i class="basket-coupon-icon las la-arrow-right"></i></button>
+                                </div>
                             </div>
+                            <div class="sidebar-order-table-wrapper">
+                                <ul class="profile-order-table sidebar-order-table js-custom-scroll">
 
-                            <div class="basket-order-sum-wrapper">
+                                    <li class="profile-order-table-item">
+                                    <div class="profile-order-table-col">
+                                        <div class="profile-order-table-product">
+                                            <div>
+                                                <a class="profile-order-table-link-picture" href="#">
+                                                    <img class="profile-order-table-picture" src="./images/basket/basket-img-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a class="profile-order-table-product-link js-find-value" href="#">Футболка Nordski Pro Berry с длинным рукавом</a>
+                                                <div>
+                                                    <ul class="profile-order-table-props">
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Арт
+                                                                </div>
+                                                                <div class="col-6 order-sidebar-price">
+                                                                    444797
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Размер
+                                                                </div>
+                                                                <div class="col-6 order-sidebar-price">
+                                                                    XL
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Цвет
+                                                                </div>
+                                                                <div class="col-6 order-sidebar-price">
+                                                                    Красный
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Цена
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <span class="order-sidebar-price">5 280<span class="profile-order-table-price-currency currency">i</span></span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Кол-во
+                                                                </div>
+                                                                <div class="col-6 order-sidebar-price">
+                                                                    1 шт.
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    </li>
+
+                                    <li class="profile-order-table-item">
+                                    <div class="profile-order-table-col">
+                                        <div class="profile-order-table-product">
+                                            <div>
+                                                <a class="profile-order-table-link-picture" href="#">
+                                                    <img class="profile-order-table-picture" src="./images/basket/basket-img-2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a class="profile-order-table-product-link js-find-value" href="#">Футболка Nordski Pro Berry с длинным рукавом</a>
+                                                <div>
+                                                    <ul class="profile-order-table-props">
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Арт
+                                                                </div>
+                                                                <div class="col-6 order-sidebar-price">
+                                                                    444797
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Размер
+                                                                </div>
+                                                                <div class="col-6 order-sidebar-price">
+                                                                    XL
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Цвет
+                                                                </div>
+                                                                <div class="col-6 order-sidebar-price">
+                                                                    Красный
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Цена
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <span class="order-sidebar-price">5 280<span class="profile-order-table-price-currency currency">i</span></span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Кол-во
+                                                                </div>
+                                                                <div class="col-6 order-sidebar-price">
+                                                                    1 шт.
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    </li>
+
+                                    <li class="profile-order-table-item">
+                                    <div class="profile-order-table-col">
+                                        <div class="profile-order-table-product">
+                                            <div>
+                                                <a class="profile-order-table-link-picture" href="#">
+                                                    <img class="profile-order-table-picture" src="./images/basket/basket-img-3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a class="profile-order-table-product-link js-find-value" href="#">Футболка Nordski Pro Berry с длинным рукавом</a>
+                                                <div>
+                                                    <ul class="profile-order-table-props">
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Арт
+                                                                </div>
+                                                                <div class="col-6 order-sidebar-price">
+                                                                    444797
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Размер
+                                                                </div>
+                                                                <div class="col-6 order-sidebar-price">
+                                                                    XL
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Цвет
+                                                                </div>
+                                                                <div class="col-6 order-sidebar-price">
+                                                                    Красный
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Цена
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <span class="order-sidebar-price">5 280<span class="profile-order-table-price-currency currency">i</span></span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="profile-order-table-props-item">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Кол-во
+                                                                </div>
+                                                                <div class="col-6 order-sidebar-price">
+                                                                    1 шт.
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="basket-order-sum-wrapper sidebar-block-ex_padding">
                                 <dl class="basket-order-sum">
                                     <dt class="basket-order-sum-name">Стоимость заказа:</dt>
                                     <dd class="basket-order-sum-value">
@@ -1969,13 +2298,14 @@
                                         от <span class="basket-order-price">5 280<span class="basket-order-price-currency currency">i</span></span>
                                     </dd>
                                 </dl>
-                                <dl class="basket-order-sum basket-order-sum_total">
+                                <dl class="basket-order-sum basket-order-sum_total no_margin">
                                     <dt class="basket-order-sum-name">Итого:</dt>
                                     <dd class="basket-order-sum-value">
                                         <span class="basket-order-price basket-order-price_total">4 990<span class="basket-order-price-currency basket-order-price-currency_total currency">i</span></span>
                                     </dd>
                                 </dl>
                             </div>
+
                         </div>
                     </div>
 
