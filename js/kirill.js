@@ -37,8 +37,8 @@ function initSelSexForm() {
     });
 }
 
-$(".js-accordion-input-country").click(function(){
-    $(this).find(".js-accordion-input-country-item_choose").removeClass("hidden");
+$(".js-accordion-input-country-item_active").click(function(){
+    $(".js-accordion-input-country-item_choose").removeClass("hidden");
 });
 $(".js-accordion-input-country-item").click(function(){
     $(".js-accordion-input-country-item_active").attr('name', $(this).attr('name')).html($(this).html());
