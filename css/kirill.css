@@ -939,6 +939,15 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 .js-accordion-input-country:hover{
     cursor: pointer;
 }
+.js-accordion-input-country-item_active_wrapper{
+    position: relative;
+}
+.js-accordion-input-country_right-angle{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
 .js-accordion-input-country-item,
 .js-accordion-input-country-item_active{
     padding: 10px 20px;
@@ -947,6 +956,7 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     align-items: center;
     justify-content: left;
 }
+
 .accordion-input-country-item_name{
     margin: 0;
     margin-left: 10px;

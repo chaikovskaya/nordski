@@ -39,10 +39,12 @@ function initSelSexForm() {
 
 $(".js-accordion-input-country-item_active").click(function(){
     $(".js-accordion-input-country-item_choose").removeClass("hidden");
+    $(".js-accordion-input-country_right-angle i").removeClass("fa-angle-down").addClass("fa-angle-up");
 });
 $(".js-accordion-input-country-item").click(function(){
     $(".js-accordion-input-country-item_active").attr('name', $(this).attr('name')).html($(this).html());
     $(".js-accordion-input-country-item_choose").addClass("hidden");
+    $(".js-accordion-input-country_right-angle i").removeClass("fa-angle-up").addClass("fa-angle-down");
 });
 
 $(".js-delivery-block-order").click(function(){
