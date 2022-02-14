@@ -880,12 +880,13 @@ div.input_right_image.input_right_image_pass{
     fill: #014161;
 }
 
-
-#mapSvgRegionMarker84:hover + #mapSvgRegion84.st_map_country{
-    fill: #025077;
-    cursor: pointer;
+.banners-fon-list__svg{
+    position: relative;
 }
-
+.markers-description-item{
+    position: absolute;
+    background-color: #E9ECF0;
+}
 /*\\map style*/
 
 .switch-label-gray{
@@ -1122,6 +1123,9 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     }
 }
 @media (max-width: 720px){
+    .delivery-order-img{
+        margin: 0 auto;
+    }
     .minibanner-variant{
         height: 60px;
     }

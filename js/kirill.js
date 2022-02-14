@@ -55,6 +55,23 @@ $(".js-delivery-block-order").click(function(){
     $(`#post${selId}`).removeClass("hidden");
 });
 
+/*map*/
+$(".st_map_region").hover(function(){
+    var regionId = $(this).attr("id").replace("mapSvgRegion", '');
+    var pointerId = "#mapSvgRegionMarker" + regionId;
+    var descriptionId = "#mapDescription" + regionId;
+    //console.log(pointerId);
+    if(!$(pointerId).length)
+        return;
+        console.log($(pointerId));
+    console.log($(pointerId).get(0).getBoundingClientRect());
+    console.log($(".banners-fon-list__svg").get(0).getBoundingClientRect());
+    var pointerRect = $(pointerId).get(0).getBoundingClientRect();
+    var mapRect = $(".banners-fon-list__svg").get(0).getBoundingClientRect();
+    //$("#mapDescription84").css("top",pointerRect["y"] - mapRect["y"]).css("right",mapRect["right"] - pointerRect["x"]);
+    $("#mapDescription84").removeClass("hidden");
+});
+
 var sliderClubPurchaseProducts;
 function initSliderClubPurchaseProducts() {
     jQuery('.js-slider-ClubPurchase-products').each(function() {
