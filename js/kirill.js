@@ -56,23 +56,6 @@ $(document).on('click', '.js-delivery-block-order', function(){
     $(`#post${selId}`).removeClass("hidden");
 });
 
-/*map*/
-$(".st_map_region").hover(function(){
-    var regionId = $(this).attr("id").replace("mapSvgRegion", '');
-    var pointerId = "#mapSvgRegionMarker" + regionId;
-    var descriptionId = "#mapDescription" + regionId;
-    //console.log(pointerId);
-    if(!$(pointerId).length)
-        return;
-        console.log($(pointerId));
-    console.log($(pointerId).get(0).getBoundingClientRect());
-    console.log($(".banners-fon-list__svg").get(0).getBoundingClientRect());
-    var pointerRect = $(pointerId).get(0).getBoundingClientRect();
-    var mapRect = $(".banners-fon-list__svg").get(0).getBoundingClientRect();
-    //$("#mapDescription84").css("top",pointerRect["y"] - mapRect["y"]).css("right",mapRect["right"] - pointerRect["x"]);
-    $("#mapDescription84").removeClass("hidden");
-});
-
 var sliderClubPurchaseProducts;
 function initSliderClubPurchaseProducts() {
     jQuery('.js-slider-ClubPurchase-products').each(function() {
@@ -228,6 +211,25 @@ function reInitMozaic() {
     }
 }
 /*MAP*/
+/*map*/
+/*
+$(".st_map_region").hover(function(){
+    var regionId = $(this).attr("id").replace("mapSvgRegion", '');
+    var pointerId = "mapSvgRegionMarker" + regionId;
+    var descriptionId = "mapDescription" + regionId;
+    if(!$(pointerId).length)
+        return;
+        console.log($(pointerId));
+    var pointer = document.querySelector('.st_map-marker[id="'+regionId+'"]');
+    console.log(pointer);
+    //console.log($(pointerId).get(0).getBoundingClientRect());
+    //console.log($(".banners-fon-list__svg").get(0).getBoundingClientRect());
+    //var pointerRect = $(pointerId).get(0).getBoundingClientRect();
+    //var mapRect = $(".banners-fon-list__svg").get(0).getBoundingClientRect();
+    //$("#mapDescription84").css("top",pointerRect["y"] - mapRect["y"]).css("right",mapRect["right"] - pointerRect["x"]);
+    $(`#${descriptionId}`).removeClass("hidden");
+});
+*/
 $(document).ready(function () {
     function regionItemHover(regionId, hover) {
       (hover === true) ? document.querySelector('.js-region-item[data-region="'+regionId+'"]').classList.add('region-item-hover') : document.querySelector('.js-region-item[data-region="'+regionId+'"]').classList.remove('region-item-hover');
@@ -258,26 +260,22 @@ $(document).ready(function () {
         regionBaloon.classList.remove('banners-fon-list__baloon-active');
       }
     }
-    
-    function regionLinesHide(regionId, hide) {
-      if (regionId == 'russia') {
-        (hide === true) ? document.querySelector('.js-region-lines').classList.add('region-lines-hide') : document.querySelector('.js-region-lines').classList.remove('region-lines-hide');
-      }
-    }
   
     $('.js-region-baloon').hover(
       function() {
         var regionId = $(this).attr('data-region');
-        regionItemHover(regionId, true);
-        regionBaloonHover(regionId, true);
-        regionBaloonShow(regionId, true);
-        regionLinesHide(regionId, true);
+        if(regionId){
+            regionItemHover(regionId, true);
+            regionBaloonHover(regionId, true);
+            regionBaloonShow(regionId, true);
+        }
       }, function() {
         var regionId = $(this).attr('data-region');
-        regionItemHover(regionId, false);
-        regionBaloonHover(regionId, false);
-        regionBaloonShow(regionId, false);
-        regionLinesHide(regionId, false);
+        if(regionId){
+            regionItemHover(regionId, false);
+            regionBaloonHover(regionId, false);
+            regionBaloonShow(regionId, false);
+        }
       }
     );
   });
