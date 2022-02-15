@@ -109,9 +109,67 @@ function initSliderClubPurchaseProducts() {
                     loop: sliderLength > 2 ? true : false,
                 },
                 992: {
-                    slidesPerView: 3,
-                    slidesPergroup: 3,
+                    slidesPerView: 1,
+                    slidesPergroup: 1,
                     loop: sliderLength > 3 ? true : false,
+                },
+            },
+            on: {
+                beforeInit: function () {
+                    var length = $slider.find('.swiper-slide').length;
+                    if (length < 10) {
+                        //length=Math.floor(length/3);//костылирую для того чтобы 1 страница симулировала 1 элемент для кол-ва слайдов
+                        if(!length)
+                            length=1;
+                        length =  '0' + length;
+                    }
+                    $slider.find('.js-slider-amount').html(length);
+                },
+                init: function () {
+                    _buildSliderCounter();
+                },
+                slideChangeTransitionEnd: function () {
+                    _buildSliderCounter();
+                },
+            },
+        });
+    });
+}
+
+var sliderClubPurchaseProducts;
+function initSliderAboutBrand() {
+    jQuery('.js-slider-AboutBrand').each(function() {
+        var $slider = $(this),
+            sliderClass = ".js-slider-AboutBrand",
+            sliderLength = $slider.find('.swiper-slide').length;
+
+        var isStart = sliderLength > 1 ? true : false;
+        function _buildSliderCounter() {
+            var index = $slider.find('.swiper-slide-active').attr("data-slider-index");
+            index = parseInt(index, 10) + 1;
+                //index=Math.floor(index/3) + 1;//костылирую для того чтобы 1 страница симулировала 1 элемент для текущего слайда
+                index =  '0' + index;
+
+            $slider.find('.js-slider-current').html(index);
+        }
+
+        ClubPurchaseProducts = new Swiper(sliderClass, {
+            loop: isStart,
+            pagination: {
+                el: '.js-slider-pagination',
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".js-slider-next",
+                prevEl: ".js-slider-prev",
+                disabledClass: "slider-button_disabled",
+            },
+            spaceBetween: 10,
+            breakpoints: {
+                992: {
+                    slidesPerView: 1,
+                    slidesPergroup: 1,
+                    loop: true,
                 },
             },
             on: {
@@ -224,10 +282,95 @@ $(document).ready(function () {
     );
   });
 
+
+/*History*/
+
+function initSliderHistory() {
+    $(".js-slider-history").each(function(){
+        var $element = $(this),
+            $list = $element.find('.js-slider-list'),
+            $buttons = $element.find('.js-slider-buttons'),
+            $pager = $element.find('.js-slider-pager'),
+            $item = $list.find('.js-slider-item');
+
+        var isLoop = $item.length > 1 ? true : false;
+
+        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
+            loop: isLoop,
+            mouseDrag: isLoop,
+            touchDrag: isLoop,
+            nav: true,
+            autoHeight: false,
+            smartSpeed: 600,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: 15,
+                },
+                720: {
+                    items: 1,
+                    margin: 15,
+                },
+                992: {
+                    items: 1,
+                    margin: 30,
+                },
+            },
+            navContainer: $buttons,
+            dotsContainer: $pager,
+            onInitialize: function (event) {
+            },
+        }));
+    });
+}
+
+function initDragging() {
+    new ScrollBooster({
+        viewport: document.querySelector('.js-dragging'),
+        content: document.querySelector('.js-dragging-content'),
+        scrollMode: 'transform',
+        direction: 'horizontal',
+        bounceForce: 0.2,
+    });
+}
+
+function initAjaxHistory() {
+    $(".js-history").each(function() {
+        var $element = $(this),
+            $url = $element.data('src');
+
+        $('.js-preloader').removeClass('g-hidden');
+
+        $.ajax({
+            url: $url,
+            method: "POST",
+            dataType: "html",
+            success: function (data) {
+                if (data) {
+                    $element.html(data);
+                }
+
+                initTab();
+                initDragging();
+                initSliderHistory();
+
+                $('.js-preloader').addClass('g-hidden');
+            }
+        });
+    });
+}
+
+$(document).ready(function () {
+
+});
+/*\\History*/
 $(document).ready(function () {
     initSelSexForm();
     initSliderClubPurchaseProducts();
+    initSliderAboutBrand();
     initAjaxMoreLookBook();
     initMozaic();
-    reInitMozaic()
+    reInitMozaic();
+    initSliderHistory();
+    initAjaxHistory();
 });

@@ -8,12 +8,36 @@
 .blue{
     color: #007aff;
 }
+.white{
+    color: #fff;
+}
 .light-blue{
     color: #108ec8;
 }
 .hidden{
     display: none !important;
 }
+.t-transform-none{
+    text-transform: none;
+}
+.t-a-center{
+    text-align: center;
+}
+.def-mrg{
+    margin-bottom: 50px;
+}
+.small-mrg{
+    margin-bottom: 30px;
+}
+.small-mrg_static{
+    margin-bottom: 30px;
+}
+.add-border-bottom{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #e6e8ed;
+}
+
 .add-remove-extra-telephone-block{
     display: flex;
     justify-content: left;
@@ -81,6 +105,9 @@
     margin-bottom: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid #e6e8ed;
+}
+.profile-data-title_mrgfix-no_border{
+    margin-bottom: 30px;
 }
 
 .input_right_image{
@@ -902,6 +929,12 @@ div.input_right_image.input_right_image_pass{
     margin-bottom: 15px;
     text-transform: uppercase;
 }
+.like_h3_noup{
+    font-size: 14px;
+    font-weight: 700;
+    color: #282829;
+    margin-bottom: 15px;
+}
 .profile-data-group-form_segment{
     padding-bottom: 40px;
     border-bottom: 1px solid #dcdee6;
@@ -1032,9 +1065,177 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     padding: 0 20px;
 }
 /*\\sidebar*/
-
 /*\\order page*/
+
+/*about-brand*/
+.big-n-little-t{
+    height: 150px;
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-n-little-t::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    height: 1px;
+    background: #E9ECF0;
+}
+.big-n-little-t:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15%;
+    width: 1px;
+    height: 70%;
+    background: #E9ECF0;
+}
+.big-n-little-t:nth-child(3n)::after{
+    content: none;
+}
+  
+.big-n-little-t_number{
+    font-family: "PFDinDisplayPro";
+    color: #014161;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.big-n-little-t_text{
+    text-align: center;
+}
+
+.company-purpose{
+    background-image: url("../images/about-brand/bkg_purpose.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding: 30px;
+    margin-top: 20px;
+}
+.company-purpose_factory{
+    background-image: url("../images/about-brand/bkg3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding: 30px;
+}
+
+.company-aspects-item{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: 'PFDinDisplayPro';
+    margin-bottom: 25px;
+}
+
+.company-aspects-item:last-child{
+    margin-bottom: 0;
+}
+
+.company-aspects-item_number{
+    border-right: 1px solid #E9ECF0;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 0;
+    color: #025077;
+    height: 40px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.company-aspects-item_number--modified{
+    font-size: 50px;
+    font-weight: 900;
+    padding-right: 0px;
+}
+.our_factory-wrapper{
+    overflow: hidden;
+    margin-bottom: 50px;
+    background-image: url(../images/about-brand/bkg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 630px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    padding-top: 30px;
+}
+
+/*history*/
+.history-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px;
+    z-index: 2;
+    width: 30px;
+    height: 100%;
+    transform: scaleX(-1);
+    background: url("../images/history/timeline-bgr.png") repeat-y 0 0;
+  }
+.history-timeline-list {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.history-timeline-item {
+  position: relative;
+  width: 23px;
+  margin-right: 86px;
+}
+.history-timeline-link {
+    display: inline-block;
+}
+.history-timeline-label {
+    position: absolute;
+    left: 0;
+    bottom: 34px;
+    width: 50px;
+    margin-left: -13px;
+    font-size: 15px;
+    color: #a0a0a0;
+    font-family: 'Nunito';
+    font-weight: 800;
+    text-align: center;
+}
+.history-timeline-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+.history-timeline-item_active .history-timeline-icon-decor {
+    background-color: #335aa6;
+}
+.history-timeline-icon-decor {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+    border: 3px solid #fff;
+}
+/*\\history*/
+/*\\about-brand*/
+
+
 @media (max-width: 1200px){
+    .big-n-little-t_number{
+        font-size: 30px;
+    }
     .look-book-microcard-card-buttons-item{
         flex-wrap: wrap;
     }
@@ -1047,6 +1248,12 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 }
 
 @media (max-width: 992px){
+    .company-purpose{
+        margin-top: 0;
+    }
+    .slider-margin{
+        margin-bottom: 25px;
+    }
     .order-sidebar-col{
         order: -1;  
     }
@@ -1123,6 +1330,21 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     }
 }
 @media (max-width: 720px){
+    .add-border-bottom{
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+    .block-border-bottom{
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #e6e8ed;
+    }
+    .big-n-little-t_number{
+        font-size: 20px;
+    }
+    .def-mrg, .small-mrg{
+        margin-bottom: 20px;
+    }
     .delivery-order-img{
         margin: 0 auto;
     }
