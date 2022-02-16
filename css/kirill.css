@@ -1123,6 +1123,7 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     align-items: center;
     margin-right: 20px;
 }
+
 .company-aspects-item_number--modified{
     font-size: 50px;
     font-weight: 900;
@@ -1201,7 +1202,7 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 }
 
 /*map style*/
-.map-title{
+.map-title_for-partners{
     margin-top: 35px;
 }
 .map-title_company-aspects{
@@ -1393,6 +1394,16 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     }
 }
 @media (max-width: 720px){
+    .map-title_for-partners {
+        text-align: center;
+      }
+    .map-title_company-aspects {
+        justify-content: center;
+    }
+    .company-aspects-item_number{
+        padding-right: 10px;
+        margin-right: 10px;
+    }
     .minibanner-variant-number{
         padding: 0px 10px;
         margin-right: 10px;
