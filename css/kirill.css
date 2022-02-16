@@ -730,7 +730,7 @@ div.input_right_image.input_right_image_pass{
 
 .turbo-mozaika{
     display: grid;
-    grid-template-columns: [col1-start] auto [col2-start] auto [col3-start] auto [col4-start] auto [col5-start] auto [col5-end] auto ;
+    grid-template-columns: [col1-start] auto [col2-start] auto [col3-start] auto [col4-start] auto [col5-start] auto [col5-end];
     grid-template-rows: [row1-start] auto [row2-start] auto[row3-start] auto [row4-start] auto [row4-end] auto;
     gap: 10px;
 
@@ -1098,6 +1098,9 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     background-position: left;
     padding: 30px;
 }
+.company-purpose_factory.big-n-little-t{
+    justify-content: left;
+}
 
 .company-aspects-item{
     display: flex;
@@ -1105,6 +1108,7 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     justify-content: left;
     font-family: 'PFDinDisplayPro';
     margin-bottom: 25px;
+    text-align: left;
 }
 
 .company-aspects-item:last-child{
@@ -1287,6 +1291,7 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 
 .feedback-company-aspects_content{
     font-size: 20px;
+    text-align: left;
 }
 
 /*\\history*/
@@ -1394,6 +1399,10 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     }
 }
 @media (max-width: 720px){
+    .big-n-little-t{
+        height: 170px;
+    }
+
     .map-title_for-partners {
         text-align: center;
       }
@@ -1407,6 +1416,7 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     .minibanner-variant-number{
         padding: 0px 10px;
         margin-right: 10px;
+        font-size: 40px;
     }
     .feedback-company-aspects{
         margin-bottom: 40px;
@@ -1584,16 +1594,38 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
         margin-bottom: 15px;
     }
 }
-
+@media (max-width:400px){
+    .for-partners-minibanner-title {
+        padding-top: 20px;
+    }
+    .minibanner-variant-number{
+        padding-top: 3px;
+    }
+    .feedback-company-aspects_content{
+        font-size: 15px;
+    }
+    .feedback-company-aspects_content span{
+        font-size: 20px;
+    }
+    .map-title_company-aspects-item_number {
+        font-size: 25px;
+    }
+    .company-purpose_factory{
+        padding: 20px 10px;
+    }
+    .big-n-little-t {
+        height: 220px;
+    }
+}
 
 @media screen and (max-width: 460px) {
 .articles-wishlist-img-val {
   min-height: 200px; } }
-  
+
+
 .history-panel {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 30px; }
 
 .history-title {
@@ -1610,14 +1642,6 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 .history-content_active {
   display: block; }
 
-/*
-.history-slider {
-  float: right;
-  margin-left: 30px;
-  margin-bottom: 15px;
-  width: 50%;
-  max-width: 570px; }
-*/
 .history-slider-list {
   margin-bottom: 35px;
   overflow: hidden; }
