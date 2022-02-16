@@ -878,7 +878,6 @@ div.input_right_image.input_right_image_pass{
     -webkit-text-stroke: 1px #2B7EC6;
 
     height: 80%;
-    margin: auto 0;
     display: flex;
     align-items: center;
     padding: 0px 19px;
@@ -1113,7 +1112,7 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 }
 
 .company-aspects-item_number{
-    border-right: 1px solid #E9ECF0;
+    border-right: 1px solid #d6d6d6;
     font-size: 35px;
     font-weight: 600;
     line-height: 0;
@@ -1177,7 +1176,6 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     margin-left: -13px;
     font-size: 15px;
     color: #a0a0a0;
-    font-family: 'Nunito';
     font-weight: 800;
     text-align: center;
 }
@@ -1203,6 +1201,9 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 }
 
 /*map style*/
+.map-title{
+    margin-top: 35px;
+}
 .map-title_company-aspects{
     display: flex;
     justify-content: left;
@@ -1224,7 +1225,7 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 }
 
 .banners-fon-list__svg-wrapper{
-    padding: 50px 20px;
+    padding: 0px 20px 40px 20px;
 }
 .banners-fon-list__svg{
     position: relative;
@@ -1280,15 +1281,12 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 .region-baloon-open { 
     cursor:pointer; 
 } 
-/*
-.st_map_country{
-    fill:#D8DDE4; opacity:1;
-}
-.st_map_region{
-    fill:#E9ECF0; opacity:1;
-}
-*/
+
 /*\\map style*/
+
+.feedback-company-aspects_content{
+    font-size: 20px;
+}
 
 /*\\history*/
 /*\\about-brand*/
@@ -1390,11 +1388,19 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     .for-partners-slider ul .swiper-slide-next, .for-partners-slider ul .swiper-slide-prev{
         height: 300px;
     }
+    .feedback-form-img-for-partners_about-brand{
+        display: none;
+    }
 }
 @media (max-width: 720px){
-    .banners-fon-list__svg-wrapper{
-        padding: 30px 20px;
+    .minibanner-variant-number{
+        padding: 0px 10px;
+        margin-right: 10px;
     }
+    .feedback-company-aspects{
+        margin-bottom: 40px;
+    }
+    
     .add-border-bottom{
         padding-bottom: 30px;
         margin-bottom: 30px;
@@ -1567,3 +1573,207 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
         margin-bottom: 15px;
     }
 }
+
+
+@media screen and (max-width: 460px) {
+.articles-wishlist-img-val {
+  min-height: 200px; } }
+  
+.history-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+
+.history-title {
+  margin-bottom: 0; }
+
+.history-content {
+  display: none; }
+  .history-content:after {
+    content: "";
+    clear: both;
+    display: table;
+    line-height: 0; }
+
+.history-content_active {
+  display: block; }
+
+/*
+.history-slider {
+  float: right;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  width: 50%;
+  max-width: 570px; }
+*/
+.history-slider-list {
+  margin-bottom: 35px;
+  overflow: hidden; }
+
+.history-slider-img {
+  display: block;
+  width: 100%; }
+
+.history .owl-stage {
+  display: flex; }
+
+.history .owl-item {
+  position: relative; }
+  .history .owl-item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); }
+
+.history .owl-item.active:after {
+  display: none; }
+
+.history-timeline {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px; }
+  .history-timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px;
+    z-index: 2;
+    width: 30px;
+    height: 100%;
+    transform: scaleX(-1);
+    background: url("../images/history/timeline-bgr.png") repeat-y 0 0; }
+  .history-timeline:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 35px;
+    height: 100%;
+    background: url("../images/history/timeline-bgr.png") repeat-y 0 0; }
+
+.history-timeline-block {
+  overflow-x: hidden; }
+  .history-timeline-block:after {
+    content: '';
+    position: absolute;
+    bottom: 13px;
+    left: 25px;
+    width: calc(100% - 11px);
+    height: 2px;
+    background-color: #d6d6d6; }
+
+.history-timeline-list {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 20px; }
+
+.history-timeline-item {
+  position: relative;
+  width: 23px;
+  margin-right: 86px; }
+  .history-timeline-item:last-child {
+    padding-right: 80px; }
+
+.history-timeline-link {
+  display: inline-block; }
+
+.history-timeline-label {
+  position: absolute;
+  left: 0;
+  bottom: 34px;
+  width: 50px;
+  margin-left: -13px;
+  font-size: 15px;
+  color: #a0a0a0;
+  font-weight: 800;
+  text-align: center; }
+
+.history-timeline-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%; }
+
+.history-timeline-icon-decor {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+  border: 3px solid #fff; }
+
+.history-timeline-item_active .history-timeline-label {
+  color: #2a364d;
+  font-size: 15px; }
+
+.history-timeline-item_active .history-timeline-icon {
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(97, 107, 120, 0.23); }
+
+.history-timeline-item_active .history-timeline-icon-decor {
+  background-color: #335aa6; }
+
+  
+.content .list li::before {
+  content: '\f058';
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  width: auto;
+  height: auto;
+  margin-right: 6px;
+  background-color: transparent;
+  color: #2a364d;
+}
+.content ul li::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 5px;
+  margin-top: -2px;
+  margin-left: -12px;
+  margin-right: 11px;
+  background-color: #050101;
+  border-radius: 50%;
+}
+@media screen and (max-width: 1200px) {
+  .history-timeline-item {
+    margin-right: 62px; } }
+
+@media screen and (max-width: 992px) {
+  .history-content_active {
+    display: flex;
+    flex-direction: column; }
+  .history-slider {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+    order: 1;
+    width: 100%; } }
+
+@media screen and (max-width: 720px) {
+  .history-panel {
+    flex-direction: column; }
+  .history-title {
+    margin-bottom: 15px; }
+  .history-slider-list {
+    margin-left: 40px;
+    margin-right: 40px;
+    overflow: visible; }
+  .history-slider-nav {
+    display: none; }
+  .history .owl-item.active:after {
+    display: none; } 
+}  
+.about-history {
+    margin-bottom: 30px; }

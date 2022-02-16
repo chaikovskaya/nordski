@@ -210,26 +210,9 @@ function reInitMozaic() {
         $('.masonry-mozaika').masonry('destroy');
     }
 }
+
 /*MAP*/
-/*map*/
-/*
-$(".st_map_region").hover(function(){
-    var regionId = $(this).attr("id").replace("mapSvgRegion", '');
-    var pointerId = "mapSvgRegionMarker" + regionId;
-    var descriptionId = "mapDescription" + regionId;
-    if(!$(pointerId).length)
-        return;
-        console.log($(pointerId));
-    var pointer = document.querySelector('.st_map-marker[id="'+regionId+'"]');
-    console.log(pointer);
-    //console.log($(pointerId).get(0).getBoundingClientRect());
-    //console.log($(".banners-fon-list__svg").get(0).getBoundingClientRect());
-    //var pointerRect = $(pointerId).get(0).getBoundingClientRect();
-    //var mapRect = $(".banners-fon-list__svg").get(0).getBoundingClientRect();
-    //$("#mapDescription84").css("top",pointerRect["y"] - mapRect["y"]).css("right",mapRect["right"] - pointerRect["x"]);
-    $(`#${descriptionId}`).removeClass("hidden");
-});
-*/
+
 $(document).ready(function () {
     function regionItemHover(regionId, hover) {
       (hover === true) ? document.querySelector('.js-region-item[data-region="'+regionId+'"]').classList.add('region-item-hover') : document.querySelector('.js-region-item[data-region="'+regionId+'"]').classList.remove('region-item-hover');
@@ -280,88 +263,6 @@ $(document).ready(function () {
     );
   });
 
-
-/*History*/
-
-function initSliderHistory() {
-    $(".js-slider-history").each(function(){
-        var $element = $(this),
-            $list = $element.find('.js-slider-list'),
-            $buttons = $element.find('.js-slider-buttons'),
-            $pager = $element.find('.js-slider-pager'),
-            $item = $list.find('.js-slider-item');
-
-        var isLoop = $item.length > 1 ? true : false;
-
-        $list.owlCarousel(jQuery.extend({}, GLOBAL.owl.common, {
-            loop: isLoop,
-            mouseDrag: isLoop,
-            touchDrag: isLoop,
-            nav: true,
-            autoHeight: false,
-            smartSpeed: 600,
-            responsive: {
-                0: {
-                    items: 1,
-                    margin: 15,
-                },
-                720: {
-                    items: 1,
-                    margin: 15,
-                },
-                992: {
-                    items: 1,
-                    margin: 30,
-                },
-            },
-            navContainer: $buttons,
-            dotsContainer: $pager,
-            onInitialize: function (event) {
-            },
-        }));
-    });
-}
-
-function initDragging() {
-    new ScrollBooster({
-        viewport: document.querySelector('.js-dragging'),
-        content: document.querySelector('.js-dragging-content'),
-        scrollMode: 'transform',
-        direction: 'horizontal',
-        bounceForce: 0.2,
-    });
-}
-
-function initAjaxHistory() {
-    $(".js-history").each(function() {
-        var $element = $(this),
-            $url = $element.data('src');
-
-        $('.js-preloader').removeClass('g-hidden');
-
-        $.ajax({
-            url: $url,
-            method: "POST",
-            dataType: "html",
-            success: function (data) {
-                if (data) {
-                    $element.html(data);
-                }
-
-                initTab();
-                initDragging();
-                initSliderHistory();
-
-                $('.js-preloader').addClass('g-hidden');
-            }
-        });
-    });
-}
-
-$(document).ready(function () {
-
-});
-/*\\History*/
 $(document).ready(function () {
     initSelSexForm();
     initSliderClubPurchaseProducts();
@@ -369,6 +270,4 @@ $(document).ready(function () {
     initAjaxMoreLookBook();
     initMozaic();
     reInitMozaic();
-    initSliderHistory();
-    initAjaxHistory();
 });
