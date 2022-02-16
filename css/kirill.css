@@ -901,73 +901,6 @@ div.input_right_image.input_right_image_pass{
 }
 /*\\\для партнеров*/
 
-/*map style*/
-.banners-fon-list__svg-wrapper{
-    padding: 50px 20px;
-}
-.banners-fon-list__svg{
-    position: relative;
-}
-.region-item:hover, 
-.region-item:hover path, 
-.region-item-hover, 
-.region-item-hover path { 
-    fill: #025077;
-} 
- 
-.region-item, 
-.region-baloon-open { 
-    cursor:pointer; 
-} 
-
-.region-baloon-open.region-baloon-open-hover{ 
-    opacity: 0; 
-}
-.banners-fon-list__baloon {
-    display: none;
-    position: absolute;
-
-    box-shadow: 0 0 13px rgba(0,0,0,.08);
-    transform: translate(-50%,-100%);
-}
-
-.banners-fon-list__baloon::before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    margin-left: -4px;
-    width: 8px;
-    height: 8px;
-    background-color: #fff;
-    transform: rotate(45deg);
-}
-.banners-fon-list__baloons {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-}
-.banners-fon-list__baloon-active{
-    display: inline-block;
-    background-color: #fff;
-}
-.markers-description-item{
-    padding: 20px 10px 0px 10px;
-    line-height: 10px;
-}
-/*
-.st_map_country{
-    fill:#D8DDE4; opacity:1;
-}
-.st_map_region{
-    fill:#E9ECF0; opacity:1;
-}
-*/
-/*\\map style*/
-
 .switch-label-gray{
     color: #7d7d7d;
 }
@@ -1268,6 +1201,95 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     background-color: #d6d6d6;
     border: 3px solid #fff;
 }
+
+/*map style*/
+.map-title_company-aspects{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.map-title_company-aspects-item{
+    align-items:initial;
+    margin-right: 25px;
+}
+.map-title_company-aspects-item:last-child{
+    margin-bottom: 25px;
+}
+.map-title_company-aspects-item_number{
+    color: #282829;
+    font-size: 40px;
+}
+.map-title_content{
+    line-height: 5px;
+}
+
+.banners-fon-list__svg-wrapper{
+    padding: 50px 20px;
+}
+.banners-fon-list__svg{
+    position: relative;
+}
+
+
+.region-baloon-open.region-baloon-open-hover{ 
+    opacity: 0; 
+}
+.banners-fon-list__baloon {
+    display: none;
+    position: absolute;
+
+    box-shadow: 0 0 13px rgba(0,0,0,.08);
+    transform: translate(-50%,-100%);
+}
+
+.banners-fon-list__baloon::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    margin-left: -4px;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+.banners-fon-list__baloons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+}
+.banners-fon-list__baloon-active{
+    display: inline-block;
+    background-color: #fff;
+}
+.markers-description-item{
+    padding: 20px 10px 0px 10px;
+    line-height: 10px;
+}
+.region-item:hover, 
+.region-item:hover path, 
+.region-item-hover, 
+.region-item-hover path { 
+    fill: #025077 !important;
+} 
+ 
+.region-item, 
+.region-baloon-open { 
+    cursor:pointer; 
+} 
+/*
+.st_map_country{
+    fill:#D8DDE4; opacity:1;
+}
+.st_map_region{
+    fill:#E9ECF0; opacity:1;
+}
+*/
+/*\\map style*/
+
 /*\\history*/
 /*\\about-brand*/
 
