@@ -33,6 +33,10 @@
 .font-size18{
     font-size: 18px;
 }
+.bold-black{
+    color: #000;
+    font-weight: 700;
+}
 .content_bigger-fs{ 
     font-size: 17px;
 }
@@ -728,13 +732,8 @@ div.input_right_image.input_right_image_pass{
 .for-partners-slider{
     margin-bottom: 50px;
 }
-.for-partners-slider ul .swiper-slide-next{
-    height: 400px;
-    filter: grayscale(30%);
-    overflow: hidden;
-}
-.for-partners-slider ul .swiper-slide-prev{
-    height: 400px;
+.for-partners-slider ul .swiper-slide-next, .for-partners-slider ul .swiper-slide-prev{
+    height: 500px;
     filter: grayscale(30%);
     overflow: hidden;
 }
@@ -1110,6 +1109,9 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     height: 80%;
     background: #E9ECF0;
 }
+.big-n-little-t:nth-child(1n + 4)::before{
+    content: none
+}
 .big-n-little-t:nth-child(3n)::after{
     content: none;
 }
@@ -1170,7 +1172,10 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     align-items: center;
     margin-right: 20px;
 }
-
+.company-aspects-item_number-feedback{
+    font-size: 25px;
+    height: 46px;
+}
 .company-aspects-item_number--modified{
     font-size: 50px;
     font-weight: 900;
@@ -1274,7 +1279,7 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 }
 
 .banners-fon-list__svg-wrapper{
-    padding: 0px 20px 40px 20px;
+    padding: 0px 20px 80px 20px;    
 }
 .banners-fon-list__svg{
     position: relative;
@@ -1336,6 +1341,9 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 .feedback-company-aspects_content{
     font-size: 20px;
     text-align: left;
+}
+.feedback-company-aspects_content div{
+    margin-bottom: 10px;
 }
 
 /*\\history*/
