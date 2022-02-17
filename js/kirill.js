@@ -18,12 +18,12 @@ $('.js-remove-extra-telephone').click(function(){
         $(this).addClass("hidden");
 });
 
-$('.js-add-extra-adress').click(function(){
+$(document).on('click', '.js-add-extra-adress', function(){
     $(".form-add-adress").removeClass("hidden");
     $(this).addClass("hidden");
     $('.js-remove-extra-adress').removeClass("hidden");
 });
-$('.js-remove-extra-adress').click(function(){
+$(document).on('click', '.js-remove-extra-adress', function(){
     $(".form-add-adress").addClass("hidden");
     $(this).addClass("hidden");
     $(".js-add-extra-adress").removeClass("hidden");
