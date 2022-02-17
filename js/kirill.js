@@ -228,7 +228,7 @@ $(document).ready(function () {
     function regionBaloonShow(regionId, show) {
       var regionBaloon = document.querySelector('.js-region-baloon-item[data-region="'+regionId+'"]');
       if (!regionBaloon) return;
-      var regionArea = document.querySelector('.js-region-item[data-region="'+regionId+'"]');
+      var regionArea = document.querySelector('.js-region-baloon.region-baloon-open[data-region="'+regionId+'"]');
       if (show) {
         var mapRect = document.querySelector('.js-region-map').getBoundingClientRect();
         var baloonRect = regionArea.getBoundingClientRect();
