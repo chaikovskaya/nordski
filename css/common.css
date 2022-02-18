@@ -94,7 +94,11 @@
   font-family: 'ALSRubl';
   src: local("ALSRubl"), url("../fonts/ALSRubl/rouble.otf");
   font-weight: 400; }
-
+@font-face {
+  font-family: 'Rubik';
+  src: local("Rubik"), url("../fonts/Rubik/Rubik-Regular.ttf");
+  font-weight: 400; }
+  
 * {
   box-sizing: border-box;
   margin: 0;
@@ -2301,7 +2305,7 @@ body.mob-form-show .wrapper {
   .input_modified {
     height: 42px;
     padding: 10px  14px;
-    color: #7d7d7d;
+    color: #1d1d1d;/*#7d7d7d*/
     border-color: #e6e8ed;
     border-width: 1px;
     font-size: 16px; }
