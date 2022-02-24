@@ -1073,7 +1073,7 @@ function openPopupProductArrival($element) {
 
 function initPopupProductArrival() {
     $(".js-open-product-arrival").on('click', function() {
-        openPopupProductArrival($(".js-open-product-arrival"));
+        openPopupProductArrival($(this));
     });
 }
 
