@@ -1237,10 +1237,13 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 630px;
+    /*
     display: flex;
     align-items: center;    
     justify-content: center;
-    padding-top: 30px;
+    */
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .our_factory-undertext{
     font-weight: bold;

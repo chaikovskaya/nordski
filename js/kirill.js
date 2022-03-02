@@ -53,7 +53,7 @@ $(document).on('click', '.js-delivery-block-order', function(){
     $(this).addClass("delivery-block-order-checked");
     $(".post-order-detail-item").addClass("hidden");
     var selId = $(this).find(".delivery-pick-input").attr("id").replace("radioShipment", '');
-    $(`#post${selId}`).removeClass("hidden");
+    $("#post" + selId).removeClass("hidden");
 });
 
 var sliderClubPurchaseProducts;
