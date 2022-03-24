@@ -254,13 +254,12 @@ var sliderProducts;
 function initSliderProducts() {
     jQuery('.js-slider-products').each(function() {
         var $slider = $(this),
-            sliderClass = ".js-slider-products",
             sliderLength = $slider.find('.swiper-slide').length;
 
         var isStart = sliderLength > 1 ? true : false;
 
         function _buildSliderCounter() {
-            var index = $slider.find('.swiper-slide-active').attr("data-slider-index");
+            var index = $slider.find('.swiper-slide-active').attr("data-slider-index") || 0;
             index = parseInt(index, 10) + 1;
             if (index < 10) {
                 index =  '0' + index;
@@ -269,15 +268,15 @@ function initSliderProducts() {
             $slider.find('.js-slider-current').html(index);
         }
 
-        sliderProducts = new Swiper(sliderClass, {
+        sliderProducts = new Swiper($slider[0], {
             loop: isStart,
             pagination: {
-                el: '.js-slider-pagination',
+                el: $slider.find('.js-slider-pagination')[0],
                 type: "progressbar",
             },
             navigation: {
-                nextEl: ".js-slider-next",
-                prevEl: ".js-slider-prev",
+                nextEl: $slider.find('.js-slider-next')[0],
+                prevEl: $slider.find('.js-slider-prev')[0],
                 disabledClass: "slider-button_disabled",
             },
             spaceBetween: 10,
@@ -355,13 +354,12 @@ var sliderLookbook;
 function initSliderLookbook() {
     jQuery('.js-slider-lookbook').each(function() {
         var $slider = $(this),
-            sliderClass = ".js-slider-lookbook",
             sliderLength = $slider.find('.swiper-slide').length;
 
         var isStart = sliderLength > 1 ? true : false;
 
         function _buildSliderCounter() {
-            var index = $slider.find('.swiper-slide-active').attr("data-slider-index");
+            var index = $slider.find('.swiper-slide-active').attr("data-slider-index") || 0;
             index = parseInt(index, 10) + 1;
             if (index < 10) {
                 index =  '0' + index;
@@ -370,15 +368,15 @@ function initSliderLookbook() {
             $slider.find('.js-slider-current').html(index);
         }
 
-        sliderLookbook = new Swiper(sliderClass, {
+        sliderLookbook = new Swiper($slider[0], {
             loop: isStart,
             pagination: {
-                el: '.js-slider-pagination',
+                el: $slider.find('.js-slider-pagination')[0],
                 type: "progressbar",
             },
             navigation: {
-                nextEl: ".js-slider-next",
-                prevEl: ".js-slider-prev",
+                nextEl: $slider.find('.js-slider-next')[0],
+                prevEl: $slider.find('.js-slider-prev')[0],
                 disabledClass: "slider-button_disabled",
             },
             slidesPerView: 1,
