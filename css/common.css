@@ -118,6 +118,11 @@ h1,
   font: 700 35px/43px 'PFDinDisplayPro', sans-serif;
   color: #1d1d1d; }
 
+.h1--white{
+  margin: 0 0 30px;
+  font: 700 35px/43px 'PFDinDisplayPro', sans-serif;
+  color: #fff; }
+
 h2,
 .h2 {
   margin-bottom: 18px;
