@@ -5787,7 +5787,7 @@ label.form-error {
   margin-bottom: 25px; }
 
 .product-detail-size-link {
-  width: 48px;
+  min-width: 48px;
   height: 36px;
   line-height: 33px;
   font-size: 16px; }
