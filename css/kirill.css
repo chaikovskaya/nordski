@@ -748,23 +748,23 @@ div.input_right_image.input_right_image_pass{
 .for-partners-slider{
     margin-bottom: 50px;
 }
-.for-partners-slider ul .swiper-slide-next, .for-partners-slider ul .swiper-slide-prev{
-    height: 500px;
+.for-partners-slider-item {
+    width: 640px;
+}
+.for-partners-slider .swiper-slide:not(.swiper-slide-active) .lookbook-block {
+    width: 100%;
     filter: grayscale(30%);
     overflow: hidden;
 }
-.for-partners-slider-lookbook-img{
-    height: 600px;
-}
 
 .turbo-mozaika{
-    display: grid;
-    grid-template-columns: [col1-start] auto [col2-start] auto [col3-start] auto [col4-start] auto [col5-start] auto [col5-end];
-    grid-template-rows: [row1-start] auto [row2-start] auto[row3-start] auto [row4-start] auto [row4-end] auto;
-    gap: 10px;
+display: grid;
+grid-template-columns: [col1-start] auto [col2-start] auto [col3-start] auto [col4-start] auto [col5-start] auto [col5-end];
+grid-template-rows: [row1-start] auto [row2-start] auto[row3-start] auto [row4-start] auto [row4-end] auto;
+gap: 10px;
 
-    display: -ms-grid;
-                    /* 1        3        5        7        9  */
+display: -ms-grid;
+                /* 1        3        5        7        9  */
     -ms-grid-columns: 20% 10px 20% 10px 20% 10px 20% 10px 20%;
     column-gap: 10px;
                  /* 1        3        5        7*/
@@ -1406,6 +1406,10 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 /*\\history*/
 /*\\about-brand*/
 
+@media screen and (max-width: 1440px) {
+    .for-partners-slider-item {
+        width: 440px;
+    } }
 
 @media (max-width: 1200px){
     .big-n-little-t_number{
@@ -1496,15 +1500,11 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     .minibanner-variant{
         height: 50px;
     }
-
-    .for-partners-slider-lookbook-img{
-        height: 400px;
-    }
-    .for-partners-slider ul .swiper-slide-next, .for-partners-slider ul .swiper-slide-prev{
-        height: 300px;
-    }
     .feedback-form-img-for-partners_about-brand{
         display: none;
+    }
+    .for-partners-slider-item {
+        width: 320px;
     }
 }
 @media (max-width: 720px){
@@ -1697,13 +1697,6 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     }
     .look-book-item-detail_pic_col .look-book-item-little_pic_single_col:last-child{
         padding-top: 7.5px;
-    }
-
-    .for-partners-slider-lookbook-img{
-        height: 300px;
-    }
-    .for-partners-slider ul .swiper-slide-next, .for-partners-slider ul .swiper-slide-prev{
-        height: 200px;
     }
 }
 
@@ -1913,7 +1906,8 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     margin-right: auto;
     margin-left: auto;
     order: 1;
-    width: 100%; } }
+    width: 100%; }
+}
 
 @media screen and (max-width: 720px) {
   .history-panel {
@@ -1927,8 +1921,7 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
   .history-slider-nav {
     display: none; }
   .history .owl-item.active:after {
-    display: none; } 
-}  
+    display: none; } }
 .about-history {
     margin-bottom: 30px; }
 
