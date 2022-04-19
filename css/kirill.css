@@ -1060,6 +1060,9 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
 .pos-relative{
     position: relative;   
 }
+.order-sidebar-col {
+    margin-bottom: 37px;
+}
 .order-sidebar{
     border: 1px solid #dcdee6;
     border-bottom: none;
