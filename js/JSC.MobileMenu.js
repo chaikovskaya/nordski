@@ -69,7 +69,7 @@
   };
 
   MobileMenu.prototype._outside = function _outside(e) {
-    if (!this.backgroundDisabled && (this.$element.has(e.target).length === 0)){
+    if (!this.backgroundDisabled && (this.$element.has(e.target).length === 0) && !$(e.target).closest('jdiv').length){
       this._close();
     }
   };
