@@ -4,6 +4,7 @@
 	src: local('PFDinDisplayPro'),
 	url('../fonts/pfdindisplaypro/pfdindisplaypro-light.ttf');
 	font-weight: 300;
+	font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
 	url('../fonts/pfdindisplaypro/pfdindisplaypro-lightital.ttf');
 	font-weight: 300;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -19,6 +21,7 @@
 	src: local('PFDinDisplayPro'),
 	url('../fonts/pfdindisplaypro/pfdindisplaypro-reg.ttf');
 	font-weight: 400;
+	font-display: swap;
 }
 
 @font-face {
@@ -27,6 +30,7 @@
 	url('../fonts/pfdindisplaypro/pfdindisplaypro-italic.ttf');
 	font-weight: 400;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -34,6 +38,7 @@
 	src: local('PFDinDisplayPro'),
 	url('../fonts/pfdindisplaypro/pfdindisplaypro-med.ttf');
 	font-weight: 500;
+	font-display: swap;
 }
 
 @font-face {
@@ -42,6 +47,7 @@
 	url('../fonts/pfdindisplaypro/pfdindisplaypro-medital.ttf');
 	font-weight: 500;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -49,6 +55,7 @@
 	src: local('PFDinDisplayPro'),
 	url('../fonts/pfdindisplaypro/pfdindisplaypro-bold.ttf');
 	font-weight: 700;
+	font-display: swap;
 }
 
 @font-face {
@@ -57,6 +64,7 @@
 	url('../fonts/pfdindisplaypro/pfdindisplaypro-boldital.ttf');
 	font-weight: 700;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -64,6 +72,7 @@
 	src: local('PFDinDisplayPro'),
 	url('../fonts/pfdindisplaypro/pfdindisplaypro-black.ttf');
 	font-weight: 900;
+	font-display: swap;
 }
 
 
@@ -72,6 +81,7 @@
 	src: local('OpenSans'),
 	url('../fonts/open_sans/OpenSans-Light.ttf');
 	font-weight: 300;
+	font-display: swap;
 }
 
 @font-face {
@@ -80,6 +90,7 @@
 	url('../fonts/open_sans/OpenSans-LightItalic.ttf');
 	font-weight: 300;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -87,6 +98,7 @@
 	src: local('OpenSans'),
 	url('../fonts/open_sans/OpenSans-Regular.ttf');
 	font-weight: 400;
+	font-display: swap;
 }
 
 @font-face {
@@ -95,6 +107,7 @@
 	url('../fonts/open_sans/OpenSans-Italic.ttf');
 	font-weight: 400;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -102,6 +115,7 @@
 	src: local('OpenSans'),
 	url('../fonts/open_sans/OpenSans-Semibold.ttf');
 	font-weight: 600;
+	font-display: swap;
 }
 
 @font-face {
@@ -109,6 +123,7 @@
 	src: local('OpenSans'),
 	url('../fonts/open_sans/OpenSans-Bold.ttf');
 	font-weight: 700;
+	font-display: swap;
 }
 
 @font-face {
@@ -117,6 +132,7 @@
 	url('../fonts/open_sans/OpenSans-BoldItalic.ttf');
 	font-weight: 700;
 	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
@@ -124,6 +140,7 @@
 	src: local('OpenSans'),
 	url('../fonts/open_sans/OpenSans-ExtraBold.ttf');
 	font-weight: 800;
+	font-display: swap;
 }
 
 @font-face {
@@ -131,4 +148,5 @@
 	src: local("ALSRubl"),
 	url('../fonts/ALSRubl/rouble.otf');
 	font-weight: 400;
+	font-display: swap;
 }
