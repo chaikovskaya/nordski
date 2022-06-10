@@ -1162,6 +1162,9 @@ function initPopupProduct() {
             initPopupGallery();
             initPopupSizeChart();
             initPopupProductArrival();
+
+            let basket = new Basket;
+            basket.initDOMEvents();
         },
     });
 }
