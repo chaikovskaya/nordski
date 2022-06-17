@@ -1061,11 +1061,25 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     position: relative;   
 }
 .order-sidebar-col {
+    position: relative;
+    min-height: 100%;
     margin-bottom: 37px;
 }
 .order-sidebar{
+    position: static;
+    top: 0;
     border: 1px solid #dcdee6;
     border-bottom: none;
+    transition: top 0.2s linear;
+}
+.order-sidebar_fix {
+    position: fixed;
+    top: 0;
+}
+.order-sidebar_bottom {
+    position: absolute;
+    top: auto;
+    bottom: 0;
 }
 .order-sidebar-value{
     font-size: 15px;
@@ -1436,8 +1450,17 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
     .slider-margin{
         margin-bottom: 25px;
     }
+    .order-sidebar {
+        width: 100%!important;
+    }
     .order-sidebar-col{
         order: -1;  
+    }
+    .order-sidebar_fix {
+        position: static;
+    }
+    .order-sidebar_bottom {
+        position: static;
     }
     .sidebar-order-table{
         height: 250px;
