@@ -1698,6 +1698,7 @@ label.form-error {
     opacity: 0; }
   .radio-check {
     display: inline-block;
+    min-width: 18px;
     width: 18px;
     height: 18px;
     margin-right: 7px;

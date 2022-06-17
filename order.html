@@ -2078,8 +2078,11 @@
                     
 
                     <!--sidebar-->
-                    <div class="col-lg-4 col-xl-3 order-sidebar-col" data-sticky-container>
-                        <div class="order-sidebar js-fix-sticky" data-sticky-wrap>
+                    <div class="col-lg-4 col-xl-3 order-sidebar-col JS-Sticky" data-sticky="{
+                        'classActive': 'order-sidebar_fix',
+                        'classBottom': 'order-sidebar_bottom'
+                    }">
+                        <div class="order-sidebar JS-Sticky-Item">
                             
                             <div class="order-sidebar-header sidebar-block-ex_padding">
                                 <div class="like_h3 no_margin">Информация о заказе</div>
@@ -2659,6 +2662,7 @@
     <script src="./js/JSC.ShowMore.js"></script>
     <script src="./js/JSC.AjaxMore.js"></script>
     <script src="./js/JSC.Quantity.js"></script>
+    <script src="./js/JSC.StickyFix.js"></script>
 
     <script src="./js/main.js"></script>
     <script src="./js/datepicker-ru.js"></script>
