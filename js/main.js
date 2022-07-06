@@ -505,6 +505,9 @@ function initSliderKinds() {
 
         sliderKinds = new Swiper(sliderClass, {
             loop: isStart,
+            autoplay:{
+                delay:3000
+            },
             pagination: {
                 el: '.js-slider-pagination',
                 type: "progressbar",
@@ -1038,6 +1041,7 @@ function openPopupFastbuy($element) {
 
 function initPopupFastbuy() {
     $(".js-open-fastbuy").on('click', function() {
+        console.log("true");
         $.fancybox.close();
         openPopupFastbuy($(".js-open-fastbuy"));
     });

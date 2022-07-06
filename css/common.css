@@ -5210,7 +5210,8 @@ label.form-error {
   .feedback-title {
     margin-bottom: 18px; }
   .feedback-info {
-    max-width: 340px;
+    /*max-width: 340px; */
+    max-width: 429px; 
     margin-bottom: 84px;
     font-size: 25px;
     line-height: 25px; }
@@ -8427,3 +8428,15 @@ label.form-error {
   .basket-table-select {
     margin-left: 0;
     margin-right: 0; } }
+    .desc_parners_condition li{
+      list-style-type: none;
+    }
+    .desc_parners_condition{
+      padding-top:10px;
+      font-size:23px;
+    }
+    .desc_parners_condition .snow-csm{
+      padding-right: 10px;
+       color: #014161;
+    }
+   

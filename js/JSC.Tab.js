@@ -32,7 +32,7 @@
     }
 
     this.$switcher.on('click.JS-Tab', function(e){
-      e.preventDefault();
+      //e.preventDefault();
       context.toggle.apply(context, [this]);
     });
 
