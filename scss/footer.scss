@@ -229,6 +229,7 @@ and (max-width: $mobile){
         }
         &-main-list {
             height: auto!important;
+            flex-direction: column;
         }
         &-block {
             display: none;

@@ -1653,7 +1653,7 @@ input[type="radio"] + label:hover, input[type="radio"]:hover {
         margin-bottom: 25px;
     }
     .look-book-block{
-        margin-bottom: -25px;
+        margin-bottom: 25px;
     }
     .look-book-item-text{
         margin-bottom: 10px;

@@ -1263,7 +1263,7 @@ and (max-width: $mobile){
     &-form-decor-inner {
         transform: skew(-164deg);
         height: 100%;
-        margin-left: -83px;
+        margin-left: -110px;
         background: #0d3d57 url(../images/feedback/feedback-form-bgr.jpg) no-repeat -95px bottom;
     }
     &-title {
@@ -1363,6 +1363,7 @@ and (max-width: $mobile){
         &-form-decor-inner {
             transform: skew(0deg);
             background-position: -305px bottom;
+            margin-left: -83px;
         }
         &-form-name {
             text-align: center;

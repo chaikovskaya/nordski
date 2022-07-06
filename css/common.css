@@ -4243,7 +4243,8 @@ label.form-error {
   .footer-main-container {
     padding-bottom: 40px; }
   .footer-main-list {
-    height: auto !important; }
+    height: auto !important;
+    flex-direction: column; }
   .footer-block {
     display: none; }
   .footer-socials {
@@ -5205,7 +5206,7 @@ label.form-error {
   .feedback-form-decor-inner {
     transform: skew(-164deg);
     height: 100%;
-    margin-left: -83px;
+    margin-left: -110px;
     background: #0d3d57 url(../images/feedback/feedback-form-bgr.jpg) no-repeat -95px bottom; }
   .feedback-title {
     margin-bottom: 18px; }
@@ -5280,7 +5281,8 @@ label.form-error {
       transform: skew(0deg); }
     .feedback-form-decor-inner {
       transform: skew(0deg);
-      background-position: -305px bottom; }
+      background-position: -305px bottom;
+      margin-left: -83px; }
     .feedback-form-name {
       text-align: center; } }
 
@@ -6378,7 +6380,8 @@ label.form-error {
   .card-advantages-title {
     text-align: center; }
   .card-advantages-item {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: normal; }
     .card-advantages-item:last-child {
       margin-bottom: 21px; }
   .card-advantages-item_hide {
