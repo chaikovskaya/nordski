@@ -31,18 +31,17 @@
     &-main {}
     &-main-container {
         padding-top: 40px;
-        padding-bottom: 39px;
+        padding-bottom: 30px;
     }
     &-main-item {}
     &-logo {
         display: inline-block;
         margin-bottom: 26px;
-        margin-top: 5px;
     }
     &-company-name {
     }
     &-company-info {
-        padding-bottom: 26px;
+        padding-bottom: 20px;
         margin-bottom: 20px;
         border-bottom: 1px solid #dcdee6;
         font-size: 17px;
@@ -61,14 +60,14 @@
     }
     &-name {
         display: block;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
         font-size: 13px;
         color: #1d1d1d;
         font-weight: 700;
         text-transform: uppercase;
     }
     &-menu {
-        margin-bottom: 20px;
+        margin-bottom: 23px;
     }
     &-menu-item {
         margin-bottom: 6px;
@@ -106,17 +105,16 @@
     }
     &-contacts {}
     &-contacts-item {
-        margin-bottom: 15px;
+        margin-bottom: 19px;
         &:last-child {
             margin-bottom: 0;
         }
     }
     &-contacts-name {
         margin-bottom: 5px;
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 700;
         color: #1c1c1c;
-        text-transform: uppercase;
     }
     &-contacts-block {
         display: flex;
@@ -134,7 +132,7 @@
     }
     &-icon {
         margin-top: 4px;
-        margin-right: 8px;
+        margin-right: 3px;
         font-size: 13px;
         color: #1c1c1c;
     }
@@ -166,8 +164,7 @@
         padding-left: 22px;
     }
     &-icon {
-        margin-top: -4px;
-        margin-right: 12px;
+        margin-right: 11px;
         font-size: 30px;
         vertical-align: middle;
     }
@@ -204,9 +201,6 @@ and (max-width: $tablet){
 @media screen
 and (max-width: $mobile){
     .footer {
-        &-logo {
-            margin-top: 0;
-        }
         &-main-item {
             display: none;
             position: static!important;
