@@ -372,6 +372,24 @@ label.form-error {
             color: #fff;
         }
     }
+
+    &_blue {
+        height: 36px;
+        line-height: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 1px solid #014161;
+        background-color: transparent;
+        color: #014161;
+        &:hover {
+            background-color: transparent;
+            color: #014161;
+        }
+        &:active {
+            background-color: transparent;
+            color: #014161;
+        }
+    }
 }
 
 /*selectric*/
