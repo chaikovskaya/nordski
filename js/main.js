@@ -174,11 +174,9 @@ function initSliderBanner() {
         loop: true,
         slidesPerView: "auto",
         pagination: false,
-        /*
         autoplay: {
             delay: 4000,
         },
-         */
         navigation: {
             nextEl: ".js-slider-next",
             prevEl: ".js-slider-prev",
