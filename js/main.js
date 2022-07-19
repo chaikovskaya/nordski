@@ -175,7 +175,7 @@ function initSliderBanner() {
         slidesPerView: "auto",
         pagination: false,
         autoplay: {
-            delay: 4000,
+            delay: 8000,
         },
         navigation: {
             nextEl: ".js-slider-next",
